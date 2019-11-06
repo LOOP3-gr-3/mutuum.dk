@@ -23,7 +23,8 @@ require_once('conn.php')
     
 <body>
  <!--Skaber menu-bar containeren-->
-<div class="jumbotron">
+<div class="jumbotron" id="jumbotron">
+    <img src="images/mutuumudenbaggrund.png" id="limg">
         <div id="lmenu-bar">
             <!-- skaber funktionen, at man kan klikke-->
             <div id="lmenu" onclick="onClickMenu()">
@@ -37,15 +38,15 @@ require_once('conn.php')
             <ul class="lnav" id="lnav">
                     <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
                 <li><a href="#">Login </a> </li>
-                <li><a href="#">Opret Bruger</a> </li>
-                <li><a href="#">Min side</a> </li>
-                <li><a href="#">Om Mutuum</a> </li>
-                <li><a href="#">FAQ</a> </li>
+                <li><a href="../opretbruger.php">Opret Bruger</a> </li>
+                <li><a href="../minside.php">Min side</a> </li>
+                <li><a href="../om_os.php">Om Mutuum</a> </li>
+                <li><a href="../faq.php">FAQ</a> </li>
             </ul>           
         </div>
  </div>
 
-        <!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
+<!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
         <div class="lmenu-block" id="lmenu-block"> 
         </div>
         
@@ -56,4 +57,4 @@ require_once('conn.php')
             document.getElementById("lnav").classList.toggle("lchange");
             document.getElementById("lmenu-block").classList.toggle("lchange-block");
 }</script>
-   
+    
