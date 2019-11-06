@@ -22,3 +22,6 @@
 
 <U>Investering af større puljer?</U>
 <p>Hvis der ønskes at få afkast på et større beløb, så kan der oprettes en ønsket kontrakt på 2-12.000 kr. kontrakten kan herefter replikkeres, ved at vælge eks. 10 ved feltet antal. Ønskes der flere forskellige kontrakter tilføjer man blot på inkonet + oppe i højre hjørne.</p>
+
+</body>
+</html>
