@@ -38,13 +38,41 @@ require_once('../conn.php')
             <ul class="lnav" id="lnav">
                     <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
                 <li><a href="#">Login </a> </li>
-                <li><a href="#">Opret Bruger</a> </li>
-                <li><a href="#">Min side</a> </li>
-                <li><a href="#">Om Mutuum</a> </li>
-                <li><a href="#">FAQ</a> </li>
+                <li><a href="../opretbruger.php">Opret Bruger</a> </li>
+                <li><a href="../minside.php">Min side</a> </li>
+                <li><a href="../om_os.php">Om Mutuum</a> </li>
+                <li><a href="../faq.php">FAQ</a> </li>
             </ul>           
         </div>
  </div>
+<div id="container-content">
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+<h1>Halløj halløj</h1>
+<hr>
+
+
+</div>
 
         <!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
         <div class="lmenu-block" id="lmenu-block"> 
