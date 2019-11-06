@@ -13,12 +13,12 @@ require_once('conn.php')
 	   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	   <meta name="description" content="">
 	   <meta name="author" content="Projektgruppe 3">
-	   <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
 	   <title><?php echo $page;?></title>                                       <!-- Gør siderne dynamiske, så der ændres navn i toppen -->                      
         <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
     
         <!-- Bootstrap core css -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
 </head>
     
 <body>
