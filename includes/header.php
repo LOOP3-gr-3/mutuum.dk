@@ -45,36 +45,8 @@ require_once('conn.php')
             </ul>           
         </div>
  </div>
-<div id="container-content">
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
-<h1>Halløj halløj</h1>
-<hr>
 
-
-</div>
-
-        <!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
+<!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
         <div class="lmenu-block" id="lmenu-block"> 
         </div>
         
@@ -85,4 +57,4 @@ require_once('conn.php')
             document.getElementById("lnav").classList.toggle("lchange");
             document.getElementById("lmenu-block").classList.toggle("lchange-block");
 }</script>
-   
+    
