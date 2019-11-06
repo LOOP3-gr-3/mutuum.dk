@@ -1,0 +1,134 @@
+﻿/*__________________________________________________HEADER________________________________________*/
+.jumbotron{
+    background-color:aqua;
+}
+
+#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
+    position: fixed;
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;        /*viser en hånd istedet for pil*/
+    float: right;
+    right:2.5%;             /*afstand fra højre*/
+    
+  
+    
+}
+
+.lbar{                  /*fortæller om bars farver, display, højde og bredde*/
+    height: 5px;
+    width: 100%;
+    background-color:#b81568;
+    display: block;
+    border-radius: 5px;   
+    transition:1.2s ease;   /*hastigheden fra burger til kryds*/
+   
+    
+    
+}
+
+#lbar1{                 /*giver toppe af burgeren*/
+    transform:translateY(-4px);
+}
+
+#lbar3{                 /*giver bunden af burgeren*/
+    transform:translateY(4px);
+}
+
+.lchange .lbar{           /*angiver farven på burger efter åben*/
+    background-color:black;
+}
+.lchange #lbar1{           /*får bar1 til at dreje til kryds*/
+    transform: translateY(4px) rotateZ(-135deg);
+}
+
+.lchange #lbar3{           /*får bar3 til at dreje til kryds*/
+    transform: translateY(-6px) rotateZ(135deg);
+}
+.lchange #lbar2{        /*får bar2 til at forsvinde*/
+    opacity: 0;
+}
+.lnav li a:hover{       /*Får nav tekst til at blive market efter åbnet burger*/
+    font-weight: bold;
+}
+
+.lnav li a{             /*giver nav tekst farve og fjerne understregning fra link*/
+    color:black;
+    text-decoration:none;
+}
+
+
+.lnav li{               /* fjerne bullets og beskriver padding i nav tekst efter åben burger*/
+    list-style: none;
+    padding: 16px 0;
+}
+
+.lnav{                  /*fortæller om navs position, padding, margin*/
+    position:relative;
+    padding:0px;
+    margin: 0 20px;
+    transition: 3s ease;
+    display: none;
+    float:right;
+    top:70px;
+    
+
+}
+
+.lchange{               /*fortæller omkring krydsets display*/
+    display:block;
+}
+
+.lmenu-block{           /*fortæller om blokken der kommer efter at have åbnet burgeren FØR den er åben. Z-index er prioriteringsrækkefølge*/
+    width:0;
+    height:0;
+    background:radial-gradient(circle, #FAEBD7, #FAEBD7);
+    transition:0.3s ease;
+    z-index: 1;
+}
+
+.lchange-block{     /*fortæller om blokkens størrelse når burgeren åbnes*/
+    width:100%;
+    height:100%;    
+}
+
+.lmenu-block, #lmenu-bar{   /*fortæller om hvor blokken starter*/
+    top:0;
+    right:0;
+    position:absolute;
+    
+}
+
+#lmenu-bar{             /* fortæller om prioriteringsrækkefølgen - gør egentligt bare, at menu-bar baggrund ikke dækker alt*/
+    z-index: 2;
+}
+
+/*__________________________________________________OM OS________________________________________*/
+/* dette er til overskrifterne på om_os*/
+xh1 {
+    font-size: 1.5em;
+    font-family: arial;
+    color: forestgreen;
+}
+
+/*__________________________________________________OPRET BRUGER________________________________________*/
+/* overskrifterne på login og opret bruger */
+#nheading{
+    text-align:center;
+    padding:20px;
+}
+
+                        /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
+#passwordtjek{
+    text-align: center;
+
+    
+}
+input::placeholder{
+    font-style:italic;
+}
+
+#logmag{
+    margin:15px;
+}
