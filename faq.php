@@ -1,4 +1,4 @@
-<!-- her henter jeg headeren ned -->
+<!-- her kalder jeg headeren ind -->
 <?php
     $page = ('FAQ');
     require_once('includes/header.php');
