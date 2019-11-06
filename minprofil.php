@@ -5,7 +5,10 @@
     //require_once('includes/footer.php');
 ?>
 
-<xh1>MIN PROFIL</xh1>
+<xh1>MIN PROFIL</xh1> <img id="profilbillede" src="images/mutuumudenbaggrund.png">
 
+<?php
+
+?>
 
 </html>
