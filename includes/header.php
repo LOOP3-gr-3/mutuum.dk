@@ -1,7 +1,7 @@
 <?php
 
 //skaber connection til databasen
-require_once('..\conn.php') 
+require_once('../conn.php') 
 
 //Her skal tilføjes, hvis der skal være forskel på navbarens udseende.                                                               
 ?>
