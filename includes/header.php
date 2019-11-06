@@ -23,7 +23,8 @@ require_once('../conn.php')
     
 <body>
  <!--Skaber menu-bar containeren-->
-<div class="jumbotron">
+<div class="jumbotron" id="jumbotron">
+    <img src="../images/mutuumudenbaggrund.png" id="limg">
         <div id="lmenu-bar">
             <!-- skaber funktionen, at man kan klikke-->
             <div id="lmenu" onclick="onClickMenu()">
