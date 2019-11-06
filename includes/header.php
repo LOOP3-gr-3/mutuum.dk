@@ -1,7 +1,7 @@
 <?php
 
 //skaber connection til databasen
-require_once('../conn.php') 
+require_once('conn.php') 
 
 //Her skal tilføjes, hvis der skal være forskel på navbarens udseende.                                                               
 ?>
@@ -15,7 +15,7 @@ require_once('../conn.php')
 	   <meta name="author" content="Projektgruppe 3">
 	   <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
 	   <title><?php echo $page;?></title>                                       <!-- Gør siderne dynamiske, så der ændres navn i toppen -->                      
-        <link rel="stylesheet" href="../includes/styles/overallstyle.css" type="text/css">
+        <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
     
         <!-- Bootstrap core css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">     
@@ -24,7 +24,7 @@ require_once('../conn.php')
 <body>
  <!--Skaber menu-bar containeren-->
 <div class="jumbotron" id="jumbotron">
-    <img src="../images/mutuumudenbaggrund.png" id="limg">
+    <img src="images/mutuumudenbaggrund.png" id="limg">
         <div id="lmenu-bar">
             <!-- skaber funktionen, at man kan klikke-->
             <div id="lmenu" onclick="onClickMenu()">
@@ -38,10 +38,10 @@ require_once('../conn.php')
             <ul class="lnav" id="lnav">
                     <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
                 <li><a href="#">Login </a> </li>
-                <li><a href="../opretbruger.php">Opret Bruger</a> </li>
-                <li><a href="../minside.php">Min side</a> </li>
-                <li><a href="../om_os.php">Om Mutuum</a> </li>
-                <li><a href="../faq.php">FAQ</a> </li>
+                <li><a href="opretbruger.php">Opret Bruger</a> </li>
+                <li><a href="minside.php">Min side</a> </li>
+                <li><a href="om_os.php">Om Mutuum</a> </li>
+                <li><a href="faq.php">FAQ</a> </li>
             </ul>           
         </div>
  </div>
