@@ -8,7 +8,7 @@
 
 
 <!-- Dette er overskriften for dette indhold -->
-<xh1><strong>HVEM ER VI?</strong></xh1>                                
+<h1><strong>HVEM ER VI?</strong></h1>                                
 
 <p>MUTUUM startede på baggrund af et ønske - fra Morten Refsgaard, Jens Eriksen og Sander Dyrvig, om at hjælpe dem, der havde brug for lidt ekstra penge til indskud til diverse efter nødssituationer. Men også ønsket om at gøre det lettere for to bekendte at låne penge til hinanden, men sikre at den økonomiske situation ikke kommer mellem dem vha. af en juridisk kontrakt, der skal holde begge parter ansvarlige for aftalen. <br> Efterfølgende er hele designet, forretningmodellen og det videre koncept udarbejdet af en gruppe 3. semester studerende fra Aarhus Universitet:
 </p>
@@ -21,7 +21,7 @@
         <li>Lasse Hvisthule</li>
     </ul>
 
-<xh1><strong>HVORFOR VÆLGE OS?</strong></xh1>
+<h1><strong>HVORFOR VÆLGE OS?</strong></h1>
 <ul>
     <li>Enkelte, overskuelige og juridiskbindende kontrakter</li>
     <li>Slip for at sende en reminder eller komme i uønskede situationer med nære relationer</li>
