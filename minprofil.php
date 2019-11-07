@@ -3,6 +3,9 @@
     $page = ('Min profil');
     require_once('includes/header.php');
     //require_once('includes/footer.php');
+  if (isset($_SESSION['user_id'])) {
+        header('location:forside.php');
+}
 ?>
 
 <h1>MIN PROFIL</h1> 
