@@ -1,5 +1,6 @@
 <!-- her henter jeg headeren ned -->
 <?php
+
     $page = ('Min profil');
     require_once('includes/header.php');
     //require_once('includes/footer.php');
