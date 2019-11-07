@@ -24,26 +24,30 @@ require_once('conn.php')
 <body>
  <!--Skaber menu-bar containeren-->
 <div class="jumbotron" id="jumbotron">
-    <img src="images/mutuumudenbaggrund.png" id="limg">
-        <div id="lmenu-bar">
-            <!-- skaber funktionen, at man kan klikke-->
-            <div id="lmenu" onclick="onClickMenu()">
+<div id="llogin">
+    <a href="login.pgp">LOG IND</a>
+</div>  
+    <a href="om_os.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
+
+    <div id="lmenu-bar">
+        <!-- skaber funktionen, at man kan klikke-->
+    <div id="lmenu" onclick="onClickMenu()">
 
                 <!--skaber egentligt en firkant, som vi splitter op i CSS til burgeren-->
-                <div id="lbar1" class="lbar"></div>
-                <div id="lbar2" class="lbar"></div>
-                <div id="lbar3" class="lbar"></div>
-            </div>
+        <div id="lbar1" class="lbar"></div>
+        <div id="lbar2" class="lbar"></div>
+        <div id="lbar3" class="lbar"></div>
+    </div>
                 <!--Skaber navigationsbaren når burgeren er foldet ud-->
-            <ul class="lnav" id="lnav">
+        <ul class="lnav" id="lnav">
                     <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
-                <li><a href="#">Login </a> </li>
-                <li><a href="../opretbruger.php">Opret Bruger</a> </li>
-                <li><a href="../minside.php">Min side</a> </li>
-                <li><a href="../om_os.php">Om Mutuum</a> </li>
-                <li><a href="../faq.php">FAQ</a> </li>
-            </ul>           
-        </div>
+            <li><a href="#">Login </a> </li>
+            <li><a href="opretbruger.php">Opret Bruger</a> </li>
+            <li><a href="minside.php">Min side</a> </li>
+            <li><a href="om_os.php">Om Mutuum</a> </li>
+            <li><a href="faq.php">FAQ</a> </li>
+        </ul>           
+    </div>
  </div>
 
 <!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
