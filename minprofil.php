@@ -7,6 +7,7 @@
         header('location:forside.php');
 }
 ?>
+<link href="includes/styles/overallstyle.css">
 
 <h1>MIN PROFIL</h1> 
 <br>
