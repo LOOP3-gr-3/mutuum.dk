@@ -116,12 +116,28 @@ h1 {
     color: forestgreen;
 }
 
-h3 {
+#mineaftaler{
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 24em;  
+}
 
-    
+#retoplysninger {
+    font-size: 1.2em;
+    font-family: arial;
+    color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 22em;
 
 }
 
