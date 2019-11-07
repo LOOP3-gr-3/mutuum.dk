@@ -44,11 +44,11 @@
     background-color:green;
 }
 .lchange #lbar1{           /*får bar1 til at dreje til kryds*/
-    transform: translateY(4px) rotateZ(-135deg);
+    transform: translateY(4px) rotateZ(-45deg);
 }
 
 .lchange #lbar3{           /*får bar3 til at dreje til kryds*/
-    transform: translateY(-6px) rotateZ(135deg);
+    transform: translateY(-6px) rotateZ(45deg);
 }
 .lchange #lbar2{        /*får bar2 til at forsvinde*/
     opacity: 0;
@@ -176,3 +176,46 @@ input::placeholder{
 }
 
 
+/*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
+@media screen and (min-width: 300px){
+    #jumbotron{
+    
+ background-color: lightblue;
+    }
+}
+
+@media screen and (min-width: 750px) {
+  #jumbotron {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #jumbotron {
+    background-color: lavender;
+    height:150px;
+  }
+
+ #llogin{ 
+    width:15%;
+    left:75%;   
+    margin-top:1.2%;
+    }
+
+  #limg{
+    padding:5px;
+    margin:5px;
+    width: 150px;
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    height:100;
+    width:150px;
+     }
+    
+    .lchange-block{     /*fortæller om blokkens størrelse når burgeren åbnes*/
+    width:9%;
+    height:45%;   
+    
+}
+}
