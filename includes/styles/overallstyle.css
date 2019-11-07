@@ -118,7 +118,8 @@ h3 {
     font-size: 1.2em;
     font-family: arial;
     color: darkgreen;
-    border-bottom-style: outset
+    border-style: solid;
+    
 }
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
