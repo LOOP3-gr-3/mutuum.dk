@@ -114,6 +114,12 @@ h1 {
     color: forestgreen;
 }
 
+h3 {
+    font-size: 1.2em;
+    font-family: arial;
+    color: darkgreen;
+}
+
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
 #nheading{
