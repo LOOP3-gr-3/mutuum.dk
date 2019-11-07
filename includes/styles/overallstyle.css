@@ -1,4 +1,4 @@
-﻿/*__________________________________________________HEADER________________________________________*/
+/*__________________________________________________HEADER________________________________________*/
 #jumbotron{
     padding:0!important;
     padding-bottom: 30px !important;
@@ -156,7 +156,27 @@ input::placeholder{
     height:100;
     width:100px; 
 }
+#container-content{
+    width:100%;
+    height:100000%;
+}
 
+/*___________________________________ MIN SIDE ___________________________________*/
+
+.col-mew {
+    width: 40%;
+    border-radius: 3%;
+    border-style: solid;
+    border-color: darkgray;
+    background-color: darkgray;
+    margin: 2%;
+    left: 10%;
+    min-height:2%;
+    max-height: 13%;
+    padding: 8%
+}
+
+=======
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
 
 #llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
@@ -182,5 +202,4 @@ input::placeholder{
     font-weight: 800;    
     
 }
-
 
