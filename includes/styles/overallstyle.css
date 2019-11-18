@@ -261,11 +261,13 @@ a{
     height: auto;
     margin: auto;
     margin-top: 20em;
+    
 }
 .wfooter-menu-to ul{
     margin: 0em;
     padding: 0em;
     text-align: center;
+    text-decoration: none;
     
 }
 .wfooter-menu-to ul li a{
@@ -274,11 +276,12 @@ a{
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 #woplysninger {
-    position: relative
-    width: 25%;
-    
+    position: relative;
+    width:100%;
+    text-decoration: none;
     
 }
 .wfooter-menu-fire p{

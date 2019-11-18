@@ -14,11 +14,11 @@
     </div>
     <div class="wfooter-menu-to">
         <div class="col-lg-3 col-md-6 footer-info">
-            <ul>
-                <li><a id="woplysninger" href="../faq">FAQ</a></li>
-                <li><a href="../handelsebetingelser">Handelsbetingelser</a></li>
-                <li><a href="../kontakt">Kontakt</a></li>
-            </ul> 
+            
+                <a id="woplysninger" href="../faq">FAQ |</a>
+                <a href="../handelsebetingelser">Handelsbetingelser |</a>
+                <a href="../kontakt">Kontakt</a>
+            
         </div>
     </div>
     <div class="wfooter-menu-tre">
