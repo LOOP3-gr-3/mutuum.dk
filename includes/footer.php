@@ -4,7 +4,7 @@
 ?>
 
 
-<link href=includes/styles/footer.css type="text/css" rel="stylesheet">
+<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
     
 <div class="footer" align="center">
     <div class="wfooter-menu-en">
@@ -23,7 +23,7 @@
     </div>
     <div class="wfooter-menu-tre">
         <div class="col-lg-3 col-md-6 footer-info">
-            <img src="images/ICO.PNG">
+    
         </div>
     </div>
             <div class="wfooter-menu-fire">

@@ -87,7 +87,9 @@ if (isset($_SESSION['user_id'])) {
       <a href="#OVERBLIK"><img src="images/graf.png" alt="Matchsiden" style="width:90%"></a>
     </div>
 
-
+<?php  
+require_once('includes/footer.php'); ?>
+    
 </body>
 </html>
      
