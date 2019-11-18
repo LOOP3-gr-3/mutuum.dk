@@ -186,9 +186,13 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 /*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
 td, th {
-    border: 0.5em solid #dddddd;
+    border: 0.25em solid #dddddd;
     text-align: left;
     padding: 0.5em;
+
+}
+#xlille {
+    font-size: 0.2em;
 }
 
 /*-----------------------------------kontrakt------------------------------------*/
