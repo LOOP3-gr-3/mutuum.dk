@@ -10,7 +10,7 @@
 ?>
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
-<h1>MIN PROFIL</h1> 
+<h1><strong>MIN PROFIL</strong></h1> 
 <br>
 
 <?php
@@ -35,7 +35,7 @@ mysqli_close($con);
 ?>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på mine aftaler-->
-<a href="mineaftaler.php" target="_blank"><br><br><h3>Mine aftaler</h3></a>
+<xa href="mineaftaler.php" target="_blank"><br><br><h1>Mine aftaler</h1></xa>
 
 
 <U>Kredit oplysninger</U>
@@ -48,7 +48,7 @@ mysqli_close($con);
 <form></form>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på ret oplysninger-->
-<a href="retoplysninger.php" target="_blank"><h3>Ret oplysninger</h3></a>
+<xa href="retoplysninger.php" target="_blank"><h3>Ret oplysninger</h3></xa>
 
 
 </body>
