@@ -25,7 +25,6 @@
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
     right: 12.5%;
-   
     
     
 }
@@ -46,7 +45,7 @@
 }
 
 .lchange #lbar3{           /*får bar3 til at dreje til kryds*/
-    transform: translateY(-0.45em) rotateZ(45deg);
+    transform: translateY(-0.65em) rotateZ(45deg);
 }
 .lchange #lbar2{        /*får bar2 til at forsvinde når krydset vises*/
     opacity: 0;
@@ -214,14 +213,14 @@ input::placeholder{
   }
 
     .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    height: 0.4em;
+    height: 0.5em;
     width: 100%;
     background-color:#85bb65;
     display: block;
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
-    right: 12.5%;
-    top: 10em; 
+    right: 12.5%; 
+    margin: 0.em 0 0em 1em;
     }
 
 #limg{
@@ -240,13 +239,6 @@ input::placeholder{
     margin-top:2%;
     } 
     
-#lbar1{                 /*giver toppen af burgeren*/
-    transform:translateY(0.9em);
-}
-
-#lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(0.2em);
-}
 }
 
 @media screen and (min-width: 1280px) {
@@ -262,9 +254,9 @@ input::placeholder{
     }
 
   #limg{
-    /*left: 50px;
+    left: 50px;
     height:100;
-    width:150px;*/
+    width:150px !important;
      }
 
     
