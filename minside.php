@@ -88,13 +88,10 @@ if (isset($_SESSION['user_id'])) {
     </div>
 
 <?php  
-<<<<<<< Updated upstream
 require_once('includes/footer.php'); ?>
     
 </body>
 </html>
-=======
-require_once('includes/footer.php');
-?>
->>>>>>> Stashed changes
+
+
      
