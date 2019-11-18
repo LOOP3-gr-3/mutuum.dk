@@ -34,11 +34,11 @@
             
             <!-- de nedenstående er bare for at vise hvordan det kommer ind i tabellen-->
             <td>18/11-19</td>
-            <td>xiastald@hotmail.com</td>
+            <td>4059, -</td>
         </tr>
         <tr>
             <td>21/11-19</td>
-            <td>wasfeyah.hashemi@hotmail.com</td>
+            <td>5313, -</td>
         </tr>
     </table>
     
@@ -60,11 +60,11 @@
             
             <!-- de nedenstående er bare for at vise hvordan det kommer ind i tabellen-->
             <td>18/11-19</td>
-            <td>+ 5000, -</td>
+            <td>5000, -</td>
         </tr>
         <tr>
             <td>21/11-19</td>
-            <td>- 2000, -</td>
+            <td>2000, -</td>
         </tr>
     </table>
     
