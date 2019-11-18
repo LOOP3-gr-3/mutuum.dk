@@ -35,7 +35,7 @@ mysqli_close($con);
 ?>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på mine aftaler-->
-<a href="mineaftaler.php" target="_blank"><br><br><h3 id="mineaftaler">Mine aftaler</h3></a><br>
+<a href="mineaftaler.php" target="_blank" ><br><br><h3 id="mineaftaler" class="btn btn-light">Mine aftaler</h3></a><br>
 
 
 
@@ -49,7 +49,7 @@ mysqli_close($con);
 
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på ret oplysninger-->
-<a href="retoplysninger.php" target="_blank"><h3 id="retoplysninger">Ret oplysninger</h3></a>
+<a href="retoplysninger.php" target="_blank"><h3 id="retoplysninger" class="btn btn-light">Ret oplysninger</h3></a>
 
 
 </body>
