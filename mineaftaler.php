@@ -10,9 +10,10 @@
 
 <h2>MINE AFTALER</h2>
 
-<!-- INDSÆT SØGEFELT-->
+<!-- billede af lup ved søgefeltet-->
+<img id="Xlup"src="images/s%C3%B8gefunktion.PNG" alt="lup til søgefelt" title="søgefelt">
 
-<I>Din oversigt over alle aftaler</I><br><br>
+<br><br><I>Nedenstående er en oversigt over alle dine aftaler</I><br><br>
 
 <h3>Historik</h3>
 
