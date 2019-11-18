@@ -10,22 +10,27 @@ require_once('conn.php')
 <html lang="en">
 <head>
 	   <meta charset="utf-8">
-	   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
 	   <meta name="description" content="">
 	   <meta name="author" content="Projektgruppe 3">
 	   <title><?php echo $page;?></title>                                       <!-- Gør siderne dynamiske, så der ændres navn i toppen -->                      
+        <!-- Bootstrap core css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
         <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
     
+
         <!-- Bootstrap core css -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
+
 </head>
     
 <body>
  <!--Skaber menu-bar containeren-->
 <div class="jumbotron" id="jumbotron">
 <div id="llogin">
-    <a href="login.pgp">LOG IND</a>
+    <a href="login.php">LOG IND</a>
 </div>  
     <a href="om_os.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
 
