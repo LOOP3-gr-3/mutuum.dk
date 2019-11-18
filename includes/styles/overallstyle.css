@@ -1,11 +1,17 @@
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
+
+    padding:0!important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
+ /*hvad gør important?*/   
+
     padding:0em !important;
     border-radius:0em !important;
     padding-bottom: 2em !important;
     padding-top: 2em !important;
     width:auto !important;
-    
+   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -118,17 +124,33 @@
 /*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: arial;
     color: forestgreen;
 }
 
-h3 {
+#mineaftaler{
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 24em;  
+}
 
-    
+#retoplysninger {
+    font-size: 1.2em;
+    font-family: arial;
+    color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 22em;
 
 }
 
