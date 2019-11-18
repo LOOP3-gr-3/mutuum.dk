@@ -208,6 +208,23 @@ input::placeholder{
     
 }
 
+
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 5%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 1em;
+=======
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 300px){
 
@@ -239,14 +256,8 @@ input::placeholder{
         left:1.2em
     }
 
+
 }
-
-
-
-
-
-
-
 
 
 @media screen and (min-width: 768px) {
