@@ -3,7 +3,7 @@
     padding:0!important;
     padding-bottom: 30px !important;
     padding-top: 7px !important;
-    
+ /*hvad gør important?*/   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -111,7 +111,7 @@
 /*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
 h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-family: arial;
     color: forestgreen;
 }
