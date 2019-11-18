@@ -35,7 +35,9 @@ mysqli_close($con);
 ?>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på mine aftaler-->
-<xa href="mineaftaler.php" target="_blank"><br><br><h1>Mine aftaler</h1></xa>
+
+<xa href="mineaftaler.php" target="_blank" ><br><br><h3 id="mineaftaler" class="btn btn-light">Mine aftaler</h3></xa><br>
+
 
 
 <U>Kredit oplysninger</U>
@@ -44,11 +46,13 @@ mysqli_close($con);
 <!-- U sikre at der kunne en understreg under skriften-->
 <U>Rating</U>
 <p>Denne sker gennem kreditvurderingen og der dermed udenfor afgrænsningen. Men I dette felt ville der skulle trækkes data fra kreditverificingen, denne data skal kunne aflæse om hvorvidt brugeren for en AAA, AA, A, B eller C rating</p><br>
-<p>Din rating er blevet givet på baggrund af din kreditvurdering. Denne kan anmodes om at blive fornyet under "ret oplysninger"</p>
-<form></form>
+<p><I>Din rating er blevet givet på baggrund af din kreditvurdering. Denne kan anmodes om at blive fornyet under "ret oplysninger"</I></p>
+
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på ret oplysninger-->
-<xa href="retoplysninger.php" target="_blank"><h3>Ret oplysninger</h3></xa>
+
+<xa href="retoplysninger.php" target="_blank"><h3 id="retoplysninger" class="btn btn-light">Ret oplysninger</h3></xa>
+
 
 
 </body>
