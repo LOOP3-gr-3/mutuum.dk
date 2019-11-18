@@ -3,8 +3,12 @@
     require_once('includes/header.php');
 ?>
 
+<<<<<<< Updated upstream
 
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+=======
+<link href="../includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+>>>>>>> Stashed changes
     
 <div class="footer" align="center">
     <div class="wfooter-menu-en">
@@ -23,7 +27,11 @@
     </div>
     <div class="wfooter-menu-tre">
         <div class="col-lg-3 col-md-6 footer-info">
+<<<<<<< Updated upstream
     
+=======
+            <img src="../images/ICO.PNG" id="wimg">
+>>>>>>> Stashed changes
         </div>
     </div>
             <div class="wfooter-menu-fire">
@@ -35,3 +43,5 @@
             </div>
     
     </div>
+</body>
+</html>

@@ -6,6 +6,7 @@
     padding-top: 2em !important;
     width:auto !important;
     
+    
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -208,34 +209,57 @@ input::placeholder{
     
 }
 
+<<<<<<< Updated upstream
 /*----------------------------FOOTER----------------------------*/ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+=======
+    /*--------------FOOTER--------------------*/ 
+
+>>>>>>> Stashed changes
 a{
     text-decoration: none;
     outline: none;
 }
 .footer {
     width: 100%;
+<<<<<<< Updated upstream
     height: auto;
     margin: auto;
     background: #272727; 
     bottom: 0;
+=======
+    height: 100%;
+    margin: auto;
+    background: #272727; 
+    bottom:0em;
+>>>>>>> Stashed changes
     position: relative;
     
 /*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 }
 .wfooter-menu-en {
     width: 100%;
+<<<<<<< Updated upstream
     height: 4em;
     margin-top: 1em;
 }
 .wfooter-menu-en ul{ 
     text-align: center;
 
+=======
+    height: 0em;
+    margin: auto;
+    
+}
+.wfooter-menu-en ul{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+>>>>>>> Stashed changes
 }
 .wfooter-menu-en ul li a{
     font-family: arial;
@@ -244,10 +268,17 @@ a{
     color: #fff;
     text-transform: uppercase;
 }
+<<<<<<< Updated upstream
 #wkomigang {   
     text-align:center;
     border:0.05em solid white;
     border-radius:20em;
+=======
+#wkomigang {  
+    text-align:center;
+    border:0.05em solid white;
+    border-radius:80em;
+>>>>>>> Stashed changes
     text-decoration: none;
     position: relative;
     width: 25%;
@@ -258,16 +289,24 @@ a{
 }
 .wfooter-menu-to{
     width: 100%;
+<<<<<<< Updated upstream
     height: auto;
     margin: auto;
     margin-top: 20em;
     
+=======
+    margin-top:4em;
+ 
+>>>>>>> Stashed changes
 }
 .wfooter-menu-to ul{
     margin: 0em;
     padding: 0em;
     text-align: center;
+<<<<<<< Updated upstream
     text-decoration: none;
+=======
+>>>>>>> Stashed changes
     
 }
 .wfooter-menu-to ul li a{
@@ -276,6 +315,7 @@ a{
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
+<<<<<<< Updated upstream
     text-decoration: none;
 }
 #woplysninger {
@@ -286,6 +326,17 @@ a{
 }
 .wfooter-menu-fire p{
     width:  100%;
+=======
+}
+#woplysninger {
+    position: relative
+    width: 25%;
+    
+    
+}
+.wfooter-menu-fire p{
+    width: 100%;
+>>>>>>> Stashed changes
     height: auto;
     margin: auto;
     margin-top: 20em;
@@ -302,7 +353,11 @@ a{
     color: #fff;
     text-transform: uppercase;
 }
+<<<<<<< Updated upstream
 wimg{
+=======
+#wimg{
+>>>>>>> Stashed changes
     max-width: 10%;
     height: auto;
     display: block;
@@ -312,7 +367,10 @@ wimg{
     
 }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 300px){
 
@@ -404,6 +462,7 @@ wimg{
 
 
 
+
 @media screen and (min-width: 1200px) {
   #jumbotron {
     background-color: lavender;
@@ -431,4 +490,5 @@ wimg{
     top:0.4em;
     
 }
+
 
