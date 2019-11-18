@@ -45,7 +45,7 @@ mysqli_close($con);
 <!-- U sikre at der kunne en understreg under skriften-->
 <U>Rating</U>
 <p>Denne sker gennem kreditvurderingen og der dermed udenfor afgrænsningen. Men I dette felt ville der skulle trækkes data fra kreditverificingen, denne data skal kunne aflæse om hvorvidt brugeren for en AAA, AA, A, B eller C rating</p><br>
-<p>Din rating er blevet givet på baggrund af din kreditvurdering. Denne kan anmodes om at blive fornyet under "ret oplysninger"</p>
+<p><I>Din rating er blevet givet på baggrund af din kreditvurdering. Denne kan anmodes om at blive fornyet under "ret oplysninger"</I></p>
 
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på ret oplysninger-->
