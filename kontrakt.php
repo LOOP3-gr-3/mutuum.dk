@@ -9,5 +9,8 @@
 ?>
 
 <h1 id="xopretudlan">OPRET UDLÅN</h1>
+<<<<<<< HEAD
 
 <button></button>
+=======
+>>>>>>> 582a47021c8715d48bdb1f99268bf772dc8e12b1
