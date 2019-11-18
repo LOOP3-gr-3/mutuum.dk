@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727; 
+    bottom: 0;
+    position: relative;
+    
+/*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-en {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20em;
+}
+.wfooter-menu-en ul{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-en ul li a{
+    font-family: arial;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+#wkomigang {   
+    margin-top:5%;
+    margin-bottom: 2%;
+    text-align:center;
+    border:0.05em solid white;
+    border-radius:20em;
+    text-decoration: none;
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+
+/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-to{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20em;
+}
+.wfooter-menu-to ul{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+    
+}
+.wfooter-menu-to ul li a{
+    font-family: arial;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+#woplysninger {
+    position: relative
+    width: 25%;
+    
+    
+}
+.wfooter-menu-fire p{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 20em;
+}
+.wfooter-menu-fire p{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-fire p{
+    font-family: arial;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+img{
+    max-width: 10%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    
+}
