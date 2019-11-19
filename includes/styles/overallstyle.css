@@ -1,3 +1,4 @@
+
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
     padding:0em !important;
@@ -5,7 +6,13 @@
     padding-bottom: 2em !important;
     padding-top: 2em !important;
     width:auto !important;
-    
+
+}
+/*__________________________________________________HEADER________________________________________*/
+#jumbotron{
+    padding:0!important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -14,10 +21,6 @@
     height: 4em;
     cursor: pointer;        /*viser en hånd istedet for pil*/
     right: 2em;           /*afstand fra højre*/
-   
-    
-  
-    
 }
 
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
@@ -31,9 +34,6 @@
     right: 15.5%; 
     top: 2em;
     }
-    
-    
-}
 
 #lbar1{                 /*giver toppen af burgeren*/
     transform:translateY(0.2em);
@@ -83,8 +83,6 @@
     display: none;
     float:right;
     top:5em;
-    
-
 }
 
 .lchange{               /*fortæller omkring krydsets display*/
@@ -127,10 +125,8 @@ h3 {
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
-
-    
-
 }
+
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
@@ -142,8 +138,6 @@ h3 {
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
 #passwordtjek{
     text-align: center;
-
-    
 }
 input::placeholder{
     font-style:italic;
@@ -172,9 +166,8 @@ input::placeholder{
     position:relative;
     height:35em;
     width:auto;
-
-
 }
+
 #container1-4{
     display:block;
     position:absolute;
@@ -185,9 +178,6 @@ input::placeholder{
     border: solid 2px black;
     margin: 5px;
     border-radius: 15%;
-
-    
-    
 }
 
 #container2-4{
@@ -252,12 +242,6 @@ a:hover{
     opacity:0.4;
 }
 
-
-
-
-
-
-
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
 
 #llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
@@ -284,17 +268,42 @@ a:hover{
     
 }
 
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 10%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+/*-----------------------------------kontrakt------------------------------------*/
+#xopretudlan {
+    text-align: center;
+}
+
 /*----------------------------FOOTER----------------------------*/ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    outline: none;
-}
-.footer {
+
+
+footer {
     width: 100%;
     height: auto;
     margin: auto;
@@ -302,13 +311,21 @@ a{
     bottom: 0%;
     position: static;
     
+}
 /*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+
+
+a {
+    text-decoration: none;
+    outline: none;
 }
+
 .wfooter-menu-en {
-    width: 100%;
-    height: 4em;
-    margin-top: 1em;
+        width: 100%;
+        height:4em;
+        margin-top: 1em;   
 }
+
 .wfooter-menu-en ul{ 
     text-align: center;
 
@@ -325,8 +342,6 @@ a{
     font-size:2em;
     margin:1em 1em 1em;
     text-decoration: underline;
-
-    
 }
 
 #wkomigang:hover{
@@ -341,9 +356,6 @@ a{
     width: 100%;
     height: auto;
     margin: auto;
-  
-    
-    
 }
         
 .wfooter-menu-fire p{
@@ -374,6 +386,17 @@ a{
     width:100%;
     }
 
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 5%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
 #llogin{ 
     position:relative; 
     width: 25%;
@@ -394,19 +417,12 @@ a{
     
 .lbar{
         top:1.2em;
-        left:1.2em
-    }
+        left:1.2em;
 
 }
 
 
-
-
-
-
-
-
-
+    /*----------------------------------------MEDIA SCREENS-------------------------*/ 
 @media screen and (min-width: 768px) {
   #jumbotron {
     background-color: aqua;
@@ -445,17 +461,23 @@ a{
     text-align:center;
     border:0.09em solid black;
     border-radius:20px;
-    text-decoration: none;
-    } 
+    text-decoration: none; 
     
 }
 
+#xx {
+    text-align: center;
+    }
 
-
-
-
-
-
+/*Her placeres knapperne side om side*/
+#xnetveark {  
+    float: left;
+    width: 50%
+     }
+    #xmatchside {
+        float: right;
+        width: 50%;
+    }
 
 @media screen and (min-width: 1200px) {
   #jumbotron {
