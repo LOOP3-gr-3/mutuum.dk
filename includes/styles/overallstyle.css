@@ -1,67 +1,63 @@
-Overallstyles:
+
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
-    padding:0!important;
-    padding-bottom: 30px !important;
-    padding-top: 7px !important;
-    
-    padding:0!important;
-    padding-bottom: 30px !important;
-    padding-top: 7px !important;
-
     padding:0em !important;
     border-radius:0em !important;
     padding-bottom: 2em !important;
     padding-top: 2em !important;
     width:auto !important;
-   
+
+}
+/*__________________________________________________HEADER________________________________________*/
+#jumbotron{
+    padding:0!important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
     position: absolute;
-    width: 45px;
-    height: 30px;
-    margin: 30px 0 20px 20px;
+    width: 3em;
+    height: 4em;
     cursor: pointer;        /*viser en hånd istedet for pil*/
     right: 2em;           /*afstand fra højre*/
-   
-    
-  
-    
 }
 
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    height: 5px;
+    position: relative;
+    height: 0.5em;
     width: 100%;
     background-color:#85bb65;
     display: block;
-    border-radius: 5px;   
+    border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
-    right: 12.5%;
-   
-    
-    
-}
+    right: 15.5%; 
+    top: 2em;
+    }
 
 #lbar1{                 /*giver toppen af burgeren*/
-    transform:translateY(-4px);
+    transform:translateY(0.2em);
+}
+
+#lbar2{                 /*giver toppen af burgeren*/
+    transform:translateY(0.1em);
 }
 
 #lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(4px);
+    transform:translateY(0.2em);
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
     background-color:green;
 }
 .lchange #lbar1{           /*får bar1 til at dreje til kryds*/
-    transform: translateY(4px) rotateZ(-135deg);
+    transform: translateY(0.3em) rotateZ(-45deg);
 }
 
 .lchange #lbar3{           /*får bar3 til at dreje til kryds*/
-    transform: translateY(-6px) rotateZ(135deg);
+    transform: translateY(-0.65em) rotateZ(45deg);
 }
-.lchange #lbar2{        /*får bar2 til at forsvinde*/
+.lchange #lbar2{        /*får bar2 til at forsvinde når krydset vises*/
     opacity: 0;
 }
 .lnav li a:hover{       /*Får nav tekst til at blive market efter åbnet burger*/
@@ -76,19 +72,17 @@ Overallstyles:
 
 .lnav li{               /* fjerne bullets og beskriver padding i nav tekst efter åben burger*/
     list-style: none;
-    padding: 16px 0;
+    padding: 1em 0em;
 }
 
 .lnav{                  /*fortæller om navs position, padding, margin*/
     position:relative;
-    padding:0px;
-    margin: 0 20px;
+    padding:0em;
+    margin: 0 3em;
     transition: 3s ease;
     display: none;
     float:right;
-    top:70px;
-    
-
+    top:5em;
 }
 
 .lchange{               /*fortæller omkring krydsets display*/
@@ -119,45 +113,25 @@ Overallstyles:
     z-index: 2;
 }
 
-/*__________________________________________________OM OS________________________________________*/
+/*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
 
 xh1 {
     font-size: 1.5em;
-=======
 }
+
 h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: arial;
-    color: black;
+    color: forestgreen;
 }
 
-<<<<<<< HEAD
-=======
-#mineaftaler{
+h3 {
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
-    border: 0.1em solid;
-    border-bottom-left-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-    border-top-left-radius: 0.4em;
-    border-top-right-radius: 0.4em;
-    margin-right: 24em;  
 }
 
-#retoplysninger {
-    font-size: 1.2em;
-    font-family: arial;
-    color:darkgreen;
-    border: 0.1em solid;
-    border-bottom-left-radius: 0.4em;
-    border-bottom-right-radius: 0.4em;
-    border-top-left-radius: 0.4em;
-    border-top-right-radius: 0.4em;
-    margin-right: 22em;
-
-}
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
@@ -169,8 +143,6 @@ h1 {
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
 #passwordtjek{
     text-align: center;
-
-    
 }
 input::placeholder{
     font-style:italic;
@@ -181,14 +153,98 @@ input::placeholder{
 }
 /*-------------------------------------------------BILLEDE I HEADER------------------------------------*/
 #limg{
-    padding:5px;
-    margin:5px;
-    width: 150px;
+    margin:0.2em;
     position: absolute;
-    top: -5px;
-    left: -7px;
-    height:100;
-    width:100px; 
+    top: -0.5em;
+    left: 3em;
+    height:8em;
+    width:10em; 
+}
+#container-content{
+    width:100%;
+    height:100000%;
+}
+
+/*___________________________________ MIN SIDE ___________________________________*/
+
+#container-las{
+    position:relative;
+    height:35em;
+    width:auto;
+}
+
+#container1-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:0%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+}
+
+#container2-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:25%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container3-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:50%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container4-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:75%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#l-tekst{
+    text-align: center;   
+    color:black;
+
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:forestgreen;
+    font-weight: bold;
+}
+#l-billede{
+    position:relative;
+    margin-left:18%;
+    margin-right:18%;  
+}
+
+#l-billede:hover{
+    opacity:0.4;
 }
 
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
@@ -201,7 +257,7 @@ input::placeholder{
     margin-top:5%;
     margin-bottom: 2%;
     text-align:center;
-    border:2px solid black;
+    border:0.09em solid black;
     border-radius:20px;
     text-decoration: none;
 }
@@ -219,7 +275,7 @@ input::placeholder{
 
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
-    width: 5%;
+    width: 10%;
     height: auto;
 } 
 table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
@@ -231,21 +287,19 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 td, th {
     border: 0.5em solid #dddddd;
     text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {
+    font-size: 0.8em;
     padding: 1em;
 }
 
 /*-----------------------------------kontrakt------------------------------------*/
-#xopretudlån {
+#xopretudlan {
     text-align: center;
+
 }
-
-/*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 300px){
-
-#jumbotron{
- background-color: lightblue;
-    width:100%;
-    }
 
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
@@ -255,18 +309,130 @@ td, th {
 table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;}
-
-
-/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
-td, th {
-    border: 0.5em solid #dddddd;
-    text-align: left;
-    padding: 0.5em;
+    width: 100%;
 }
 
-/*-----------------------------------kontrakt------------------------------------*/
-#xopretudlan {
+#llogin{ 
+    position:relative; 
+    width: 25%;
+    left:55%;   
+    opacity:0.6;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none;
+    top:-0.8em;
+    } 
+    
+#limg{
+    height:5em;
+    width:5em; 
+    top:0.1em;
+}
+    
+.lbar{
+        top:1.2em;
+        left:1.2em;
+
+}
+
+
+    /*----------------------------------------MEDIA SCREENS-------------------------*/ 
+@media screen and (min-width: 300px){
+
+#jumbotron{
+ background-color: lightblue;
+    width:100%;
+    }
+    
+@media screen and (min-width: 768px) {
+  #jumbotron {
+    background-color: aqua;
+    }
+
+.lbar{              /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
+    position: relative;
+    height: 0.5em;
+    width: 100%;
+    background-color:#85bb65;
+    display: block;
+    border-radius: 5em;   
+    transition:0.7s ease; /*hastigheden fra burger til kryds*/
+    right: 15.5%; 
+    top: 2.5em;
+    left: -0.5em;
+    }
+    
+
+#limg{
+   
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    height:8em;
+    width:8em;
+     }
+    
+#llogin{ 
+    position:relative; 
+    width: 25%;
+    left:60%;   
+    opacity:0.6;
+    margin-top:3%;  
+    margin-bottom: 2%;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none; 
+    
+}
+    }
+
+#xx {
     text-align: center;
+    }
+
+/*Slide button*/    
+
+    
+/*Her placeres knapperne side om side*/
+#xnetveark {  
+    position: center;
+    width: 80%
+     }
+    #xmatchside {
+    position: center;        
+    width: 80%;
+    }
+
+
+@media screen and (min-width: 1200px) {
+  #jumbotron {
+    background-color: lavender;
+    height:130px;
+  }
+
+ #llogin{ 
+    width:15%;
+    left:75%;   
+    margin-top:2.7%;
+    }
+
+
+  #limg{
+    left: 50px;
+    height:100;
+    width:150px !important;
+     }
+
+    
+#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
+    margin: 50px 0 20px 20px;
+  
+    }
+.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+    top:0.4em;
+    
 }
+    }
 

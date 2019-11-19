@@ -1,7 +1,7 @@
 <?php  
 $page = 'MinSide';
 require_once('includes/header.php');
-require_once('includes/footer.php');
+
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
 if (isset($_SESSION['user_id'])) {
@@ -67,32 +67,66 @@ if (isset($_SESSION['user_id'])) {
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
 
-<div class="main-profil">
-<div class="row">
-  <div class="col-mew"> 
-      <a href="minprofil.php"><img src="images/profil.png" alt="MinProfil" style="width:90%"></a>
+
+<div id="container-las">
+    <div id="container1-4">
+        <div id="l-billede">
+            <a href="KONTRAKT"><img src="images/kontrakt.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="KONTRAKT">Kontrakt</a>
+            
+        </div>
+
     </div>
-  <div class="col-mew">
-      <a href="#KONTRAKT"><img src="images/kontrakt.png" alt="Opret kontrakt" style="width:90%" style="center"></a>
+    
+    <div id="container2-4">
+        <div id="l-billede">
+            <a href="MATCHSITE"><img src="images/match.png"></a>
+            
+        </div>
+        
+        <div id="l-tekst">
+            <a href="MATCHSITE">Match site</a>
+            
+        </div>
     </div>
-    <div class="col-lille"></div>
+    
+    
+    <div id="container3-4">
+        <div id="l-billede">
+            <a href="NETVÆRK"><img src="images/netvaerk.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="NETVÆRK">Mit netværk</a>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container4-4">
+        <div id="l-billede">
+            <a href="MINPROFIL" taget="_blank"><img src="images/profil.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="MINPROFIL">Min profil</a>
+            
+        </div>
+    </div>
 </div>
-<div class="row">
- <div class="col-mew"> 
-      <a href="#MATCH"><img src="images/match.png" alt="Matchsiden" style="width:90%"></a>
-    </div>
-  <div class="col-mew">
-      <a href="#NETVÆRK"><img src="images/netvaerk.png" alt="Netværk" style="width:90%"></a>
-    </div>
-</div> 
-<div class="row">
- <div class="col-mew"> 
-      <a href="#OVERBLIK"><img src="images/graf.png" alt="Matchsiden" style="width:90%"></a>
-    </div>
+    
+<?php
+require_once('includes/footer.php');
+    ?>
 
 
-</body>
-</html>
+ <?php 
+    require_once('includes/footer.php');
+?>
+
 
 
      
