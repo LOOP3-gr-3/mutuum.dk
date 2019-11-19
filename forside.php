@@ -10,9 +10,6 @@
 
 <link href="includes/styles/forside.css" type="text/css" rel="stylesheet">
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-    
     <div id="site-highlights">
         <hr>
         <h2>Her skal vores motto være!</h2>
@@ -51,8 +48,6 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-    </main>
 </div>
 
 <!-- Her indsætter jeg javascript, for at få billederne til at køre -->
