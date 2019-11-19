@@ -2,7 +2,7 @@
 <?php
     $page = ('Forside');
     require_once('includes/header.php');
-    //require_once('includes/footer.php');
+    
     if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
 }
@@ -10,9 +10,6 @@
 
 <link href="includes/styles/forside.css" type="text/css" rel="stylesheet">
 
-<div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-    
     <div id="site-highlights">
         <hr>
         <h2>Her skal vores motto være!</h2>
@@ -51,8 +48,6 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-    </main>
 </div>
 
 <!-- Her indsætter jeg javascript, for at få billederne til at køre -->
@@ -108,8 +103,44 @@ function showSlides() {
   setTimeout(showSlides, 5000);
 }
 </script>
+    
+<br> <br>
+    
+<!-- Tilføjelse af tekst og figurer -->
+<div style="text-align:center">
+        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+    
+    <img src="images/MUTUUM.png">
+    
+<br> <br>
 
-</body>
+        <h2 class="w3-wide"> Det er nemt og hurtigt at ansøge om et lån </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
 
+    <img src="images/netvaerk.png">
+    <img src="images/match.png">
+    
+        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+  
+<br> <br>
+    
+        <h2 class="w3-wide"> HER SKAL DER VÆRE EN GRAF! </h2>
+        <img src="images/graf.png">
+    
+<br> <br> <br>
 
-</html>
+        <h2 id="wtext-långiver"> LÅNGIVER </h2>
+        <img src="images/profil.png">
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
+    
+        <h2 id="wtext-långiver"> LÅNTAGER </h2>
+        <img src="images/profil.png">
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D  </i></p>
+
+</div>
+    
+ <?php 
+    require_once('includes/footer.php');
+?>

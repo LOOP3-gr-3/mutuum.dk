@@ -4,12 +4,7 @@ require_once('includes/header.php');
 
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
-if (isset($_SESSION['user_id'])) {
-    header('location:loggedin_front.php');
- 
-//ellers skal den tjekke på mail og password
-} else {
-    if(isset($_POST['email']) && isset($_POST['password'])) {
+if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
@@ -54,7 +49,7 @@ if (isset($_SESSION['user_id'])) {
             }
         }
     }  
-}
+
 
 
 //if the user is logged in, redirects to the page loggedin_front.php
@@ -69,34 +64,22 @@ if (isset($_SESSION['user_id'])) {
 
 
 <div id="container-las">
-    <div id="container1-4">
+    <div id="container1-5">
         <div id="l-billede">
-            <a href="KONTRAKT"><img src="images/kontrakt.png"></a>
+            <a href="minprofil.php"><img id="billede1" src="images/profil.png"></a>
         </div>
         
         <div id="l-tekst">
-            <a href="KONTRAKT">Kontrakt</a>
+            <a href="minprofil.php">Min profil</a>
             
         </div>
 
     </div>
     
-    <div id="container2-4">
+    <div id="container2-5">
         <div id="l-billede">
-            <a href="MATCHSITE"><img src="images/match.png"></a>
+            <a href="NETVÆRK"><img id="billede1" src="images/netvaerk.png"></a>
             
-        </div>
-        
-        <div id="l-tekst">
-            <a href="MATCHSITE">Match site</a>
-            
-        </div>
-    </div>
-    
-    
-    <div id="container3-4">
-        <div id="l-billede">
-            <a href="NETVÆRK"><img src="images/netvaerk.png"></a>
         </div>
         
         <div id="l-tekst">
@@ -106,13 +89,36 @@ if (isset($_SESSION['user_id'])) {
     </div>
     
     
-    <div id="container4-4">
+    <div id="container3-5">
         <div id="l-billede">
-            <a href="MINPROFIL" taget="_blank"><img src="images/profil.png"></a>
+            <a href="MATCHSITE"><img id="billede1" src="images/match.png"></a>
         </div>
         
         <div id="l-tekst">
-            <a href="MINPROFIL">Min profil</a>
+            <a href="MATCHSITE">Match site</a>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container4-5">
+        <div id="l-billede">
+            <a href="Opret kontrakt" taget="_blank"><img id="billede1" src="images/kontrakt.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="OPRETKONTRAKT">Opret kontrakt</a>
+            
+        </div>
+    </div>
+    
+    <div id="container5-5">
+        <div id="l-billede">
+            <a href="MINPROFIL"><img id="billede1" src="images/hej2.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="STATISTIK">Statistik</a>
             
         </div>
     </div>
