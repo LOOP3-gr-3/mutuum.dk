@@ -1,15 +1,27 @@
+Overallstyles:
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
     padding:0!important;
-    padding-bottom: 3em !important;
-    padding-top: 0.3em !important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
     
+    padding:0!important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
+
+    padding:0em !important;
+    border-radius:0em !important;
+    padding-bottom: 2em !important;
+    padding-top: 2em !important;
+    width:auto !important;
+   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
     position: absolute;
-    width: 3em;
-    height: 1em;
+    width: 45px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
     cursor: pointer;        /*viser en hånd istedet for pil*/
     right: 2em;           /*afstand fra højre*/
    
@@ -19,10 +31,11 @@
 }
 
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    width: 10%;
+    height: 5px;
+    width: 100%;
     background-color:#85bb65;
     display: block;
-    border-radius: 5em;   
+    border-radius: 5px;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
     right: 12.5%;
    
@@ -31,24 +44,24 @@
 }
 
 #lbar1{                 /*giver toppen af burgeren*/
-    transform:translateY(-0.2em);
+    transform:translateY(-4px);
 }
 
 #lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(0.2em);
+    transform:translateY(4px);
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
     background-color:green;
 }
 .lchange #lbar1{           /*får bar1 til at dreje til kryds*/
-    transform: translateY(0.3em) rotateZ(-45deg);
+    transform: translateY(4px) rotateZ(-135deg);
 }
 
 .lchange #lbar3{           /*får bar3 til at dreje til kryds*/
-    transform: translateY(-0.45em) rotateZ(45deg);
+    transform: translateY(-6px) rotateZ(135deg);
 }
-.lchange #lbar2{        /*får bar2 til at forsvinde når krydset vises*/
+.lchange #lbar2{        /*får bar2 til at forsvinde*/
     opacity: 0;
 }
 .lnav li a:hover{       /*Får nav tekst til at blive market efter åbnet burger*/
@@ -63,17 +76,17 @@
 
 .lnav li{               /* fjerne bullets og beskriver padding i nav tekst efter åben burger*/
     list-style: none;
-    padding: 1em 0em;
+    padding: 16px 0;
 }
 
 .lnav{                  /*fortæller om navs position, padding, margin*/
     position:relative;
-    padding:0em;
-    margin: 0 3em;
+    padding:0px;
+    margin: 0 20px;
     transition: 3s ease;
     display: none;
     float:right;
-    top:5em;
+    top:70px;
     
 
 }
@@ -106,20 +119,42 @@
     z-index: 2;
 }
 
-/*__________________________________________________Alle overskrifter________________________________________*/
+/*__________________________________________________OM OS________________________________________*/
 /* dette er til overskrifterne på om_os*/
-h1 {
+
+xh1 {
     font-size: 1.5em;
+=======
+h1 {
+    font-size: 1.8em;
     font-family: arial;
-    color: forestgreen;
+    color: black;
 }
 
-h3 {
+<<<<<<< HEAD
+=======
+#mineaftaler{
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 24em;  
+}
 
-    
+#retoplysninger {
+    font-size: 1.2em;
+    font-family: arial;
+    color:darkgreen;
+    border: 0.1em solid;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+    margin-right: 22em;
 
 }
 
@@ -145,34 +180,16 @@ input::placeholder{
 }
 /*-------------------------------------------------BILLEDE I HEADER------------------------------------*/
 #limg{
-    margin:0.2em;
+    padding:5px;
+    margin:5px;
+    width: 150px;
     position: absolute;
-    top: -0.5em;
-    left: 3em;
-    height:8em;
-    width:10em; 
-}
-#container-content{
-    width:100%;
-    height:100000%;
+    top: -5px;
+    left: -7px;
+    height:100;
+    width:100px; 
 }
 
-/*___________________________________ MIN SIDE ___________________________________*/
-
-.col-mew {
-    width: 40%;
-    border-radius: 3%;
-    border-style: solid;
-    border-color: darkgray;
-    background-color: darkgray;
-    margin: 2%;
-    left: 10%;
-    min-height:2%;
-    max-height: 13%;
-    padding: 8%
-}
-
-=======
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
 
 #llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
@@ -183,7 +200,7 @@ input::placeholder{
     margin-top:5%;
     margin-bottom: 2%;
     text-align:center;
-    border:0.09em solid black;
+    border:2px solid black;
     border-radius:20px;
     text-decoration: none;
 }
@@ -199,77 +216,143 @@ input::placeholder{
     
 }
 
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 5%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 1em;
+}
+
+/*-----------------------------------kontrakt------------------------------------*/
+#xopretudlån {
+    text-align: center;
+
+
+/*----------------------------FOOTER----------------------------*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: #272727; 
+    bottom: 0;
+    position: relative;
+    
+/*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-en {
+    width: 100%;
+    height: 4em;
+    margin-top: 1em;
+}
+.wfooter-menu-en ul{ 
+    text-align: center;
+
+}
+.wfooter-menu-en ul li a{
+    font-family: arial;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+#wkomigang {   
+   text-decoration: none;
+    color:white;
+    font-size:2em;
+    margin:1em 1em 1em;
+    
+}
+#Wkomigang{
+    position:relative; 
+    width: 25%;
+    left:45%;   
+    opacity:0.6;
+    margin-top:5%;
+    margin-bottom: 2%;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none;
+}
+
+/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-to{
+    width: 100%;
+    height: auto;
+    margin: auto;
+  
+    
+    
+}
+        
+.wfooter-menu-fire p{
+    width:  100%;
+    height: auto;
+    margin: auto;
+   
+}
+.wfooter-menu-fire p{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-fire p{
+    font-family: arial;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 300px){
-    #jumbotron{
-    
+
+#jumbotron{
  background-color: lightblue;
- border-radius:0 !important;
-    }
-}
-
-@media screen and (min-width: 768px) {
-  #jumbotron {
-    background-color: aqua;
-  }
-
-    .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    height: 0.4em;
-    width: 100%;
-    background-color:#85bb65;
-    display: block;
-    border-radius: 5em;   
-    transition:0.7s ease; /*hastigheden fra burger til kryds*/
-    right: 12.5%;
-    top: 10em; 
+    width:100%;
     }
 
-#limg{
-    padding:5px;
-    margin:5px;
-    width: 150px;
-    position: absolute;
-    top: -5px;
-    left: 50px;
-    height:110;
-    width:7em;
-     }
-#llogin{ 
-    width:15%;
-    left:72%;   
-    margin-top:2%;
-    } 
-    
-#lbar1{                 /*giver toppen af burgeren*/
-    transform:translateY(0.9em);
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 5%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+
+
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 0.5em;
 }
 
-#lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(0.2em);
-}
-}
-
-@media screen and (min-width: 1280px) {
-  #jumbotron {
-    background-color: lavender;
-    height:130px;
-  }
-
- #llogin{ 
-    width:15%;
-    left:75%;   
-    margin-top:2.7%;
-    }
-
-  #limg{
-    /*left: 50px;
-    height:100;
-    width:150px;*/
-     }
-
-    
-#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
-    margin: 50px 0 20px 20px;
-  
+/*-----------------------------------kontrakt------------------------------------*/
+#xopretudlan {
+    text-align: center;
 }
 

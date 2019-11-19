@@ -1,6 +1,7 @@
-<?php 
+<?php  
 $page = 'MinSide';
 require_once('includes/header.php');
+require_once('includes/footer.php');
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
 if (isset($_SESSION['user_id'])) {
@@ -88,8 +89,10 @@ if (isset($_SESSION['user_id'])) {
  <div class="col-mew"> 
       <a href="#OVERBLIK"><img src="images/graf.png" alt="Matchsiden" style="width:90%"></a>
     </div>
-</div>
+
 
 </body>
 </html>
+
+
      

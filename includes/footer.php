@@ -4,26 +4,34 @@
 ?>
 
 
-<link href=includes/styles/footer.css type="text/css" rel="stylesheet">
+
+<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+
+<link href="../includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+
     
 <div class="footer" align="center">
     <div class="wfooter-menu-en">
-            <ul>
-                <li><a id="wkomigang" href="">KOM I GANG</a></li>
-            </ul>   
+            
+                <a id="wkomigang" href="">KOM I GANG</a>
+             
     </div>
     <div class="wfooter-menu-to">
         <div class="col-lg-3 col-md-6 footer-info">
-            <ul>
-                <li><a id="woplysninger" href="../faq">FAQ</a></li>
-                <li><a href="../handelsebetingelser">Handelsbetingelser</a></li>
-                <li><a href="../kontakt">Kontakt</a></li>
-            </ul> 
+            
+                <a id="woplysninger" href="../faq">FAQ |</a>
+                <a href="../handelsebetingelser">Handelsbetingelser |</a>
+                <a href="../kontakt">Kontakt</a>
+            
         </div>
     </div>
     <div class="wfooter-menu-tre">
         <div class="col-lg-3 col-md-6 footer-info">
-            <img src="images/ICO.PNG">
+
+    
+
+           
+
         </div>
     </div>
             <div class="wfooter-menu-fire">
@@ -35,3 +43,5 @@
             </div>
     
     </div>
+</body>
+</html>
