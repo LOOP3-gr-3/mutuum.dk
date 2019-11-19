@@ -315,7 +315,7 @@ footer {
 /*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 
 
-a {
+wa {
     text-decoration: none;
     outline: none;
 }
@@ -476,12 +476,12 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     
 /*Her placeres knapperne side om side*/
 #xnetveark {  
-    float: left;
-    width: 50%
+    position: center;
+    width: 80%
      }
     #xmatchside {
-        float: right;
-        width: 50%;
+    position: center;        
+    width: 80%;
     }
 
 
