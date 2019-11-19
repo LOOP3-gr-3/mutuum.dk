@@ -112,8 +112,8 @@
             
             <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
             <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
-        
-        <button type="button" class="btn btn-light">Gem i mine aftaler uden at underskrive</button>  
+        <!-- Den anden knap -->
+            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale uden at underskrive</button></a> 
     </div>
 </div>
 
