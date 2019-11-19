@@ -303,13 +303,8 @@ td, th {
     padding: 1em;
 }
 
-/*-----------------------------------kontrakt------------------------------------*/
-#xopretudlan {
-    text-align: center;
 
-}
-
-
+/*-------------------FOOTER------------------------------*/
 
 /*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 }
@@ -667,12 +662,19 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     text-align: center;
     }
 
-/*Her placeres knapperne side om side*/
+
+/*----------------Kontrakt-------------------*/
+
+#xopretudlan {
+    text-align: center;
+}
+
+/*knapperne placere over og under hinanden*/
 #xnetveark {  
-    float: left;
-    width: 50%
+    margin-left: 25%;
+    margin-right: auto;
      }
     #xmatchside {
-        float: right;
-        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
     }
