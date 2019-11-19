@@ -1,20 +1,10 @@
-﻿/*__________________________________________________HEADER________________________________________*/
+Overallstyles:
+/*__________________________________________________HEADER________________________________________*/
 #jumbotron{
-
     padding:0!important;
     padding-bottom: 30px !important;
     padding-top: 7px !important;
     
-    padding:0!important;
-    padding-bottom: 30px !important;
-    padding-top: 7px !important;
-
-    padding:0em !important;
-    border-radius:0em !important;
-    padding-bottom: 2em !important;
-    padding-top: 2em !important;
-    width:auto !important;
-   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -119,7 +109,7 @@
 /*__________________________________________________OM OS________________________________________*/
 /* dette er til overskrifterne på om_os*/
 h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: arial;
     color: black;
 }
@@ -148,6 +138,7 @@ h1 {
     margin-right: 22em;
 
 }
+
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
@@ -301,18 +292,43 @@ a:hover{
     
 }
 
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 10%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
 
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+/*-----------------------------------kontrakt------------------------------------*/
+#xopretudlan {
+    text-align: center;
+}
+
+}
 /*----------------------------FOOTER----------------------------*/ 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    outline: none;
-}
-.footer {
+
+
+footer {
     width: 100%;
     height: auto;
     margin: auto;
@@ -322,10 +338,16 @@ a{
     
 /*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 }
+
+a {
+    text-decoration: none;
+    outline: none;
+}
 .wfooter-menu-en {
-    width: 100%;
-    height: 4em;
-    margin-top: 1em;
+        width: 100%;
+        height:4em;
+        margin-top: 1em;
+    }   
 }
 .wfooter-menu-en ul{ 
     text-align: center;
@@ -391,7 +413,7 @@ a{
  background-color: lightblue;
     width:100%;
     }
-=======
+
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
     width: 5%;
@@ -414,5 +436,21 @@ td, th {
 #xopretudlan {
     text-align: center;
 }
+
+#xx {
+    text-align: center;
+    }
+
+/*Her placeres knapperne side om side*/
+#xnetveark {  
+    float: left;
+    width: 50%
+     }
+    #xmatchside {
+        float: right;
+        width: 50%;
+    }
+
+
 
 

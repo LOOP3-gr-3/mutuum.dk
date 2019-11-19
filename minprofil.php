@@ -1,8 +1,13 @@
 <!-- her henter jeg headeren ned -->
 <?php
+<<<<<<< Updated upstream
 
     $page = ('Min profil');
     require_once('includes/header.php');
+=======
+    $page = ('FAQ');
+require_once('includes/header.php');
+>>>>>>> Stashed changes
     //require_once('includes/footer.php');
   if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
@@ -10,7 +15,7 @@
 ?>
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
-<h1>MIN PROFIL</h1> 
+<h1><strong>MIN PROFIL</strong></h1> 
 <br>
 
 <?php
@@ -35,7 +40,8 @@ mysqli_close($con);
 ?>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på mine aftaler-->
-<a href="mineaftaler.php" target="_blank" ><br><br><h3 id="mineaftaler" class="btn btn-light">Mine aftaler</h3></a><br>
+
+<xa href="mineaftaler.php" target="_blank" ><br><br><h3 id="mineaftaler" class="btn btn-light">Mine aftaler</h3></xa><br>
 
 
 
@@ -49,7 +55,9 @@ mysqli_close($con);
 
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på ret oplysninger-->
-<a href="retoplysninger.php" target="_blank"><h3 id="retoplysninger" class="btn btn-light">Ret oplysninger</h3></a>
+
+<xa href="retoplysninger.php" target="_blank"><h3 id="retoplysninger" class="btn btn-light">Ret oplysninger</h3></xa>
+
 
 
 </body>
