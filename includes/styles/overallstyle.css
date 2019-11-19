@@ -105,6 +105,11 @@
 
 /*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
+
+xh1 {
+    font-size: 1.5em;
+}
+
 h1 {
     font-size: 1.5em;
     font-family: arial;
@@ -227,10 +232,6 @@ input::placeholder{
 
 }
 
-#l-tekst2{
-    
-
-}
 
 a{
     color:black;
@@ -303,61 +304,9 @@ td, th {
 /*-----------------------------------kontrakt------------------------------------*/
 #xopretudlan {
     text-align: center;
-}
-
-/*----------------------------FOOTER----------------------------*/ 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-footer {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    background: #272727; 
-    bottom: 0%;
-    position: static;
-    
-}
-/*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
-
-
-a {
-    text-decoration: none;
-    outline: none;
-}
-
-.wfooter-menu-en {
-        width: 100%;
-        height:4em;
-        margin-top: 1em;   
-}
-
-.wfooter-menu-en ul{ 
-    text-align: center;
 
 }
-.wfooter-menu-en ul li a{
-    font-family: arial;
-    font-size: 2.5em;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-}
-#wkomigang {   
-    color:white;
-    font-size:2em;
-    margin:1em 1em 1em;
-    text-decoration: underline;
-}
 
-#wkomigang:hover{
-    opacity:0.5;
-    color:lightgreen;
-}
 
 
 /*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
@@ -391,8 +340,6 @@ a {
 
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 320px)and (max-width:767px){
-
-
 
 #llogin{ 
     position:relative; 
@@ -555,6 +502,7 @@ body{
     top:1.75em;
     }
 
+
 #limg{
 height:6em;
 width: 7em;
@@ -580,9 +528,9 @@ margin:0.25em;
     
 @media screen and (min-width: 1300px) {
 #jumbotron {
-    background-color: lavender;
-    height:130px;
+  background-color:lavender;
   }
+ 
 
 #llogin{ 
     width:15%;
@@ -590,7 +538,11 @@ margin:0.25em;
     margin-top:2.7%;
     }
 
-#limg{
+
+
+
+  #limg{
+
     left: 50px;
     height:100;
     width:9em;
