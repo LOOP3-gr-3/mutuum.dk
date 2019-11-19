@@ -164,22 +164,7 @@ input::placeholder{
     height:100000%;
 }
 
-/*___________________________________ MIN SIDE ___________________________________*/
 
-.col-mew {
-    width: 40%;
-    border-radius: 3%;
-    border-style: solid;
-    border-color: darkgray;
-    background-color: darkgray;
-    margin: 2%;
-    left: 10%;
-    min-height:2%;
-    max-height: 13%;
-    padding: 8%
-}
-
-=======
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
 
 #llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
