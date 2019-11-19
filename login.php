@@ -12,7 +12,7 @@ if (isset($_COOKIE['login'])) {
 }
 if(isset($_POST['mail']) && isset($_POST['password'])) {
     $mail_temp = $_POST['mail'];
-    $pass_temp = $_POST['password'];
+    $password = $_POST['password'];
     $query = "SELECT * FROM users WHERE mail = '$mail_temp'";
     $result = mysqli_query($con, $query);
     if (!$result){
@@ -29,7 +29,7 @@ if(isset($_POST['mail']) && isset($_POST['password'])) {
             $mail = $row['mail'];
             $database_password = $row['password'];
             $user_id = $row['user_id'];
-            $token = password_verify($pass_temp, $database_password);
+            $token = password_verify($password, $database_password);
             if ($token != $password) {
 					echo '<script>alert("Forkert brugernavn eller kodeord")</script>';
             }

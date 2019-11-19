@@ -4,12 +4,7 @@ require_once('includes/header.php');
 
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
-if (isset($_SESSION['user_id'])) {
-    header('location:loggedin_front.php');
- 
-//ellers skal den tjekke på mail og password
-} else {
-    if(isset($_POST['email']) && isset($_POST['password'])) {
+if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
@@ -54,7 +49,7 @@ if (isset($_SESSION['user_id'])) {
             }
         }
     }  
-}
+
 
 
 //if the user is logged in, redirects to the page loggedin_front.php
