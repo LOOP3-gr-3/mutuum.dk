@@ -1,9 +1,8 @@
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
     padding:0!important;
-    padding-bottom: 3em !important;
-    padding-top: 0.3em !important;
-    
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -12,10 +11,6 @@
     height: 4em;
     cursor: pointer;        /*viser en hånd istedet for pil*/
     right: 2em;           /*afstand fra højre*/
-   
-    
-  
-    
 }
 
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
@@ -29,20 +24,17 @@
     right: 15.5%; 
     top: 2em;
     }
-    
-    
-}
 
 #lbar1{                 /*giver toppen af burgeren*/
     transform:translateY(0.2em);
 }
 
-#lbar2{                 /*giver toppen af burgeren*/
-    transform:translateY(0.1em);
+#lbar2{                 /*giver midten af burgeren*/
+    transform:translateY(0.3em);
 }
 
 #lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(0.2em);
+    transform:translateY(0.4em);
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
@@ -81,8 +73,6 @@
     display: none;
     float:right;
     top:5em;
-    
-
 }
 
 .lchange{               /*fortæller omkring krydsets display*/
@@ -115,6 +105,11 @@
 
 /*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
+
+xh1 {
+    font-size: 1.5em;
+}
+
 h1 {
     font-size: 1.5em;
     font-family: arial;
@@ -125,10 +120,8 @@ h3 {
     font-size: 1.2em;
     font-family: arial;
     color:darkgreen;
-
-    
-
 }
+
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
@@ -140,8 +133,6 @@ h3 {
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
 #passwordtjek{
     text-align: center;
-
-    
 }
 input::placeholder{
     font-style:italic;
@@ -162,6 +153,105 @@ input::placeholder{
 #container-content{
     width:100%;
     height:100000%;
+}
+
+
+/*___________________________________ MIN SIDE ___________________________________*/
+
+#container-las{
+    position:relative;
+    height:35em;
+    width:auto;
+}
+
+#container1-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:0%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+}
+
+#container2-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:25%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container3-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:50%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container4-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:75%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container5-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:38%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    top:18.5em;
+}
+#l-tekst{
+    text-align: center;   
+    color:black;
+
+}
+
+
+a{
+    color:black;
+    
+}
+a:hover{
+    color:forestgreen;
+    font-weight: bold;
+}
+#l-billede{
+    position:relative;
+    margin-left:18%;
+    margin-right:18%;
+    top:0.5em;
+    
+}
+
+#l-billede:hover{
+    opacity:0.4;
 }
 
 
@@ -191,53 +281,148 @@ input::placeholder{
     
 }
 
-/*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 300px){
+/*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 10%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
 
-#jumbotron{
-    
- background-color: lightblue;
- border-radius:0 !important;
-    }
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+/*-----------------------------------kontrakt------------------------------------*/
+#xopretudlan {
+    text-align: center;
+
+}
+
+
+
+/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-to{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+        
+.wfooter-menu-fire p{
+    width:  100%;
+    height: auto;
+    margin: auto;
+   
+}
+.wfooter-menu-fire p{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-fire p{
+    font-family: arial;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+/*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
+@media screen and (min-width: 320px)and (max-width:767px){
 
 #llogin{ 
     position:relative; 
     width: 25%;
-    left:55%;   
+    left:50%;   
     opacity:0.6;
-    margin-top:3%;  
-    margin-bottom: 2%;
     text-align:center;
     border:0.09em solid black;
     border-radius:20px;
     text-decoration: none;
+    top:-0.15em;
     } 
     
-#limg{
-    height:7em;
-    width:7em; 
+#billede1{
+    height:5em;
+    width:5em;
+    
+    
 }
     
-    .lbar{
-        top:1.4em;
-    }
-
+.lbar{
+        top:1.2em;
+        left:1.2em;
 }
 
+#container1-5{
+    width:40%;
+    height:22%;
+    left:5%;
+}
+
+#container2-5{
+    width:40%;
+    height:22%;
+    left:50%;
+    
+}
+
+#container3-5{
+    width:40%;
+    height:22%;
+    left:5%;
+    top:25%;
+    
+}
+
+#container4-5{
+    width:40%;
+    height:22%;
+    left:50%;
+    top: 25%;
+    
+}
+
+#container5-5{
+    width:40%;
+    height:22%;
+    left:28%;
+    top:50%;
+    
+}
+    
+#limg{
+left:5%;
+width:33%;
+height:15%;
 
 
+    }
+    body{
+        background-color:lightcyan;
+    }
+}
 
-
-
-
-
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px)and (max-width:959px) {
   #jumbotron {
-    background-color: aqua;
+    background-color: burlywood;
   }
 
-.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+
+.lbar{              /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
     position: relative;
     height: 0.5em;
     width: 100%;
@@ -246,67 +431,248 @@ input::placeholder{
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
     right: 15.5%; 
-    top: 2em;
+    top: 2.5em;
     }
     
 
 #limg{
-    padding:5px;
-    margin:5px;
-    position: absolute;
     top: -5px;
     left: 50px;
-    height:15%;
+    height:7em;
     width:8em;
-     }
+}
     
 #llogin{ 
-    position:relative; 
-    width: 25%;
-    left:60%;   
-    opacity:0.6;
-    margin-top:3%;  
-    margin-bottom: 2%;
-    text-align:center;
-    border:0.09em solid black;
-    border-radius:20px;
-    text-decoration: none;
-    } 
+    left:60%;     
+}
+    
+#container1-5{
+    width:30%;
+    left:0%;
+}
+    
+
+#container2-5{
+    width:30%;
+    left:32%;
+    
     
 }
 
+#container3-5{
+    width:30%;
+    left:65%;
+   
+    
+}
+
+#container4-5{
+left:15%;
+width:30%;
+top:18.5em;
+    
+    
+}
+
+#container5-5{
+left:48%;
+width:35%;
+top:18.5em;
+}    
+
+    
+#l-billede{
+margin-left:auto;
+margin-right:auto;
+    }
+    
+body{
+        background-color:orange;
+    }
+    
+    }
+    
+    
+    
+    
+@media screen and (min-width: 960px) and (max-width:1299px) {
+    #jumbotron{
+        background-color:red;
+    }
+
+.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+    top:1.75em;
+    }
 
 
+#limg{
+height:6em;
+width: 7em;
+        
+}
 
+#llogin{
+width:15%;
+left:75%;   
+margin-top:2.7%;
+    }
 
+#l-billede{ 
+margin:0.25em;
+    }
+    
+#container5-5{
 
-
-
-@media screen and (min-width: 1280px) {
-  #jumbotron {
-    background-color: lavender;
-    height:130px;
+    width:28%;
+        
+    }
+}
+    
+@media screen and (min-width: 1300px) {
+#jumbotron {
+  background-color:lavender;
   }
+ 
 
- #llogin{ 
+#llogin{ 
     width:15%;
     left:75%;   
     margin-top:2.7%;
     }
 
+
+
+
   #limg{
+
     left: 50px;
     height:100;
-    width:150px !important;
+    width:9em;
      }
-
+    
     
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
     margin: 50px 0 20px 20px;
   
     }
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    top:-0.4em;
+    top:-.50em;
     
 }
+    
 
+#container5-5{
+width:25%;
+        
+    }
+    }
+
+
+
+   /* ________________________________FOOTER__________________*/
+    a{
+    text-decoration: none;
+    outline: none;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+/*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+.wfooter-menu-en {
+    width: 100%;
+    height: 2.5em;
+    margin-top: 1em;
+}
+.wfooter-menu-en a{ 
+    text-align: center;
+
+}
+.wfooter-menu-en ul li a{
+    font-family: arial;
+    font-size: 7em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+#wkomigang {   
+    color:white;
+    font-size:2em;
+    margin:1em 1em 1em;
+    
+}
+#wkomigang {
+    width: 100%;
+    text-align:center;
+    border:0.09em solid white;
+    border-radius:20px;
+}
+
+/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+}
+.wfooter-menu-to a{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+ .wfooter-menu-to a{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-to a{
+    font-family: arial;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;   
+}
+.wfooter-menu-tre p{
+    width:  100%;
+    height: auto;
+    margin: auto;
+   
+}
+.wfooter-menu-tre p{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-tre p{
+    font-family: arial;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+    
+    /*------------------------------------ mine aftaler -----------------------------*/
+#Xlup {
+    width: 5%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+#xx {
+    text-align: center;
+    }
+
+/*Her placeres knapperne side om side*/
+#xnetveark {  
+    float: left;
+    width: 50%
+     }
+    #xmatchside {
+        float: right;
+        width: 50%;
+    }
