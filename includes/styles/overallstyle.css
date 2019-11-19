@@ -28,9 +28,6 @@ Overallstyles:
     border-radius: 5px;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
     right: 12.5%;
-   
-    
-    
 }
 
 #lbar1{                 /*giver toppen af burgeren*/
@@ -169,11 +166,105 @@ input::placeholder{
     margin:5px;
     width: 150px;
     position: absolute;
-    top: -5px;
-    left: -7px;
-    height:100;
-    width:100px; 
+    top: -0.5em;
+    left: 3em;
+    height:8em;
+    width:10em; 
 }
+#container-content{
+    width:100%;
+    height:100000%;
+}
+
+/*___________________________________ MIN SIDE ___________________________________*/
+
+#container-las{
+    position:relative;
+    height:35em;
+    width:auto;
+
+
+}
+#container1-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:0%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+}
+
+#container2-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:25%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container3-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:50%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#container4-4{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:75%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    
+}
+
+#l-tekst{
+    text-align: center;   
+    color:black;
+
+}
+
+a{
+    color:black;
+}
+a:hover{
+    color:forestgreen;
+    font-weight: bold;
+}
+#l-billede{
+    position:relative;
+    margin-left:18%;
+    margin-right:18%;  
+}
+
+#l-billede:hover{
+    opacity:0.4;
+}
+
+
+
+
+
+
+
 
 /*-------------------------------------------LOG IND BAR I HEADER--------------------------------*/
 
@@ -242,8 +333,8 @@ footer {
     height: auto;
     margin: auto;
     background: #272727; 
-    bottom: 0;
-    position: relative;
+    bottom: 0%;
+    position: static;
     
 /*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 }
@@ -270,24 +361,19 @@ a {
     text-transform: uppercase;
 }
 #wkomigang {   
-   text-decoration: none;
     color:white;
     font-size:2em;
     margin:1em 1em 1em;
+    text-decoration: underline;
+
     
 }
-#Wkomigang{
-    position:relative; 
-    width: 25%;
-    left:45%;   
-    opacity:0.6;
-    margin-top:5%;
-    margin-bottom: 2%;
-    text-align:center;
-    border:0.09em solid black;
-    border-radius:20px;
-    text-decoration: none;
+
+#wkomigang:hover{
+    opacity:0.5;
+    color:lightgreen;
 }
+
 
 /*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
 }
