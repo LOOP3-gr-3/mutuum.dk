@@ -5,16 +5,6 @@ Overallstyles:
     padding-bottom: 30px !important;
     padding-top: 7px !important;
     
-    padding:0!important;
-    padding-bottom: 30px !important;
-    padding-top: 7px !important;
-
-    padding:0em !important;
-    border-radius:0em !important;
-    padding-bottom: 2em !important;
-    padding-top: 2em !important;
-    width:auto !important;
-   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -121,12 +111,8 @@ Overallstyles:
 
 /*__________________________________________________OM OS________________________________________*/
 /* dette er til overskrifterne på om_os*/
-
-xh1 {
-    font-size: 1.5em;
-}
 h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-family: arial;
     color: black;
 }
@@ -155,6 +141,7 @@ h1 {
     margin-right: 22em;
 
 }
+
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
 /* overskrifterne på login og opret bruger */
@@ -216,7 +203,7 @@ input::placeholder{
 
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
-    width: 5%;
+    width: 10%;
     height: auto;
 } 
 table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
@@ -228,15 +215,20 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 td, th {
     border: 0.5em solid #dddddd;
     text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {
+    font-size: 0.8em;
     padding: 1em;
 }
 
 /*-----------------------------------kontrakt------------------------------------*/
-#xopretudlån {
+#xopretudlan {
     text-align: center;
 }
 
-
+}
 /*----------------------------FOOTER----------------------------*/ 
 *{
     margin: 0;

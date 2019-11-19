@@ -2,13 +2,14 @@
 <?php
     $page = ('Mine aftaler');
     require_once('includes/header.php');
-    //require_once('includes/footer.php');
+    require_once('includes/footer.php');
     if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
 }
 ?>
 
 <h2>MINE AFTALER</h2>
+<I id="xlille">På denne side finder ud alle dine kontrakter til udlån, oprettede kontrakter og historik over alle underskrevne aftaler</I><br><br>
 
 <!-- billede af lup ved søgefeltet-->
 <img id="Xlup" src="images/s%C3%B8gefunktion.PNG" alt="lup til søgefelt" title="søgefelt"> 
@@ -33,11 +34,11 @@
             
             <!-- de nedenstående er bare for at vise hvordan det kommer ind i tabellen-->
             <td>18/11-19</td>
-            <td>xiastald@hotmail.com</td>
+            <td>4059, -</td>
         </tr>
         <tr>
             <td>21/11-19</td>
-            <td>wasfeyah.hashemi@hotmail.com</td>
+            <td>5313, -</td>
         </tr>
     </table>
     
@@ -59,18 +60,17 @@
             
             <!-- de nedenstående er bare for at vise hvordan det kommer ind i tabellen-->
             <td>18/11-19</td>
-            <td>+ 5000, -</td>
+            <td>5000, -</td>
         </tr>
         <tr>
             <td>21/11-19</td>
-            <td>- 2000, -</td>
+            <td>2000, -</td>
         </tr>
     </table>
     
 </container>
 
-<!--I gør skriften kursiv-->
-<br><br><I>Nedenstående er en oversigt over alle dine aftaler</I><br><br>
+<br>
 
 <h3>Historik</h3>
 
@@ -90,12 +90,12 @@
             <!-- de nedenstående er bare for at vise hvordan det kommer ind i tabellen-->
             <td>18/11-19</td>
             <td>xiastald@hotmail.com</td>
-            <td>+ 5000, -</td>
+            <td>5000, -</td>
         </tr>
         <tr>
             <td>21/11-19</td>
             <td>wasfeyah.hashemi@hotmail.com</td>
-            <td>- 2000, -</td>
+            <td>2000, -</td>
         </tr>
     </table>
     
