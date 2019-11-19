@@ -6,14 +6,14 @@ if(isset($_SESSION['user_id'])) {
     header('Location: minside.php');
 }
 if (isset($_COOKIE['login'])) {
-	$user_id = $_COOKIE['login'];
+	$mail = $_COOKIE['login'];
 } else {
-	$user_id = '';
+	$mail = '';
 }
 if(isset($_POST['mail']) && isset($_POST['password'])) {
-    $mail = $_POST['mail'];
-    $password = $_POST['password'];
-    $query = "SELECT * FROM users WHERE mail = '$mail'";
+    $mail_temp = $_POST['mail'];
+    $pass_temp = $_POST['password'];
+    $query = "SELECT * FROM users WHERE mail = '$mail_temp'";
     $result = mysqli_query($con, $query);
     if (!$result){
         echo "MySQL Error: " . mysqli_error($con);
@@ -26,10 +26,10 @@ if(isset($_POST['mail']) && isset($_POST['password'])) {
             echo '<script>alert("Denne bruger eksisterer ikke")</script>';
         }
         while($row = mysqli_fetch_assoc($result)){
-            $mail = $_POST['mail'];
-            $database_password = $_POST['password'];
+            $mail = $row['mail'];
+            $database_password = $row['password'];
             $user_id = $row['user_id'];
-            $token = password_verify($password, $database_password);
+            $token = password_verify($pass_temp, $database_password);
             if ($token != $password) {
 					echo '<script>alert("Forkert brugernavn eller kodeord")</script>';
             }
