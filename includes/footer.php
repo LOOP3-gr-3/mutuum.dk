@@ -38,23 +38,20 @@ a{
     text-transform: uppercase;
 }
 #wkomigang {   
-   text-decoration: none;
     color:white;
     font-size:2em;
     margin:1em 1em 1em;
     
 }
 #wkomigang{
-    position:relative; 
-    width: 25%;
+    width: 100%;
     left:45%;   
     opacity:0.6;
     margin-top:5%;
     margin-bottom: 2%;
     text-align:center;
-    border:0.09em solid black;
+    border:0.09em solid white;
     border-radius:20px;
-    text-decoration: none;
 }
 
 /*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
@@ -63,31 +60,40 @@ a{
     width: 100%;
     height: auto;
     margin: auto;
-  
-    
     
 }
-        
-.wfooter-menu-fire p{
+ .wfooter-menu-to{
+    margin: 0em;
+    padding: 0em;
+    text-align: center;
+}
+.wfooter-menu-to{
+    font-family: arial;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;   
+}
+.wfooter-menu-tre p{
     width:  100%;
     height: auto;
     margin: auto;
    
 }
-.wfooter-menu-fire p{
+.wfooter-menu-tre p{
     margin: 0em;
     padding: 0em;
     text-align: center;
 }
-.wfooter-menu-fire p{
+.wfooter-menu-tre p{
     font-family: arial;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
 }
-
 </style>
+    
 </head>
 <body>
 
@@ -106,7 +112,8 @@ a{
             
         </div>
     </div>
-            <div class="wfooter-menu-fire">
+    <br>
+            <div class="wfooter-menu-tre">
                 <div class="col-lg-3 col-md-6 footer-info">
                     <p>CVR: 23850592 <br>
                     Adresse: Birk Centerpark 15<br>
