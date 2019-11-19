@@ -125,4 +125,8 @@ img {vertical-align: middle;}
     bottom: 8px;
     width: 100%;
     text-align: center;
-}  
+}
+
+#wtext-långiver {
+     text-align: left;
+    }
