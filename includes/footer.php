@@ -1,9 +1,3 @@
-
-
-<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
-
-
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     
@@ -94,7 +88,6 @@ a{
 }
 </style>
     
-</head>
 <body>
 
 <div class="footer">
