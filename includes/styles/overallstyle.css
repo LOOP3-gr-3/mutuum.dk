@@ -471,6 +471,9 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     text-align: center;
     }
 
+/*Slide button*/    
+
+    
 /*Her placeres knapperne side om side*/
 #xnetveark {  
     float: left;
@@ -480,6 +483,7 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
         float: right;
         width: 50%;
     }
+
 
 @media screen and (min-width: 1200px) {
   #jumbotron {
@@ -492,6 +496,7 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     left:75%;   
     margin-top:2.7%;
     }
+
 
   #limg{
     left: 50px;
