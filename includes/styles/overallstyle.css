@@ -124,15 +124,13 @@ Overallstyles:
 
 xh1 {
     font-size: 1.5em;
-=======
+}
 h1 {
     font-size: 1.8em;
     font-family: arial;
     color: black;
 }
 
-<<<<<<< HEAD
-=======
 #mineaftaler{
     font-size: 1.2em;
     font-family: arial;
@@ -360,4 +358,21 @@ td, th {
 #xopretudlan {
     text-align: center;
 }
+
+#xx {
+    text-align: center;
+    }
+
+/*Her placeres knapperne side om side*/
+#xnetveark {  
+    float: left;
+    width: 50%
+     }
+    #xmatchside {
+        float: right;
+        width: 50%;
+    }
+
+
+
 

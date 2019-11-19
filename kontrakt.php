@@ -10,7 +10,8 @@
 
 <h1 id="xopretudlan">OPRET UDLÅN</h1>
 
+<p id="xx"><I>Her vælger du hvor kontrakten skal sendes hen, til en vilkårlig bruger eller til en i dit netværk</I></p><br>
 
-<container id="xbutton">
-    <button>Låneaftale via netværk</button><button>Låneaftale via Matchsiden</button>
-</container>
+<button id="xnetveark"> Låneaftale via netværk</button>
+
+<button id="xmatchside">Låneaftale via Matchsiden</button>
