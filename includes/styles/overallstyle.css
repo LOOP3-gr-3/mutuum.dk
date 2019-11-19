@@ -363,6 +363,9 @@ td, th {
     text-align: center;
     }
 
+/*Slide button*/    
+
+    
 /*Her placeres knapperne side om side*/
 #xnetveark {  
     float: left;
@@ -373,6 +376,7 @@ td, th {
         width: 50%;
     }
 
+    #more {display: none;}
 
 
 
