@@ -1,21 +1,11 @@
-<!-- her henter jeg headeren ned -->
-<?php
-    require_once('header.php');
-?>
-
-
-
-<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
-
-<link href="../includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
-
-    
-<div class="footer" align="center">
+<div class="footer">
     <div class="wfooter-menu-en">
             
-                <a id="wkomigang" href="">KOM I GANG</a>
-             
+                <a id="wkomigang" href="">KOM I GANG</a>      
     </div>
+    
+    <br>
+    
     <div class="wfooter-menu-to">
         <div class="col-lg-3 col-md-6 footer-info">
             
@@ -25,16 +15,8 @@
             
         </div>
     </div>
-    <div class="wfooter-menu-tre">
-        <div class="col-lg-3 col-md-6 footer-info">
-
-    
-
-           
-
-        </div>
-    </div>
-            <div class="wfooter-menu-fire">
+    <br>
+            <div class="wfooter-menu-tre">
                 <div class="col-lg-3 col-md-6 footer-info">
                     <p>CVR: 23850592 <br>
                     Adresse: Birk Centerpark 15<br>
@@ -42,6 +24,7 @@
                 </div>
             </div>
     
-    </div>
+</div>
+
 </body>
-</html>
+</html> 

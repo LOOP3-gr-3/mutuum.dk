@@ -1,65 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        var check = function() {
-            if (document.getElementById("p1").value ==
-                document.getElementById("p2").value) {
-                document.getElementById("passwordtjek").style.color = "green";
-                document.getElementById("passwordtjek").innerHTML = " Password matcher!";
-            } else {
-                document.getElementById("passwordtjek").style.color = "red";
-                document.getElementById("passwordtjek").innerHTML = " Password matcher ikke!";
-            }
-        }
-    </script>
-</head>
+<?php
+$page = "Opret Bruger på MUTUUM";
+require_once('includes/header.php');
+if (isset($_SESSION['user_id'])) {
+	header('Location: minside.php');
+}
+else { 
+if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail']) && isset($_POST['password1']) && isset($_POST['telefon'])) {
+	$fornavn = get_post($con, 'fornavn');
+	$efternavn = get_post($con, 'efternavn');
+	$mail = get_post($con, 'mail');
+	$password1 = get_post($con, 'password1');
+    $password2 = get_post($con,'password2');
+	$mobil = get_post($con, 'telefon');	
     
-<body>
+    if($password1 != $password2){
+        echo '<script>alert("Dine passwords matchede ikke. Prøv igen!")</script>' ;
+        die();
+    }
+    
+        
+	$token = password_hash($password1, PASSWORD_DEFAULT);
+    
+    	$query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
+	$result = mysqli_query($con, $query);
+	if(!$result) {
+		if (mysqli_errno($con) == 1062) {
+			echo '<script>alert("Email-adressen du har indtastet, er invalid eller allerede i brug. Vælg en ny og prøv igen.")</script>';
+		require_once ('includes/footer.php');
+		die();
+		}
+		else 
+		echo '<script>alert("Der er opstået en ukendt fejl. Prøv igen, eller kontakt sideadministratoren")';
+		require_once ('includes/footer.php');
+		die();
+    }
+	if($result) {
+		echo '<script>alert("Du er nu registreret på MUTUUM, velkommen! Log ind, og se dig omkring!")</script>';
+		require_once ('includes/footer.php');
+		die();
+	}
+}   
+}
+?>
 
-<div class="container" id="nheading">
-      <h2>Opret Bruger</h2>
- </div>
-<form onSubmit = "return checkPassword(this)">
-    <form action="/action_page.php">
-      <div class="form-group" id="logmag">
-        <label for="fornavn">Fornavn:</label>
-        <input type="text" class="form-control" name="fornavn" placeholder="Brugernavn" required>
-      </div>
-    <div class="form-group" id="logmag">
-      <label for="efternavn">Efternavn:</label>
-      <input type="text" class="form-control" name="efternavn" placeholder="Efternavn" required>
-    </div>
-    <div class="form-group" id="logmag">
-      <label for="mail">Mail:</label>
-        <input type="email" class="form-control" name="mail" placeholder="kurt@kurtsen.dk" required>
-    </div>
-    <div class="form-group" id="logmag">
-      <label for="telefon">Telefonnummer:</label>
-      <input type="tel" class="form-control" name="telefon" placeholder="+45 00 00 00 00" required>
-    </div>  
-      <hr>
-    <div class="form-group" id="logmag">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" name="password1" id="p1" placeholder="********" onkeyup='check();' required>
-    </div>
-    <div class="form-group" id="logmag">
-      <label for="pwd-confirm">Gentag password:</label>
-      <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
-    </div>
-    <button type="submit" class="btn btn-primary" id="logmag">Opret Bruger</button>
-    <span id="passwordtjek"></span> 
-  </form>
-</form>
+<fieldset>
+    <legend>Opret Bruger</legend>
+    <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
+        <div class="form-group" id="logmag">
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" class="form-control" name="fornavn" placeholder="Fornavn" required>
+        </div>
+        <div class="form-group" id="logmag">
+            <label for="efternavn">Efternavn:</label>
+            <input type="text" class="form-control" name="efternavn" placeholder="Efternavn" required>
+        </div>
+        <div class="form-group" id="logmag">
+            <label for="mail">Mail:</label>
+            <input type="email" class="form-control" name="mail" placeholder="kurt@kurtsen.dk" required>
+        </div>
+        <div class="form-group" id="logmag">
+            <label for="tf">Telefonnummer:</label>
+            <input type="tel" class="form-control" name="telefon" placeholder="00 00 00 00" required>
+        </div>
+        <hr>
+        <div class="form-group" id="logmag">
+            <label for="p1">Password:</label>
+            <input type="password" class="form-control" name="password1" id="p1" placeholder="********" onkeyup='check();' required>
+        </div>
+        <div class="form-group" id="logmag">
+            <label for="p2">Gentag password:</label>
+            <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
+        </div>
+        <button type="submit" class="btn btn-primary" id="logmag">Opret Bruger</button>
+        <span id="passwordtjek"></span>
+    </form>
+</fieldset>
 
-</body>
-</html>
+<script>
+    var check = function() {
+        if (document.getElementById("p1").value ==
+            document.getElementById("p2").value) {
+            document.getElementById("passwordtjek").style.color = "green";
+            document.getElementById("passwordtjek").innerHTML = " Password matcher!";
+        } else {
+            document.getElementById("passwordtjek").style.color = "red";
+            document.getElementById("passwordtjek").innerHTML = " Password matcher ikke!";
+        }
+    }
 
+</script>
+<?php
+function get_post($con, $var) {
+	return mysqli_real_escape_string($con, $_POST[$var]);
+}
+require_once('includes/footer.php');
+?>
