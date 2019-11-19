@@ -125,6 +125,7 @@ Overallstyles:
 xh1 {
     font-size: 1.5em;
 =======
+}
 h1 {
     font-size: 1.8em;
     font-family: arial;
@@ -248,7 +249,7 @@ a{
     text-decoration: none;
     outline: none;
 }
-.footer {
+.wfooter {
     width: 100%;
     height: auto;
     margin: auto;

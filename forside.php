@@ -115,7 +115,7 @@ function showSlides() {
     
 <br> <br>
 
-        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <h2 class="w3-wide"> Det er nemt og hurtigt at ansøge om et lån </h2>
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
 
     <img src="images/netvaerk.png">

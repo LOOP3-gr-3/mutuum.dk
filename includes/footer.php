@@ -1,16 +1,25 @@
-<!-- her henter jeg headeren ned -->
-<?php
-    require_once('header.php');
-?>
-
 
 
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
-<link href="../includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
-    
-<div class="footer" align="center">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.wfooter {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="wfooter">
     <div class="wfooter-menu-en">
             
                 <a id="wkomigang" href="">KOM I GANG</a>
@@ -25,15 +34,6 @@
             
         </div>
     </div>
-    <div class="wfooter-menu-tre">
-        <div class="col-lg-3 col-md-6 footer-info">
-
-    
-
-           
-
-        </div>
-    </div>
             <div class="wfooter-menu-fire">
                 <div class="col-lg-3 col-md-6 footer-info">
                     <p>CVR: 23850592 <br>
@@ -42,6 +42,7 @@
                 </div>
             </div>
     
-    </div>
+</div>
+
 </body>
-</html>
+</html> 
