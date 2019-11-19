@@ -82,7 +82,7 @@ a{
     text-transform: uppercase;
 }
 </style>
-<body>
+
 
 <div class="footer">
     <div class="wfooter-menu-en">
