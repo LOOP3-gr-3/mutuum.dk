@@ -1,8 +1,13 @@
 <!-- her henter jeg headeren ned -->
 <?php
+<<<<<<< Updated upstream
 
     $page = ('Min profil');
     require_once('includes/header.php');
+=======
+    $page = ('FAQ');
+require_once('includes/header.php');
+>>>>>>> Stashed changes
     //require_once('includes/footer.php');
   if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
