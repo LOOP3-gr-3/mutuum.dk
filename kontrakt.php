@@ -14,24 +14,26 @@
 <!-- her laves funktionen der skal få den bestemte kontrakt til at blive vist-->
 
 <div class="container">
-  <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="netveark">Låneftale via netværk</button>
-  <div id="netveark" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="netveark" id="xnetveark">Låneftale via netværk</button>
+    
+        <div id="netveark" class="collapse">
+            <span id="more">
+            <form>
+            <input type="text" name="Beløb" placeholder="Beløb"></form>
+            </span>
+        </div>
 </div>
 
-
-<button onclick="myFunction()" id="xnetveark"> Låneaftale via netværk</button>
-    <span id="more">
-        <form>
-        <input type="text" name="Beløb" placeholder="Beløb"></form>
-    </span>
-
-
-
-<button id="xmatchside">Låneaftale via Matchsiden</button>
+<div class="container">
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="matchside" id="xmatchside">Låneftale til vilkårlig</button>
+    
+        <div id="matchside" class="collapse">
+            <span id="more">
+            <form>
+            <input type="text" name="Beløb" placeholder="Beløb"></form>
+            </span>
+        </div>
+</div>
 
 <?php
     require_once('includes/footer.php');
