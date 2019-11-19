@@ -39,12 +39,12 @@
     transform:translateY(0.2em);
 }
 
-#lbar2{                 /*giver toppen af burgeren*/
-    transform:translateY(0.1em);
+#lbar2{                 /*giver midten af burgeren*/
+    transform:translateY(0.3em);
 }
 
 #lbar3{                 /*giver bunden af burgeren*/
-    transform:translateY(0.2em);
+    transform:translateY(0.4em);
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
@@ -168,7 +168,7 @@ input::placeholder{
     width:auto;
 }
 
-#container1-4{
+#container1-5{
     display:block;
     position:absolute;
     width: 24%;
@@ -180,7 +180,7 @@ input::placeholder{
     border-radius: 15%;
 }
 
-#container2-4{
+#container2-5{
     display:block;
     position:absolute;
     width: 24%;
@@ -193,7 +193,7 @@ input::placeholder{
     
 }
 
-#container3-4{
+#container3-5{
     display:block;
     position:absolute;
     width: 24%;
@@ -206,7 +206,7 @@ input::placeholder{
     
 }
 
-#container4-4{
+#container4-5{
     display:block;
     position:absolute;
     width: 24%;
@@ -219,14 +219,32 @@ input::placeholder{
     
 }
 
+#container5-5{
+    display:block;
+    position:absolute;
+    width: 24%;
+    height: 50%;
+    background-color: #aaa;
+    left:38%;
+    border: solid 2px black;
+    margin: 5px;
+    border-radius: 15%;
+    top:18.5em;
+}
 #l-tekst{
     text-align: center;   
     color:black;
 
 }
 
+#l-tekst2{
+    
+
+}
+
 a{
     color:black;
+    
 }
 a:hover{
     color:forestgreen;
@@ -235,7 +253,9 @@ a:hover{
 #l-billede{
     position:relative;
     margin-left:18%;
-    margin-right:18%;  
+    margin-right:18%;
+    top:0.5em;
+    
 }
 
 #l-billede:hover{
@@ -379,14 +399,223 @@ a {
 
 
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 300px){
+@media screen and (min-width: 320px)and (max-width:767px){
 
 #jumbotron{
  background-color: lightblue;
     width:100%;
     }
 
-/*------------------------------------ mine aftaler -----------------------------*/
+#llogin{ 
+    position:relative; 
+    width: 25%;
+    left:50%;   
+    opacity:0.6;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none;
+    top:-0.15em;
+    } 
+    
+#billede1{
+    height:5em;
+    width:5em;
+    
+    
+}
+    
+.lbar{
+        top:1.2em;
+        left:1.2em;
+}
+
+#container1-5{
+    width:40%;
+    height:22%;
+    left:5%;
+}
+
+#container2-5{
+    width:40%;
+    height:22%;
+    left:50%;
+    
+}
+
+#container3-5{
+    width:40%;
+    height:22%;
+    left:5%;
+    top:25%;
+    
+}
+
+#container4-5{
+    width:40%;
+    height:22%;
+    left:50%;
+    top: 25%;
+    
+}
+
+#container5-5{
+    width:40%;
+    height:22%;
+    left:28%;
+    top:50%;
+    
+}
+    
+#limg{
+left:5%;
+width:33%;
+height:15%;
+
+    }
+    body{
+        background-color:lightcyan;
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width:959px) {
+  #jumbotron {
+    background-color: burlywood;
+  }
+
+.lbar{                  /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
+    left:20%;
+    top: 2.5em;
+    }
+    
+
+#limg{
+    top: -5px;
+    left: 50px;
+    height:7em;
+    width:8em;
+}
+    
+#llogin{ 
+    left:60%;     
+}
+    
+#container1-5{
+    width:30%;
+    left:0%;
+}
+
+#container2-5{
+    width:30%;
+    left:32%;
+    
+    
+}
+
+#container3-5{
+    width:30%;
+    left:65%;
+   
+    
+}
+
+#container4-5{
+left:15%;
+width:30%;
+top:18.5em;
+    
+    
+}
+
+#container5-5{
+left:48%;
+width:35%;
+top:18.5em;
+}    
+
+    
+#l-billede{
+margin-left:auto;
+margin-right:auto;
+    }
+    
+body{
+        background-color:orange;
+    }
+    
+    }
+    
+    
+    
+    
+@media screen and (min-width: 960px) and (max-width:1299px) {
+    #jumbotron{
+        background-color:red;
+    }
+
+.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+    top:1.75em;
+    }
+
+#limg{
+height:6em;
+width: 7em;
+        
+}
+
+#llogin{
+width:15%;
+left:75%;   
+margin-top:2.7%;
+    }
+
+#l-billede{ 
+margin:0.25em;
+    }
+    
+#container5-5{
+
+    width:28%;
+        
+    }
+}
+    
+@media screen and (min-width: 1300px) {
+#jumbotron {
+    background-color: lavender;
+    height:130px;
+  }
+
+#llogin{ 
+    width:15%;
+    left:75%;   
+    margin-top:2.7%;
+    }
+
+#limg{
+    left: 50px;
+    height:100;
+    width:9em;
+     }
+    
+    
+#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
+    margin: 50px 0 20px 20px;
+  
+    }
+.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+    top:-.50em;
+    
+}
+
+#container5-5{
+width:25%;
+        
+    }
+    }
+
+    
+    /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
     width: 5%;
     height: auto;
@@ -395,76 +624,8 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}
-
-#llogin{ 
-    position:relative; 
-    width: 25%;
-    left:55%;   
-    opacity:0.6;
-    text-align:center;
-    border:0.09em solid black;
-    border-radius:20px;
-    text-decoration: none;
-    top:-0.8em;
-    } 
-    
-#limg{
-    height:5em;
-    width:5em; 
-    top:0.1em;
-}
-    
-.lbar{
-        top:1.2em;
-        left:1.2em;
-
-}
-
-
-    /*----------------------------------------MEDIA SCREENS-------------------------*/ 
-@media screen and (min-width: 768px) {
-  #jumbotron {
-    background-color: aqua;
-  }
-
-.lbar{                       /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
-    position: relative;
-    height: 0.5em;
-    width: 100%;
-    background-color:#85bb65;
-    display: block;
-    border-radius: 5em;   
-    transition:0.7s ease; /*hastigheden fra burger til kryds*/
-    right: 15.5%; 
-    top: 2.5em;
-    left: -0.5em;
     }
     
-
-#limg{
-   
-    position: absolute;
-    top: -5px;
-    left: 50px;
-    height:8em;
-    width:8em;
-     }
-    
-#llogin{ 
-    position:relative; 
-    width: 25%;
-    left:60%;   
-    opacity:0.6;
-    margin-top:3%;  
-    margin-bottom: 2%;
-    text-align:center;
-    border:0.09em solid black;
-    border-radius:20px;
-    text-decoration: none; 
-    
-}
-
 #xx {
     text-align: center;
     }
@@ -478,32 +639,3 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
         float: right;
         width: 50%;
     }
-
-@media screen and (min-width: 1200px) {
-  #jumbotron {
-    background-color: lavender;
-    height:130px;
-  }
-
- #llogin{ 
-    width:15%;
-    left:75%;   
-    margin-top:2.7%;
-    }
-
-  #limg{
-    left: 50px;
-    height:100;
-    width:150px !important;
-     }
-
-    
-#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
-    margin: 50px 0 20px 20px;
-  
-    }
-.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
-    top:0.4em;
-    
-}
-
