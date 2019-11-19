@@ -15,11 +15,9 @@
 
 <div class="container">
     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#netveark" id="xnetveark">Låneftale til netværk</button> 
-    
-    <br>
 
 <!--Her vælger jeg indholdet der skal vises når der trykkes på den bestemte knap-->
-        <div id="netveark" class="collapse">
+       <br> <br>  <div id="netveark" class="collapse">
             <p id="beløb">Beløb</p>
             
                 <div class="dropdown">
@@ -108,7 +106,7 @@
                     </label>
                 </div>
             <!--Jeg er ikke helt sikker på hvordan I vil have boxen med den udregnet/generated value, men har bare lavet en U med value indeni, som symbolisere det for nu-->
-            <p>Udreget afkast = <U>Some generated value , -</U></p>
+            <p><I>Udreget afkast = <U>Some generated value , -</U></I></p>
             
             <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
             <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
