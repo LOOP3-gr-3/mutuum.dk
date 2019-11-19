@@ -103,8 +103,19 @@ function showSlides() {
   setTimeout(showSlides, 5000);
 }
 </script>
+    
+<br> <br>
+    
+<!-- Tilføjelse af noget tekst -->
+<div style="text-align:center">
+        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
+</div>
+    
+<div style="text-align:center">
+    <img src="images/MUTUUM.png">
+</div>
+    
+
 
 </body>
-
-
-</html>
