@@ -2,7 +2,7 @@
 <?php
     $page = ('Forside');
     require_once('includes/header.php');
-    require_once('includes/footer.php');
+    
     if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
 }
@@ -140,4 +140,7 @@ function showSlides() {
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D  </i></p>
 
 </div>
-</body>
+    
+ <?php 
+    require_once('includes/footer.php');
+?>
