@@ -111,16 +111,12 @@ Overallstyles:
 
 /*__________________________________________________OM OS________________________________________*/
 /* dette er til overskrifterne på om_os*/
-
-xh1 {
-    font-size: 1.5em;
-=======
 h1 {
     font-size: 1.5em;
     font-family: arial;
     color: black;
 }
-
+ 
 #mineaftaler{
     font-size: 1.2em;
     font-family: arial;
@@ -207,7 +203,7 @@ input::placeholder{
 
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
-    width: 8%;
+    width: 10%;
     height: auto;
 } 
 table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
@@ -217,7 +213,7 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 /*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
 td, th {
-    border: 0.25em solid #dddddd;
+    border: 0.5em solid #dddddd;
     text-align: left;
     padding: 0.2em;
 
@@ -228,7 +224,7 @@ td, th {
 }
 
 /*-----------------------------------kontrakt------------------------------------*/
-#xopretudlån {
+#xopretudlan {
     text-align: center;
 
 
