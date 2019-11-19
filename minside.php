@@ -118,13 +118,11 @@ if (isset($_SESSION['user_id'])) {
     </div>
 </div>
 
+
  <?php 
     require_once('includes/footer.php');
 ?>
 
-
-</body>
-</html>
 
 
      
