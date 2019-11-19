@@ -378,13 +378,7 @@ a {
 }
 
 
-/*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 300px){
 
-#jumbotron{
- background-color: lightblue;
-    width:100%;
-    }
 
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
@@ -423,12 +417,19 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 
     /*----------------------------------------MEDIA SCREENS-------------------------*/ 
+@media screen and (min-width: 300px){
+
+#jumbotron{
+ background-color: lightblue;
+    width:100%;
+    }
+    
 @media screen and (min-width: 768px) {
   #jumbotron {
     background-color: aqua;
-  }
+    }
 
-.lbar{                       /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
+.lbar{              /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
     position: relative;
     height: 0.5em;
     width: 100%;
@@ -464,6 +465,7 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     text-decoration: none; 
     
 }
+    }
 
 #xx {
     text-align: center;
@@ -506,4 +508,5 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     top:0.4em;
     
 }
+    }
 
