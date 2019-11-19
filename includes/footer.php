@@ -87,7 +87,7 @@ a{
     text-transform: uppercase;
 }
 </style>
-    
+
 <body>
 
 <div class="footer">
