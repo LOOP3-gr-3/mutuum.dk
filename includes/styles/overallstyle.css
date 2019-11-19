@@ -1,10 +1,10 @@
+Overallstyles:
 /*__________________________________________________HEADER________________________________________*/
 #jumbotron{
-
     padding:0!important;
     padding-bottom: 30px !important;
     padding-top: 7px !important;
-
+    
     padding:0!important;
     padding-bottom: 30px !important;
     padding-top: 7px !important;
@@ -14,7 +14,7 @@
     padding-bottom: 2em !important;
     padding-top: 2em !important;
     width:auto !important;
- 
+   
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -37,7 +37,10 @@
     display: block;
     border-radius: 5px;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
-    right: 12.5%;    
+    right: 12.5%;
+   
+    
+    
 }
 
 #lbar1{                 /*giver toppen af burgeren*/
@@ -49,7 +52,7 @@
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
-    background-color: green;
+    background-color:green;
 }
 .lchange #lbar1{           /*får bar1 til at dreje til kryds*/
     transform: translateY(4px) rotateZ(-135deg);
@@ -66,7 +69,7 @@
 }
 
 .lnav li a{             /*giver nav tekst farve og fjerne understregning fra link*/
-    color: black;
+    color:black;
     text-decoration:none;
 }
 
@@ -118,13 +121,18 @@
 
 /*__________________________________________________OM OS________________________________________*/
 /* dette er til overskrifterne på om_os*/
+
+xh1 {
+    font-size: 1.5em;
+=======
 h1 {
     font-size: 1.8em;
     font-family: arial;
     color: black;
-
 }
 
+<<<<<<< HEAD
+=======
 #mineaftaler{
     font-size: 1.2em;
     font-family: arial;
@@ -147,6 +155,7 @@ h1 {
     border-top-left-radius: 0.4em;
     border-top-right-radius: 0.4em;
     margin-right: 22em;
+
 }
 
 /*__________________________________________________OPRET BRUGER________________________________________*/
@@ -207,7 +216,6 @@ input::placeholder{
     
 }
 
-
 /*------------------------------------ mine aftaler -----------------------------*/
 #Xlup {
     width: 5%;
@@ -226,9 +234,10 @@ td, th {
 }
 
 /*-----------------------------------kontrakt------------------------------------*/
-#xopretudlan {
+#xopretudlån {
     text-align: center;
 }
+
 
 /*----------------------------FOOTER----------------------------*/ 
 *{
@@ -288,7 +297,6 @@ a {
     border:0.09em solid black;
     border-radius:20px;
     text-decoration: none;
-
 }
 
 /*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
@@ -322,7 +330,6 @@ a {
 }
 
 
-
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 300px){
 
@@ -353,6 +360,4 @@ td, th {
 #xopretudlan {
     text-align: center;
 }
-
-
 
