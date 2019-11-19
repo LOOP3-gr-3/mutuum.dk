@@ -65,6 +65,8 @@ if (isset($_SESSION['user_id'])) {
 
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
+
+<div class="main-profil">
 <div class="row">
   <div class="col-mew"> 
       <a href="minprofil.php"><img src="images/profil.png" alt="MinProfil" style="width:90%"></a>
@@ -86,7 +88,7 @@ if (isset($_SESSION['user_id'])) {
  <div class="col-mew"> 
       <a href="#OVERBLIK"><img src="images/graf.png" alt="Matchsiden" style="width:90%"></a>
     </div>
-
+</div>
 
 </body>
 </html>

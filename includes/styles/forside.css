@@ -1,0 +1,27 @@
+#site-highlights {
+    width: 100%;
+    height: 85em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#site-highlights hr{
+    clear: left;
+}
+#site-highlights section {
+    float: left;
+    width: 33%;
+    margin-bottom: 2em;
+}
+#site-highlights section {
+    float: left;
+    width: 33%;
+    margin-bottom: 2em;
+}
+#site-highlights section div {
+    width: 85em;
+    height: 85em;
+    background-size: cover;
+    margin: auto;
+    transition: 3s height,width ease;
+}

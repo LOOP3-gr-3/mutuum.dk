@@ -1,6 +1,6 @@
 <!-- her henter jeg headeren ned -->
 <?php
-    require_once('includes/header.php');
+    require_once('header.php');
 ?>
 
 
