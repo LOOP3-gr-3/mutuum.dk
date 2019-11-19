@@ -109,13 +109,39 @@ function showSlides() {
 <!-- Tilføjelse af noget tekst -->
 <div style="text-align:center">
         <h2 class="w3-wide"> Simpelt og overskueligt </h2>
-        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
 </div>
     
 <div style="text-align:center">
     <img src="images/MUTUUM.png">
 </div>
     
+<br> <br>
 
+<div style="text-align:center">
+        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+</div>
+    
+<div style="text-align:center">
+    <img src="images/netvaerk.png">
+    <img src="images/match.png">
+</div>
+    
+<div style="text-align:center">
+        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+</div>
+  
+<br> <br>
+    
+<div style="text-align:center">
+        <h2 class="w3-wide"> HER SKAL DER VÆRE EN GRAF! </h2>
+        <img src="images/graf.png">
+</div>
 
+<div style="text-align:center">
+        <h2 id="wtext-långiver"> LÅNGIVER </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
+</div>
 </body>
