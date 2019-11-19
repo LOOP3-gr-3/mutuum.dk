@@ -1,6 +1,6 @@
 <!-- her henter jeg headeren ned -->
 <?php
-    $page = ('Mine aftaler');
+    $page = ('Opret lånekontrakt');
     require_once('includes/header.php');
     if (isset($_SESSION['user_id'])) {
         header('location:forside.php');
@@ -15,11 +15,9 @@
 
 <div class="container">
     <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target="#netveark" id="xnetveark">Låneftale til netværk</button> 
-    
-    <br>
 
 <!--Her vælger jeg indholdet der skal vises når der trykkes på den bestemte knap-->
-        <div id="netveark" class="collapse">
+       <br> <br>  <div id="netveark" class="collapse">
             <p id="beløb">Beløb</p>
             
                 <div class="dropdown">
@@ -86,6 +84,7 @@
                     </label>
                 </div>
             
+            <!-- "vedlæg gebyr" laves som et checkbox punkt med en dropdown nedeunder-->
                 <div class="form-check">
                     <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" value="">Vedlæg gebyr på:
@@ -97,7 +96,7 @@
                                 <a class="dropdown-item" href="#">200 , -</a>
                                 <a class="dropdown-item" href="#">300 , -</a>
                                 </div>    
-                        </div> <br>
+                        </div>
                     </label>
                 </div>
             
@@ -105,8 +104,14 @@
                     <label class="form-check-label">
                     <input type="checkbox" class="form-check-input" value="" disabled>Forlæng løbetid med 2 måneder
                     </label>
-                </div>        
+                </div>
+            <!--Jeg er ikke helt sikker på hvordan I vil have boxen med den udregnet/generated value, men har bare lavet en U med value indeni, som symbolisere det for nu-->
+            <p><I>Udreget afkast = <U>Some generated value , -</U></I></p>
             
+            <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
+            <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
+        <!-- Den anden knap -->
+            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale uden at underskrive</button></a> 
     </div>
 </div>
 
