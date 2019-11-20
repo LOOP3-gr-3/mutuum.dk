@@ -52,7 +52,7 @@ require_once('conn.php')
                 <!--Skaber navigationsbaren når burgeren er foldet ud-->
         <ul class="lnav" id="lnav">
                     <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
-            <li><a href="#">Login </a> </li>
+            <li><a href="login.php">Login </a> </li>
             <li><a href="opretbruger.php">Opret Bruger</a> </li>
             <li><a href="minside.php">Min side</a> </li>
             <li><a href="om_os.php">Om Mutuum</a> </li>

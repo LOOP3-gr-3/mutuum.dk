@@ -4,12 +4,7 @@ require_once('includes/header.php');
 
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
-if (isset($_SESSION['user_id'])) {
-    header('location:loggedin_front.php');
- 
-//ellers skal den tjekke på mail og password
-} else {
-    if(isset($_POST['email']) && isset($_POST['password'])) {
+if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
@@ -24,7 +19,7 @@ if (isset($_SESSION['user_id'])) {
             $rows = mysqli_num_rows($result);
 
 //Hvis en query har flere end en row, så vil den returnere et nummer. Hvis mailen ikke eksistere, skal siden kunne skrive det. Derfor kommer der en conditional statement som følgende
-            if($rows == 0) {
+            if($rows == 0) {    
                 echo "Du skal logge ind eller oprette en bruger, for at se 'min side'";
             }
  //Hvis emailen eksistere så skal der være en else statement
@@ -54,7 +49,7 @@ if (isset($_SESSION['user_id'])) {
             }
         }
     }  
-}
+
 
 
 //if the user is logged in, redirects to the page loggedin_front.php
@@ -133,10 +128,6 @@ if (isset($_SESSION['user_id'])) {
 require_once('includes/footer.php');
     ?>
 
-
- <?php 
-    require_once('includes/footer.php');
-?>
 
 
 
