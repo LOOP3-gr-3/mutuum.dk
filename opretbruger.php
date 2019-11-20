@@ -1,9 +1,13 @@
+
+<!-- Her inkluderes headeren, pagen får navn, og vi tjekker om der er sat en SESSION hvor brugeren ér logget ind -->
+
 <?php
 $page = "Opret Bruger på MUTUUM";
 require_once('includes/header.php');
 if (isset($_SESSION['user_id'])) {
 	header('Location: minside.php');
 }
+/*Hvis ikke brugeren er logget ind i forvejen, vil koden herunder afvikles*/
 else { 
 if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail']) && isset($_POST['password1']) && isset($_POST['telefon'])) {
 	$fornavn = get_post($con, 'fornavn');
@@ -13,36 +17,48 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     $password2 = get_post($con,'password2');
 	$mobil = get_post($con, 'telefon');	
     
+/*Koden over tjekker om der er blevet sat noget ind i tekstfelterne, og hvis der er, lægges de i nogle variable 
+  Koden under sammenligner de 2 indtastede kodeord INDEN de hashes */
+    
     if($password1 != $password2){
         echo '<script>alert("Dine passwords matchede ikke. Prøv igen!")</script>' ;
         die();
+        /*REDIRECT TIL DENNE SIDE IGEN FORFRA*/
     }
     
-        
-	$token = password_hash($password, PASSWORD_DEFAULT);
+    /*Password hashes*/
+	$token = password_hash($password1, PASSWORD_DEFAULT);
     
-    	$query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
-	$result = mysqli_query($con, $query);
+    /*Det indsættes i tabellen i databasen */
+    $query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
+	
+    /*Der valideres hvorvidt det lukkedes at lægge oplysniger på databasen, ved at fylde resultat i en variable*/
+    $result = mysqli_query($con, $query);
 	if(!$result) {
 		if (mysqli_errno($con) == 1062) {
 			echo '<script>alert("Email-adressen du har indtastet, er invalid eller allerede i brug. Vælg en ny og prøv igen.")</script>';
 		require_once ('includes/footer.php');
-		die();
+            die();
+		header('location: opretbruger.php');
 		}
 		else 
 		echo '<script>alert("Der er opstået en ukendt fejl. Prøv igen, eller kontakt sideadministratoren")';
 		require_once ('includes/footer.php');
-		die();
+        die();
+		header('location: opretbruger.php');
     }
 	if($result) {
 		echo '<script>alert("Du er nu registreret på MUTUUM, velkommen! Log ind, og se dig omkring!")</script>';
 		require_once ('includes/footer.php');
-		die();
+        die();
+		header('location: minside.php')
+        /*REDIRICT TIL MINSIDE */
 	}
 }   
 }
 ?>
 
+<!-- Her er formen som skal udfyldes. Fieldset tagget er fordi denne gruppe af data er relaterede. Legend tagget er overskrift for fireldset tagget -->
 <fieldset>
     <legend>Opret Bruger</legend>
     <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
@@ -76,6 +92,8 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     </form>
 </fieldset>
 
+
+<!-- Her er en lille kode som tjekker "in real time" om man taster rigtig med sine adgangskoder, det displayes i span tagget i formen -->
 <script>
     var check = function() {
         if (document.getElementById("p1").value ==
@@ -89,6 +107,8 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     }
 
 </script>
+
+<!--Hvad er det helt præcis vi gør her, og har det noget at gøre med om vi kan oprette sessions? -->
 <?php
 function get_post($con, $var) {
 	return mysqli_real_escape_string($con, $_POST[$var]);
