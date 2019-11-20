@@ -266,27 +266,48 @@ Da der skal laves en checkbox til forhandling, hvor der kun skal vises andre mul
             </div>
             <br>
           <!--Jeg er ikke helt sikker på hvordan I vil have boxen med den udregnet/generated value, men har bare lavet en U med value indeni, som symbolisere det for nu-->
-    <p><I>Udreget afkast = <U>Some generated value pr. kontrakt , - eller totalt?</U></I></p>
+    <p><I>Udreget afkast = <U>Some generated value pr. kontrakt , - eller totalt?</U></I></p> <br>
     
     <!--Kontraktbrud, her skal der generes 3 valgmuligheder, hvor man afkrydser en og denne vil være gældende for konsekvensen der skal ske, når der sker et kontraktbrud-->
-    <p><strong>KONTRAKTBRUD</strong></p> <br>
+    <p><strong>KONTRAKTBRUD</strong></p>
         <p><I>Vælg en af følgende konsekvenser ved kontraktbrud</I></p>
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Forhøj rente med 2%
+                    </label>
+                </div>
             
-            <!--Her vil der blive benyttet en default checkbox med en indeterminate state, dette betyder at checkboxen enten er krydset af eller ikke-->
-            <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-            <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-            </div>
-
+            <!-- "vedlæg gebyr" laves som et checkbox punkt med en dropdown nedeunder-->
+                <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Vedlæg gebyr på:
+                        <div class="dropdown">
+                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">vælg gebyr
+                            </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">100 , -</a>
+                                <a class="dropdown-item" href="#">200 , -</a>
+                                <a class="dropdown-item" href="#">300 , -</a>
+                                </div>    
+                        </div>
+                    </label>
+                </div>
             
-            
-            
-            
+                    <div class="form-check">
+                    <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="" disabled>Forlæng løbetid med 2 måneder
+                    </label>
+                </div>  
+    <!--Her skrive rjeg en tekst, den skal deles i to afsnist, deraf <br>, dernæst vælger jeg at skrive at kontrakten bliver gemt til mine aftaler, denne har jeg gjort til en knap med button, understreget med U og kursiv med I og til slut sluttes paragraffen med en </p>-->    
+    <br><br><p><I>"Underskriv og gem", her sendes kontrakten ud, så en vilkårlig kan underskrive og indgå i en juridisk bindende kontrakt. 
+    <br> "Gem låneaftale", så gemmes den under din profil --> <button type="button" href="mineaftaler.php" target="_blank"><U> mine aftaler</U></button></I></p>        
     <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
             <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
         
             <!-- Den anden knap -->
-            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale uden at underskrive</button></a> 
+            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale</button></a> 
+            
+            
 <!--De to slut div, der afslutter containeren for hvad der skulle vises ved tryk på knappen og den sidste der afslutter selve containeren, der også indeholder knappen der skal trykkes på-->
 </div>
 </div>
