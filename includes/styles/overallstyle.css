@@ -680,7 +680,7 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     }
 
 
-/*----------------Kontrakt-------------------*/
+/*--------------------------Kontrakt---------------------------*/
 
 #xopretudlan {
     text-align: center;
@@ -696,7 +696,12 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
         margin-right: auto;
     }
 
-/*--------MinProfil---------*/
+/*-----------------------MinProfil--------------------*/
 #retoplysninger, #mineaftaler {
+    border-radius: 3em;
+}
+
+/*----------------------Knapper---------------------------*/
+#xwknap {
     border-radius: 3em;
 }

@@ -116,12 +116,12 @@
     <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
      <!--Her skrive rjeg en tekst, den skal deles i to afsnist, deraf <br>, dernæst vælger jeg at skrive at kontrakten bliver gemt til mine aftaler, denne har jeg gjort til en knap med button, understreget med U og kursiv med I og til slut sluttes paragraffen med en </p>-->    
     <br><br><p><I>"Underskriv og gem", her sendes kontrakten ud, så en vilkårlig kan underskrive og indgå i en juridisk bindende kontrakt. 
-    <br> "Gem låneaftale", så gemmes den under din profil --> <button type="button" href="mineaftaler.php" target="_blank"><U> mine aftaler</U></button></I></p>        
+    <br> "Gem låneaftale", så gemmes den under din profil --> <button type="button" id="xwknap"  href="mineaftaler.php" target="_blank">mine aftaler</button></I></p>        
     <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
-            <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
+            <a href="underskrivoggem.php" target="_blank"><button type="button" id="xwknap" class="btn btn-light">Underskriv og gem</button></a>
         
             <!-- Den anden knap -->
-            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale</button></a>
+            <a href="kontrakt.php" target="_blank"><button type="button" id="xwknap" class="btn btn-light">Gem låneaftale</button></a>
 <!--Slut tag på container og på det der skulle collapses, altså vises når der bliver trykket på den knap der er angivet i containere, sluttagget af de to </div> -->      
     </div>
 </div>
@@ -316,12 +316,12 @@ Da der skal laves en checkbox til forhandling, hvor der kun skal vises andre mul
                 </div>  
     <!--Her skrive rjeg en tekst, den skal deles i to afsnist, deraf <br>, dernæst vælger jeg at skrive at kontrakten bliver gemt til mine aftaler, denne har jeg gjort til en knap med button, understreget med U og kursiv med I og til slut sluttes paragraffen med en </p>-->    
     <br><br><p><I>"Underskriv og gem", her sendes kontrakten ud, så en vilkårlig kan underskrive og indgå i en juridisk bindende kontrakt. 
-    <br> "Gem låneaftale", så gemmes den under din profil --> <button type="button" href="mineaftaler.php" target="_blank"><U> mine aftaler</U></button></I></p>        
+    <br> "Gem låneaftale", så gemmes den under din profil --> <button type="button" href="mineaftaler.php" target="_blank" id="xwknap"> mine aftaler</button></I></p>        
     <!--Her kodes de to knapper i bunden, som skal føre til enten en siden hvor man underskriver eller sende kontrakten til mine aftaler under min profil, hvor den står som oprettede kontrakter-->
-            <a href="underskrivoggem.php" target="_blank"><button type="button" class="btn btn-light">Underskriv og gem</button></a>
+            <a href="underskrivoggem.php" target="_blank"><button type="button" id="xwknap" class="btn btn-light">Underskriv og gem</button></a>
         
             <!-- Den anden knap -->
-            <a href="kontrakt.php" target="_blank"><button type="button" class="btn btn-light">Gem låneaftale</button></a> 
+            <a href="kontrakt.php" target="_blank"><button type="button" id="xwknap" class="btn btn-light">Gem låneaftale</button></a> 
             
             
 <!--De to slut div, der afslutter containeren for hvad der skulle vises ved tryk på knappen og den sidste der afslutter selve containeren, der også indeholder knappen der skal trykkes på-->

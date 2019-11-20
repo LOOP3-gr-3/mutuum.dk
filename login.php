@@ -55,10 +55,10 @@ if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for a
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" name="password" id="p1" placeholder="********" required>
     </div>
-    <button class="btn btn-primary" type="submit">Log Ind</button>
+    <button id="xwknap" class="btn btn-light" type="submit">Log Ind</button>
     <br>
     <br>
-    <p>Ikke registreret endnu? Tryk her:</p><a href="opretbruger.php" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
+    <p>Ikke registreret endnu? Tryk her:</p><a href="opretbruger.php" id="xwknap" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
 </form>
 <br>
 
