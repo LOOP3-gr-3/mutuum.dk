@@ -12,7 +12,7 @@
 
     <div id="site-highlights">
         <hr>
-        <h2>Her skal vores motto være!</h2>
+        <h3><strong><i>HJÆLP DINE NÆRMESTE ELLER FJERNESTE</i></strong></h3>
         <hr>
     </div>
 
@@ -108,21 +108,19 @@ function showSlides() {
     
 <!-- Tilføjelse af tekst og figurer -->
 <div style="text-align:center">
-        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
-        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+        <h2 class="w3-wide">Hvad er MUTUUM? </h2>
+        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Mutuum lån er anderledes end traditionelle lån. Vi udbyder en platform hvor du frit kan udlåne til en ven eller en fremmed, hvor der er plads til at hjælpe eller tjene med tryghed og sikkerhed som sidens kerne </i></p>
     
-    <img src="images/MUTUUM.png">
+    <img id="6grunde" src="images/6grunde.PNG">
     
 <br> <br>
 
-        <h2 class="w3-wide"> Det er nemt og hurtigt at ansøge om et lån </h2>
-        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
-
-    <img src="images/netvaerk.png">
-    <img src="images/match.png">
+        <img src="images/lock.PNG">
+        <h4 class="w3-wide"><strong>Lån sikkert med nemID</strong></h4>
+        <p class="w3-opacity">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
     
-        <h2 class="w3-wide"> Simpelt og overskueligt </h2>
-        <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D </i></p>
+        <h3 id="xwlet">Let og enkelt</h3>
+        <p class="w3-opacity"><i>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</i></p>
   
 <br> <br>
     
