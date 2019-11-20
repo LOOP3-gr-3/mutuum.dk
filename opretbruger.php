@@ -19,7 +19,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     }
     
         
-	$token = password_hash($password, PASSWORD_DEFAULT);
+	$token = password_hash($password1, PASSWORD_DEFAULT);
     
     	$query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
 	$result = mysqli_query($con, $query);

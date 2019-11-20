@@ -1,30 +1,33 @@
-<div class="footer">
-    <div class="wfooter-menu-en">
-            
-                <a id="wkomigang" href="">KOM I GANG</a>      
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	   <meta charset="utf-8">
+	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta name="description" content="">
+	   <meta name="author" content="Projektgruppe 3">
+	   <title><?php echo $page;?></title> 
     
-    <br>
+    <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
+
+
+  <div id="footer-container">
     
-    <div class="wfooter-menu-to">
-        <div class="col-lg-3 col-md-6 footer-info">
-            
-                <a id="woplysninger" href="../faq">FAQ |</a>
-                <a href="../handelsebetingelser">Handelsbetingelser |</a>
-                <a href="../kontakt">Kontakt</a>
-            
-        </div>
+    <div id="oplysninger-footer">
+      <div id="las-tekst-hojre">
+          <strong>CVR nr:</strong> 12345678 <br>
+        <strong>Adresse:</strong> Birk Centerpark 15 <br>
+        <strong>E-mail:</strong> mutuum@hotmail.com
     </div>
-    <br>
-            <div class="wfooter-menu-tre">
-                <div class="col-lg-3 col-md-6 footer-info">
-                    <p>CVR: 23850592 <br>
-                    Adresse: Birk Centerpark 15<br>
-                    Mail: Mutuum@hotmail.com </p>
-                </div>
-            </div>
+    </div>
+    <div id="oplysninger-footer-2">
+      <div id="oplysninger-footer-2-style">
+        <a id="las-tekst-venstre" href="../faq.php">FAQ</a> 
+        <a id="las-tekst-venstre" href="#">&nbsp;&nbsp;&nbsp;Handelsbetingelser </a> 
+        <a id="las-tekst-venstre" href="#" >&nbsp;&nbsp;&nbsp;Kontakt</a> 
+    </div>
+      </div>
+    <div id="billede-footer">
+      <a href="opretbruger.php"><img id="billede" src="images/B3.png"></a>
+    </div>
     
 </div>
-
-</body>
-</html> 
