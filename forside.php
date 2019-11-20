@@ -113,32 +113,40 @@ function showSlides() {
     
     <img id="6grunde" src="images/6grunde.PNG">
     
+    
+<div id="vorescontainer" >
 <br> <br>
 
-        <img id="xw" src="images/lock.PNG">
+    <div id="1kolonne"><img id="xw" src="images/lock.PNG">
         <h4 class="w3-wide"><strong>Lån sikkert med nemID</strong></h4>
         <p class="w3-opacity">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
     
         <h3 id="xwlet">Let og enkelt</h3>
         <p class="w3-opacity"><i>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</i></p>
+    </div>
     
+    <div id="2kolonne">
         <img id="xw" src="images/checkbox.PNG"> <br><br>
         <h2 class="w3-wide"><strong>KRAV</strong></h2>
         <p class="w3-opacity">Du skal være fyldt 18 år. Din bruger skal være udfyldt på alle punkter med korrekte oplysninger</p>
-  
-<br>
+  </div>
     
-        <button class="button5"><p id="test">PRØV SELV</p></button> <br> <br> <br>
-        <img src="images/graf.png">
-
-        <h2 id="wtext-långiver"> LÅNGIVER </h2>
-        <img src="images/l%C3%A5ntager.PNG">
+<br><br><br>
+    
+    <div id="3kolonne">
+        <h2> LÅNGIVER </h2>
+        <img id="xw" src="images/l%C3%A5ntager.PNG">
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
-    
-        <h2 id="wtext-långiver"> LÅNTAGER </h2>
-        <img src="images/l%C3%A5ngiver.PNG">
+    </div>
+        
+    <div id="4kolonne">
+        <h2> LÅNTAGER </h2>
+        <img id="xw" src="images/l%C3%A5ngiver.PNG">
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D  </i></p>
 
+
+    </div>
+</div>
 </div>
     
  <?php 
