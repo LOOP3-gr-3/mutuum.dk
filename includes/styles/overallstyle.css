@@ -306,37 +306,11 @@ td, th {
 
 /*-------------------FOOTER------------------------------*/
 
-/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
-}
-.wfooter-menu-to{
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-        
-.wfooter-menu-fire p{
-    width:  100%;
-    height: auto;
-    margin: auto;
-   
-}
-.wfooter-menu-fire p{
-    margin: 0em;
-    padding: 0em;
-    text-align: center;
-}
-.wfooter-menu-fire p{
-    font-family: arial;
-    font-size: 1em;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-}
 
 
 
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 320px)and (max-width:767px){
+@media screen and (min-width: 300px)and (max-width:767px){
 
 #llogin{ 
     position:relative; 
@@ -361,6 +335,10 @@ td, th {
         top:1.2em;
         left:1.2em;
 }
+
+#container-las{
+        height:35em;
+    }
 
 #container1-5{
     width:40%;
@@ -409,11 +387,45 @@ height:15%;
     body{
         background-color:lightcyan;
     }
+#las-tekst-venstre{
+        font-size:0.5em !important;
+    }
+#oplysninger-footer-2{
+position:absolute;
+padding: 0px 0px !important;
+margin-top: 1.5em;
+left:35%;
+    
+}
+
+#billede{
+        width:80%;
+        height:75%;
+
+        
+    }
+#billede-footer{
+    margin-top:0px !important;
+    left:35% !important;
+    width:40% !important;
+    height: 30% !important;
+    
+    }
+#oplysninger-footer{
+        font-size:0.5em;
+        left:35% !important;
+        margin-top:4em;
+    }
+#footer-container{
+        bottom:0px!important;
+        margin-top:6em !important;
+    }
 }
 
 @media screen and (min-width: 768px)and (max-width:959px) {
   #jumbotron {
     background-color: burlywood;
+    border-radius:0 !important;
   }
 
 
@@ -484,7 +496,19 @@ margin-right:auto;
 body{
         background-color:orange;
     }
-    
+#las-tekst-hojre{
+        font-size:0.7em !important;
+    }
+#oplysninger-footer{
+        left: 75% !important;
+        margin-top:1em;
+    }
+#footer-container{
+        height:8em !important;
+    }
+#las-tekst-venstre{
+        font-size:1em !important;
+    }
     }
     
     
@@ -493,6 +517,7 @@ body{
 @media screen and (min-width: 960px) and (max-width:1299px) {
     #jumbotron{
         background-color:red;
+        border-radius:0 !important;
     }
 
 .lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
@@ -520,6 +545,16 @@ margin:0.25em;
 
     width:28%;
         
+    }
+#las-tekst-hojre{
+        font-size:0.7em !important;
+    }
+#oplysninger-footer{
+        left: 75% !important;
+        margin-top:1em;
+    }
+#footer-container{
+        height:8em !important;
     }
 }
     
@@ -565,86 +600,62 @@ width:25%;
 
 
    /* ________________________________FOOTER__________________*/
-    a{
-    text-decoration: none;
-    outline: none;
-}
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-}
-/*De fire næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
-.wfooter-menu-en {
-    width: 100%;
-    height: 2.5em;
-    margin-top: 1em;
-}
-.wfooter-menu-en a{ 
-    text-align: center;
 
-}
-.wfooter-menu-en ul li a{
-    font-family: arial;
-    font-size: 7em;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-}
-#wkomigang {   
-    color:white;
-    font-size:2em;
-    margin:1em 1em 1em;
+#footer-container{
+    position:relative;
+    width:100%;
+    height:110px;
+    bottom:0%;
+    left:0%;
+    background-color:black;
+    margin-top:2em;
+    margin-bottom: 0em;
     
 }
-#wkomigang {
-    width: 100%;
-    text-align:center;
-    border:0.09em solid white;
-    border-radius:20px;
+
+#oplysninger-footer{
+    position:absolute;
+    left:82%;
+    padding: 20px 10px;
 }
 
-/*De tre næste kolonner angiver størrelsen,  placeringen, afstanden, at de skal være på linje og ikke ovenover hinanden og hvilken form teksten skal stå i*/
+#oplysninger-footer-2{
+position:absolute;
+padding: 40px 40px;
 }
-.wfooter-menu-to a{
-    width: 100%;
-    height: auto;
-    margin: auto;
+
+#las-tekst-venstre{
+  text-decoration:none;
+  color:white;
+  font-size:1.2em;
 }
- .wfooter-menu-to a{
-    margin: 0em;
-    padding: 0em;
-    text-align: center;
+
+#las-tekst-venstre:hover{
+  opacity:0.6;
+  color:lightgreen;
+  font-weight: 700;
 }
-.wfooter-menu-to a{
-    font-family: arial;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;   
+
+#las-tekst-hojre{
+  text-decoration:none;
+  color:white;
+  font-size:0.9em;
 }
-.wfooter-menu-tre p{
-    width:  100%;
-    height: auto;
-    margin: auto;
-   
+
+#billede-footer{
+  position:absolute;
+  width:250px;
+  height: 3em;
+  margin-top:25px;
+  left:42%;
+  border-radius:3em;
+  
 }
-.wfooter-menu-tre p{
-    margin: 0em;
-    padding: 0em;
-    text-align: center;
+
+#billede-footer:hover{
+    opacity:0.5;
 }
-.wfooter-menu-tre p{
-    font-family: arial;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-}
+
 
     
     /*------------------------------------ mine aftaler -----------------------------*/
