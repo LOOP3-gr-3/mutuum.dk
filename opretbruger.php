@@ -71,7 +71,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
             <label for="p2">Gentag password:</label>
             <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
         </div>
-        <button type="submit" class="btn btn-primary" id="logmag">Opret Bruger</button>
+        <button type="submit" class="btn btn-light" id="logmag">Opret Bruger</button>
         <span id="passwordtjek"></span>
     </form>
 </fieldset>
