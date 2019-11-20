@@ -21,9 +21,9 @@
     </div>
     <div id="oplysninger-footer-2">
       <div id="oplysninger-footer-2-style">
-        <a id="las-tekst-venstre" href="../faq.php">FAQ</a> 
-        <a id="las-tekst-venstre" href="#">&nbsp;&nbsp;&nbsp;Handelsbetingelser </a> 
-        <a id="las-tekst-venstre" href="#" >&nbsp;&nbsp;&nbsp;Kontakt</a> 
+        <a id="las-tekst-venstre" href="./faq.php">FAQ</a> 
+        <a id="las-tekst-venstre" href="./handelsbetingelser.php">&nbsp;&nbsp;&nbsp;Handelsbetingelser </a> 
+        <a id="las-tekst-venstre" href="./kontakt.php" >&nbsp;&nbsp;&nbsp;Kontakt</a> 
     </div>
       </div>
     <div id="billede-footer">
