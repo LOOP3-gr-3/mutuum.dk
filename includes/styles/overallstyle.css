@@ -688,12 +688,21 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 /*knapperne placere over og under hinanden*/
 #xnetveark {  
+
+    float: left;
+    width: 45%;
+     }
+#xmatchside {
+        float: right;
+        width: 45%;
+
     margin-left: 25%;
     margin-right: auto;
      }
     #xmatchside {
         margin-left: 25%;
         margin-right: auto;
+
     }
 
 /*-----------------------MinProfil--------------------*/
