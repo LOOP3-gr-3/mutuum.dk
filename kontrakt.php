@@ -329,5 +329,5 @@ Da der skal laves en checkbox til forhandling, hvor der kun skal vises andre mul
 </div>
 
 <?php
-    //require_once('includes/footer.php');
+    require_once('includes/footer.php');
 ?>
