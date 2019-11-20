@@ -42,7 +42,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
 }   
 }
 ?>
-
+<div id="om-os-container">
 <fieldset>
     <legend>Opret Bruger</legend>
     <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
@@ -89,6 +89,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     }
 
 </script>
+</div>
 <?php
 function get_post($con, $var) {
 	return mysqli_real_escape_string($con, $_POST[$var]);

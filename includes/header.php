@@ -38,7 +38,7 @@ require_once('conn.php')
 <div id="llogin">
     <a href="login.php">LOG IND</a>
 </div>  
-    <a href="om_os.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
+    <a href="forside.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
 
     <div id="lmenu-bar">
         <!-- skaber funktionen, at man kan klikke-->

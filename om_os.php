@@ -6,7 +6,7 @@
 
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
-
+<div id="om-os-container">
 <!-- Dette er overskriften for dette indhold -->
 <h3><strong>HVEM ER VI?</strong></h3>                                
 
@@ -28,6 +28,8 @@
     <li>Kontrakter der tilgodeser både låntager og långiver</li>
     <li>Du sætter selv reglerne for dine penge</li>
 </ul>
+</div>
 
+<?php require_once('includes/footer.php'); ?>
 </html>
           
