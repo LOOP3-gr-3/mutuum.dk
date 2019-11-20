@@ -41,9 +41,9 @@ if(isset($_POST['mail']) && isset($_POST['password'])) {
     }
 }
 ?>
-
+<div id="om-os-container">
 <div class="container" id="nheading">
-    <h2>Log Ind</h2>
+    <h2>Log ind</h2>
 </div>
 <form class="form-signin" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <!-- sikrer at vi sender "ren" data op til databasen -->
@@ -61,7 +61,7 @@ if(isset($_POST['mail']) && isset($_POST['password'])) {
     <p>Ikke registreret endnu? Tryk her:</p><a href="opretbruger.php" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
 </form>
 <br>
-
+</div>
 
 <?php
 require_once('includes/footer.php');
