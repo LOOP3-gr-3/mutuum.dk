@@ -1,15 +1,10 @@
 <?php  
 $page = 'MinSide';
 require_once('includes/header.php');
-require_once('includes/footer.php');
+
 
 //Her får jeg php til at tjekke op på om brugeren er logget ind
-if (isset($_SESSION['user_id'])) {
-    header('location:loggedin_front.php');
- 
-//ellers skal den tjekke på mail og password
-} else {
-    if(isset($_POST['email']) && isset($_POST['password'])) {
+if(isset($_POST['email']) && isset($_POST['password'])) {
         $email = $_POST['email'];
         $password = $_POST['password'];
 
@@ -24,7 +19,7 @@ if (isset($_SESSION['user_id'])) {
             $rows = mysqli_num_rows($result);
 
 //Hvis en query har flere end en row, så vil den returnere et nummer. Hvis mailen ikke eksistere, skal siden kunne skrive det. Derfor kommer der en conditional statement som følgende
-            if($rows == 0) {
+            if($rows == 0) {    
                 echo "Du skal logge ind eller oprette en bruger, for at se 'min side'";
             }
  //Hvis emailen eksistere så skal der være en else statement
@@ -54,7 +49,7 @@ if (isset($_SESSION['user_id'])) {
             }
         }
     }  
-}
+
 
 
 //if the user is logged in, redirects to the page loggedin_front.php
@@ -67,32 +62,73 @@ if (isset($_SESSION['user_id'])) {
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
 
-<div class="main-profil">
-<div class="row">
-  <div class="col-mew"> 
-      <a href="minprofil.php"><img src="images/profil.png" alt="MinProfil" style="width:90%"></a>
+
+<div id="container-las">
+    <div id="container1-5">
+        <div id="l-billede">
+            <a href="minprofil.php"><img id="billede1" src="images/profil.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="minprofil.php">Min profil</a>
+            
+        </div>
+
     </div>
-  <div class="col-mew">
-      <a href="#KONTRAKT"><img src="images/kontrakt.png" alt="Opret kontrakt" style="width:90%" style="center"></a>
+    
+    <div id="container2-5">
+        <div id="l-billede">
+            <a href="NETVÆRK"><img id="billede1" src="images/netvaerk.png"></a>
+            
+        </div>
+        
+        <div id="l-tekst">
+            <a href="NETVÆRK">Mit netværk</a>
+            
+        </div>
     </div>
-    <div class="col-lille"></div>
+    
+    
+    <div id="container3-5">
+        <div id="l-billede">
+            <a href="MATCHSITE"><img id="billede1" src="images/match.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="MATCHSITE">Match site</a>
+            
+        </div>
+    </div>
+    
+    
+    <div id="container4-5">
+        <div id="l-billede">
+            <a href="Opret kontrakt" taget="_blank"><img id="billede1" src="images/kontrakt.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="OPRETKONTRAKT">Opret kontrakt</a>
+            
+        </div>
+    </div>
+    
+    <div id="container5-5">
+        <div id="l-billede">
+            <a href="MINPROFIL"><img id="billede1" src="images/hej2.png"></a>
+        </div>
+        
+        <div id="l-tekst">
+            <a href="STATISTIK">Statistik</a>
+            
+        </div>
+    </div>
 </div>
-<div class="row">
- <div class="col-mew"> 
-      <a href="#MATCH"><img src="images/match.png" alt="Matchsiden" style="width:90%"></a>
-    </div>
-  <div class="col-mew">
-      <a href="#NETVÆRK"><img src="images/netvaerk.png" alt="Netværk" style="width:90%"></a>
-    </div>
-</div> 
-<div class="row">
- <div class="col-mew"> 
-      <a href="#OVERBLIK"><img src="images/graf.png" alt="Matchsiden" style="width:90%"></a>
-    </div>
+    
+<?php
+require_once('includes/footer.php');
+    ?>
 
 
-</body>
-</html>
 
 
      

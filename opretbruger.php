@@ -27,7 +27,9 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
         /*REDIRECT TIL DENNE SIDE IGEN FORFRA*/
         }
     
+
     /*Password hashes*/
+
 	$token = password_hash($password1, PASSWORD_DEFAULT);
     
     /*Det indsættes i tabellen i databasen */
