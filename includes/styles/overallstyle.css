@@ -695,3 +695,8 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
         margin-left: 25%;
         margin-right: auto;
     }
+
+/*--------MinProfil---------*/
+#retoplysninger, #mineaftaler {
+    border-radius: 3em;
+}
