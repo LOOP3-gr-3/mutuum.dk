@@ -19,7 +19,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     }
     
         
-	$token = password_hash($password, PASSWORD_DEFAULT);
+	$token = password_hash($password1, PASSWORD_DEFAULT);
     
     	$query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
 	$result = mysqli_query($con, $query);
@@ -71,7 +71,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
             <label for="p2">Gentag password:</label>
             <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
         </div>
-        <button type="submit" class="btn btn-primary" id="logmag">Opret Bruger</button>
+        <button id="xwopretbruger" type="submit" class="btn btn-light" id="logmag"> &nbsp; Opret Bruger &nbsp; </button>
         <span id="passwordtjek"></span>
     </form>
 </fieldset>

@@ -142,6 +142,12 @@ input::placeholder{
 #logmag{
     margin:15px;
 }
+
+#xwopretbruger {
+    border-radius: 3em;
+}
+
+
 /*-------------------------------------------------BILLEDE I HEADER------------------------------------*/
 #limg{
     margin:0.2em;
@@ -305,13 +311,8 @@ td, th {
     padding: 1em;
 }
 
-/*-----------------------------------kontrakt------------------------------------*/
-#xopretudlan {
-    text-align: center;
 
-}
-
-
+/*-------------------FOOTER------------------------------*/
 
 
 
@@ -535,7 +536,6 @@ body{
     top:1.75em;
     }
 
-
 #limg{
 height:6em;
 width: 7em;
@@ -546,6 +546,7 @@ width: 7em;
 width:15%;
 left:75%;   
 margin-top:2.7%;
+
     }
 
 #l-billede{ 
@@ -695,15 +696,32 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     text-align: center;
     }
 
-/*Her placeres knapperne side om side*/
+
+/*--------------------------Kontrakt---------------------------*/
+
+#xopretudlan {
+    text-align: center;
+}
+
+/*knapperne placere over og under hinanden*/
 #xnetveark {  
+
     float: left;
-    width: 50%
+    width: 45%;
+     }
+#xmatchside {
+        float: right;
+        width: 45%;
+
+    margin-left: 25%;
+    margin-right: auto;
      }
     #xmatchside {
-        float: right;
-        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+
     }
+
 
 /*----------------------OM OS------------------------------------------*/
 
@@ -713,4 +731,14 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     height:auto;
     margin-bottom:10em;
     padding: 20px;
+
+/*-----------------------MinProfil--------------------*/
+#retoplysninger, #mineaftaler {
+    border-radius: 3em;
+}
+
+/*----------------------Knapper---------------------------*/
+#xwknap {
+    border-radius: 3em;
+
 }
