@@ -670,9 +670,9 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 /*Her placeres knapperne side om side*/
 #xnetveark {  
     float: left;
-    width: 50%
+    width: 45%;
      }
-    #xmatchside {
+#xmatchside {
         float: right;
-        width: 50%;
+        width: 45%;
     }
