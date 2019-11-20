@@ -141,6 +141,12 @@ input::placeholder{
 #logmag{
     margin:15px;
 }
+
+#xwopretbruger {
+    border-radius: 3em;
+}
+
+
 /*-------------------------------------------------BILLEDE I HEADER------------------------------------*/
 #limg{
     margin:0.2em;
