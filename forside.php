@@ -115,26 +115,28 @@ function showSlides() {
     
 <br> <br>
 
-        <img src="images/lock.PNG">
+        <img id="xw" src="images/lock.PNG">
         <h4 class="w3-wide"><strong>Lån sikkert med nemID</strong></h4>
         <p class="w3-opacity">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
     
         <h3 id="xwlet">Let og enkelt</h3>
         <p class="w3-opacity"><i>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</i></p>
+    
+        <img id="xw" src="images/checkbox.PNG"> <br><br>
+        <h2 class="w3-wide"><strong>KRAV</strong></h2>
+        <p class="w3-opacity">Du skal være fyldt 18 år. Din bruger skal være udfyldt på alle punkter med korrekte oplysninger</p>
   
-<br> <br>
+<br>
     
-        <h2 class="w3-wide"> HER SKAL DER VÆRE EN GRAF! </h2>
+        <button class="button5"><p id="test">PRØV SELV</p></button> <br> <br> <br>
         <img src="images/graf.png">
-    
-<br> <br> <br>
 
         <h2 id="wtext-långiver"> LÅNGIVER </h2>
-        <img src="images/profil.png">
+        <img src="images/l%C3%A5ntager.PNG">
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. </i></p>
     
         <h2 id="wtext-långiver"> LÅNTAGER </h2>
-        <img src="images/profil.png">
+        <img src="images/l%C3%A5ngiver.PNG">
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Det bliver kanon. Med Mutuum behøver du hverken være økonom eller millionær for at lave en professionel investering. Du behøver heller ikke at stå med lort til halsen - for vi står klar til at hjælpe :-D  </i></p>
 
 </div>
