@@ -2,8 +2,7 @@
 <!-- her henter jeg headeren ind og kontraktdatabasen -->
 <?php 
     $page = ('Oprettelse af kontrakt');
-<!-- her henter jeg headeren ned -->
-<?php
+/*her henter jeg headeren ned*/
     $page = ('Opret lånekontrakt');
 
     require_once('includes/header.php');
