@@ -36,7 +36,15 @@ require_once('conn.php')
  <!--Skaber menu-bar containeren-->
 <div class="jumbotron" id="jumbotron">
 <div id="llogin">
-    <a href="login.php">LOG IND</a>
+
+    <?php
+if(isset($_SESSION['user_id'])){
+    echo'<a href="logout.php">LOG UD</a>';
+    }  else 
+    echo '<a href="login.php">LOG IND</a>';
+    ?>
+    
+    
 </div>  
     <a href="forside.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
 
