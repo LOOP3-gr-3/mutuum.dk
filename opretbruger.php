@@ -1,9 +1,12 @@
+<!-- Her inkluderes headeren, pagen får navn, og vi tjekker om der er sat en SESSION hvor brugeren ér logget ind -->
+
 <?php
 $page = "Opret Bruger på MUTUUM";
 require_once('includes/header.php');
 if (isset($_SESSION['user_id'])) {
 	header('Location: minside.php');
 }
+/*Hvis ikke brugeren er logget ind i forvejen, vil koden herunder afvikles*/
 else { 
 if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail']) && isset($_POST['password1']) && isset($_POST['telefon'])) {
 	$fornavn = get_post($con, 'fornavn');
@@ -13,38 +16,60 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     $password2 = get_post($con,'password2');
 	$mobil = get_post($con, 'telefon');	
     
-    if($password1 != $password2){
-        echo '<script>alert("Dine passwords matchede ikke. Prøv igen!")</script>' ;
-        die();
-    }
+/*Koden over tjekker om der er blevet sat noget ind i tekstfelterne, og hvis der er, lægges de i nogle variable 
+  Koden under sammenligner de 2 indtastede kodeord INDEN de hashes */
     
-        
+    if($password1 != $password2){
+        echo '<script>alert("Dine passwords matchede ikke. Prøv igen!");';
+        echo 'window.location.href="opretbruger.php";';
+        echo '</script>' ;
+        die();
+        /*REDIRECT TIL DENNE SIDE IGEN FORFRA*/
+        }
+    
+
+    /*Password hashes*/
+
 	$token = password_hash($password1, PASSWORD_DEFAULT);
     
-    	$query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
-	$result = mysqli_query($con, $query);
+    /*Det indsættes i tabellen i databasen */
+    $query = "INSERT INTO users(fornavn, efternavn, mail, password, mobil) VALUES('$fornavn', '$efternavn', '$mail', '$token', '$mobil')";
+	
+    /*Der valideres hvorvidt det lykkedes at lægge oplysniger på databasen*/
+    $result = mysqli_query($con, $query);
 	if(!$result) {
-		if (mysqli_errno($con) == 1062) {
-			echo '<script>alert("Email-adressen du har indtastet, er invalid eller allerede i brug. Vælg en ny og prøv igen.")</script>';
-		require_once ('includes/footer.php');
-		die();
+        /*Tester om emialen er i brug i vores database, eller om den er indtastet forkert.*/
+        if (mysqli_errno($con) == 1062) {
+			echo '<script>alert("Email-adressen du har indtastet, er invalid eller allerede i brug. Vælg en ny og prøv igen.");';
+            /*Sendes tilbage til at udfylde formularen igen*/
+            echo 'window.location.href="opretbruger.php";';
+            echo '</script>' ;
+            die(); 
 		}
+        /*Tester om der er andre fejl, en den der er nem at pinpointe -> email/brugernavnet   */
 		else 
-		echo '<script>alert("Der er opstået en ukendt fejl. Prøv igen, eller kontakt sideadministratoren")';
-		require_once ('includes/footer.php');
-		die();
+		echo '<script>alert("Der er opstået en ukendt fejl. Prøv igen, eller kontakt sideadministratoren");';
+        /*Sendes tilbage til at udfylde formularen igen*/
+        echo 'window.location.href="opretbruger.php";';
+        echo '</script>' ;
+        die(); 
     }
+    /*Hvis formularen er udfyldt korrekt og resultaterne lagt i databasen afvikles denne kode: */
 	if($result) {
-		echo '<script>alert("Du er nu registreret på MUTUUM, velkommen! Log ind, og se dig omkring!")</script>';
-		require_once ('includes/footer.php');
-		die();
-	}
-}   
+		echo '<script>alert("Du er nu registreret på MUTUUM, velkommen! Log ind, og se dig omkring!");';
+        /*Brugeren sendes til login siden */
+        echo 'window.location.href="login.php";';
+        echo '</script>' ;
+        die();
+    }
+}
 }
 ?>
 
+<!-- Her er formen som skal udfyldes. Fieldset tagget er fordi denne gruppe af data er relaterede. Legend tagget er overskrift for fireldset tagget -->
 <fieldset>
     <legend>Opret Bruger</legend>
+    <!-- Under action tagget er der redirectet til en php funktion, som skal sikre at serveren forstår den information der sendes til vores 'users'-tabel -->
     <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
         <div class="form-group" id="logmag">
             <label for="fornavn">Fornavn:</label>
@@ -72,10 +97,13 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
             <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
         </div>
         <button type="submit" class="btn btn-primary" id="logmag">Opret Bruger</button>
+        <!-- Her er der tilføjet et stykke tekst der kan skifte farve. Det knytter sig til vores JS funktion som tjekker in real time, om der er tastet ens i de 2 passwordfelter -->
         <span id="passwordtjek"></span>
     </form>
 </fieldset>
 
+
+<!-- Her er en lille kode som tjekker "in real time" om man taster rigtig med sine adgangskoder, det displayes i span tagget i formen -->
 <script>
     var check = function() {
         if (document.getElementById("p1").value ==
@@ -89,6 +117,8 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
     }
 
 </script>
+
+<!--Denne funktion sikre der kommer "rigtig" eller forventet data, for at lave et sikkerhedslag-->
 <?php
 function get_post($con, $var) {
 	return mysqli_real_escape_string($con, $_POST[$var]);
