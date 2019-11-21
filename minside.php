@@ -62,7 +62,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
 
-
+<div id="om-os-container">
 <div id="container-las">
     <div id="container1-5">
         <div id="l-billede">
@@ -91,7 +91,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     
     <div id="container3-5">
         <div id="l-billede">
-            <a href="MATCHSITE"><img id="billede1" src="images/match.png"></a>
+            <a href="matchsite.php"><img id="billede1" src="images/match.png"></a>
         </div>
         
         <div id="l-tekst">
@@ -107,7 +107,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
         </div>
         
         <div id="l-tekst">
-            <a href="OPRETKONTRAKT">Opret kontrakt</a>
+            <a href="OPRETKONTRAKT">Kontrakt</a>
             
         </div>
     </div>
@@ -123,7 +123,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
         </div>
     </div>
 </div>
-    
+</div>
 <?php
 require_once('includes/footer.php');
     ?>

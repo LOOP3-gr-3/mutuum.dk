@@ -18,7 +18,7 @@
     position: relative;
     height: 0.5em;
     width: 100%;
-    background-color:whitesmoke;
+    background-color:#585858;
     display: block;
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
@@ -320,8 +320,11 @@ td, th {
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
 @media screen and (min-width: 300px)and (max-width:767px){
     #jumbotron{
-        background-color:#95B9C7;
+        background-color:whitesmoke;
         border-radius:0% !important;
+    }
+    #om-os-container{
+        margin-bottom: -15% !important;
     }
 
 #llogin{ 
@@ -341,7 +344,7 @@ td, th {
     width:5em;
 }
 
-    #container-las{
+#container-las{
     margin-bottom:2em !important;
     }
     
@@ -399,7 +402,7 @@ height:15%;
 
     }
 body{
-    background-color:lightcyan;
+    background-color:white;
     }
 #las-tekst-venstre{
         font-size:0.5em !important;
@@ -429,13 +432,19 @@ left:32%;
     }
 #footer-container{
         margin-bottom:0px!important;
-        margin-top:2.1em !important;
+        margin-top:em !important;
+    }
+    
+/*-----------FORSIDE------------*/ 
+
+#6grunde{
+        
     }
 }
 
 @media screen and (min-width: 768px)and (max-width:959px) {
   #jumbotron {
-    background-color: burlywood;
+    background-color: whitesmoke;
     border-radius:0 !important;
   }
 
@@ -444,7 +453,7 @@ left:32%;
     position: relative;
     height: 0.5em;
     width: 100%;
-    background-color:#85bb65;
+    background-color:#585858;
     display: block;
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
@@ -494,7 +503,7 @@ top:18.5em;
 
 #container5-5{
 left:48%;
-width:35%;
+width:37%;
 top:18.5em;
 }    
 
@@ -505,7 +514,7 @@ margin-right:auto;
     }
     
 body{
-        background-color:orange;
+        background-color:white;
     }
 #las-tekst-hojre{
         font-size:0.7em !important;
@@ -515,7 +524,7 @@ body{
         margin-top:1em;
     }
 #footer-container{
-        height:11.7em !important;
+        height:7em !important;
         margin-top:2em !important;
     }
 #las-tekst-venstre{
@@ -528,7 +537,7 @@ body{
     
 @media screen and (min-width: 960px) and (max-width:1299px) {
     #jumbotron{
-        background-color:red;
+        background-color:whitesmoke;
         border-radius:0 !important;
     }
 
@@ -562,11 +571,12 @@ margin:0.25em;
         font-size:0.7em !important;
     }
 #oplysninger-footer{
-        left: 75% !important;
-        margin-top:1em;
+        left: 80% !important;
+        margin-top:0.5em;
+    
     }
 #footer-container{
-        height:8em !important;
+        height:6em !important;
         
     }
 #las-container{
@@ -574,14 +584,14 @@ margin:0.25em;
         position:relative;
     }
     body{
-        background-color:yellow;
-        position:relative;
+        background-color:white;
+        
     }
 }
     
 @media screen and (min-width: 1300px) {
 #jumbotron {
-  background-color:lavender;
+  background-color: whitesmoke;
   }
  
 
@@ -731,6 +741,8 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     height:auto;
     margin-bottom:10em;
     padding: 20px;
+    
+}
 
 /*-----------------------MinProfil--------------------*/
 #retoplysninger, #mineaftaler {
@@ -742,3 +754,14 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     border-radius: 3em;
 
 }
+
+/*------------------------FORSIDE-----------------------------*/ 
+#6grunde{
+    max-width: 2em !important;
+  
+
+}
+
+
+    
+
