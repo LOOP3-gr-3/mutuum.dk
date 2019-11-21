@@ -4,6 +4,7 @@
     padding:0!important;
     padding-bottom: 30px !important;
     padding-top: 7px !important;
+    margin-bottom:0% !important;
 }
 
 #lmenu{                 /*fortæller om burgers placering, højde og bredde*/
@@ -39,7 +40,7 @@
 }
 
 .lchange .lbar{           /*angiver farven på burger efter åben*/
-    background-color:green;
+    background-color:forestgreen;
 }
 .lchange #lbar1{           /*får bar1 til at dreje til kryds*/
     transform: translateY(0.3em) rotateZ(-45deg);
@@ -83,7 +84,7 @@
 .lmenu-block{           /*fortæller om blokken der kommer efter at have åbnet burgeren FØR den er åben. Z-index er prioriteringsrækkefølge*/
     width:0;
     height:0;
-    background:radial-gradient(circle, #FAEBD7, #FAEBD7);
+    background:radial-gradient(circle, whitesmoke, whitesmoke);
     transition:0.5s ease;
     z-index: 1;
 }
@@ -106,10 +107,6 @@
 
 /*__________________________________________________Alle overskrifter________________________________________*/
 /* dette er til overskrifterne på om_os*/
-
-xh1 {
-    font-size: 1.5em;
-}
 
 h1 {
     font-size: 1.5em;
@@ -177,7 +174,7 @@ input::placeholder{
     position:absolute;
     width: 24%;
     height: 50%;
-    background-color: #aaa;
+    background-color: white;
     left:0%;
     border: solid 2px black;
     margin: 5px;
@@ -189,7 +186,7 @@ input::placeholder{
     position:absolute;
     width: 24%;
     height: 50%;
-    background-color: #aaa;
+    background-color: white;
     left:25%;
     border: solid 2px black;
     margin: 5px;
@@ -202,7 +199,7 @@ input::placeholder{
     position:absolute;
     width: 24%;
     height: 50%;
-    background-color: #aaa;
+    background-color: white;
     left:50%;
     border: solid 2px black;
     margin: 5px;
@@ -215,7 +212,7 @@ input::placeholder{
     position:absolute;
     width: 24%;
     height: 50%;
-    background-color: #aaa;
+    background-color: white;
     left:75%;
     border: solid 2px black;
     margin: 5px;
@@ -228,7 +225,7 @@ input::placeholder{
     position:absolute;
     width: 24%;
     height: 50%;
-    background-color: #aaa;
+    background-color: white;
     left:38%;
     border: solid 2px black;
     margin: 5px;
@@ -323,8 +320,8 @@ td, th {
         background-color:whitesmoke;
         border-radius:0% !important;
     }
-    #om-os-container{
-        margin-bottom: -15% !important;
+#om-os-container{
+        margin-bottom: 25% !important;
     }
 
 #llogin{ 
@@ -396,8 +393,8 @@ td, th {
     
 #limg{
 left:5%;
-width:33%;
-height:15%;
+width:30%;
+height:11%;
 
 
     }
@@ -436,10 +433,12 @@ left:32%;
     }
     
 /*-----------FORSIDE------------*/ 
-
-#6grunde{
+    #margin-container{
+        margin-left:0% !important;
+        margin-right:0% !important;
         
     }
+
 }
 
 @media screen and (min-width: 768px)and (max-width:959px) {
@@ -762,6 +761,27 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 }
 
+/*----------------Tekst størrelser, skrifter og typer----------*/
 
+h3{
+    color:forestgreen;
     
+}
 
+h2{
+    color:forestgreen;
+}
+
+#centrer-tekst{
+    text-align:center;
+}
+
+#margin-container{
+    margin-left: 25em;
+    margin-right:25em;
+}
+
+#hvad-er-mutuum{
+    font-size:2em;
+    color:black;
+}

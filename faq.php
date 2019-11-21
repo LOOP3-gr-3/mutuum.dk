@@ -9,7 +9,7 @@
 
 
 <!-- Dette er overskriften for dette indhold -->
-<xh1><strong>FAQ</strong></xh1>
+<h3><strong>FAQ</strong></h3>
 
 <p>Denne sider indeholder de mest stillede spørgsmål. Hvis der ikke er svar på det du søger, så endelig benyt kontaktinformationerne i bunden</p>
 
