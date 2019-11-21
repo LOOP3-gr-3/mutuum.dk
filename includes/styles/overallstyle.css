@@ -90,8 +90,8 @@
 }
 
 .lchange-block{     /*fortæller om blokkens størrelse når burgeren åbnes*/
-    width:200%;
-    height:200%;    
+    width:100%;
+    height:100%;    
 }
 
 .lmenu-block, #lmenu-bar{   /*fortæller om hvor blokken starter*/
@@ -321,7 +321,7 @@ td, th {
         border-radius:0% !important;
     }
 #om-os-container{
-        margin-bottom: 25% !important;
+        margin-bottom: 6em !important;
     }
 
 #llogin{ 
@@ -394,7 +394,7 @@ td, th {
 #limg{
 left:5%;
 width:30%;
-height:11%;
+height:15%;
 
 
     }
@@ -448,6 +448,12 @@ left:32%;
     width:10em;
         
     }
+#xw{
+        width:5.2em !important;
+        height:4.9em !important;
+    }
+    
+
 
 }
 
@@ -539,6 +545,11 @@ body{
 #las-tekst-venstre{
         font-size:1em !important;
     }
+    
+#margin-container{
+        margin-left:2em !important;
+        margin-right:2em !important;  
+    }
     }
     
     
@@ -594,8 +605,6 @@ margin:0.25em;
     }
     body{
         background-color:white;
-
-
         position:relative;
 
     }
@@ -751,14 +760,10 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
     position:relative;
     width:100%;
     height:auto;
-    margin-bottom:10em;
+    margin-bottom:3em;
     padding: 20px;
-
-    
 }
 
-
-}
 
 /*-----------------------MinProfil--------------------*/
 #retoplysninger, #mineaftaler {
@@ -771,13 +776,6 @@ table {                     /*denne sørger for at kolonner ligger helt op ad hi
 
 }
 
-
-/*------------------------FORSIDE-----------------------------*/ 
-#6grunde{
-    max-width: 2em !important;
-  
-
-}
 
 /*----------------Tekst størrelser, skrifter og typer----------*/
 
