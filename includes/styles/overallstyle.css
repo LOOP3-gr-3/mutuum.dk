@@ -167,70 +167,61 @@ input::placeholder{
     height:35em;
     width:auto;
     margin-bottom:2em;
+    margin-left:5%;
+    margin-right:5%;
 }
 
 #container1-5{
     display:block;
     position:absolute;
-    width: 24%;
-    height: 50%;
-    background-color: white;
-    left:0%;
-    border: solid 2px black;
-    margin: 5px;
-    border-radius: 15%;
+    width: 15%;
+    height: 30%;
+    left:7%;
+    margin: 1px;
+    
 }
 
 #container2-5{
     display:block;
     position:absolute;
-    width: 24%;
-    height: 50%;
-    background-color: white;
-    left:25%;
-    border: solid 2px black;
-    margin: 5px;
-    border-radius: 15%;
+    width: 15%;
+    height: 30%;
+    left:27%;
+    margin: 1px;
+    
     
 }
 
 #container3-5{
     display:block;
     position:absolute;
-    width: 24%;
-    height: 50%;
-    background-color: white;
-    left:50%;
-    border: solid 2px black;
-    margin: 5px;
-    border-radius: 15%;
+    width: 15%;
+    height: 30%;
+    left:47%;
+    margin: 1px;
+    
     
 }
 
 #container4-5{
     display:block;
     position:absolute;
-    width: 24%;
-    height: 50%;
-    background-color: white;
-    left:75%;
-    border: solid 2px black;
-    margin: 5px;
-    border-radius: 15%;
+    width: 15%;
+    height: 30%;
+    left:67%;
+    margin: 1px;
+   
     
 }
 
 #container5-5{
     display:block;
     position:absolute;
-    width: 24%;
-    height: 50%;
-    background-color: white;
-    left:38%;
-    border: solid 2px black;
-    margin: 5px;
-    border-radius: 15%;
-    top:18.5em;
+    width: 15%;
+    height: 30%;
+    left:29%;
+    margin: 2px;
+    top:16em;
 }
 #l-tekst{
     text-align: center;   
@@ -308,6 +299,15 @@ td, th {
     padding: 1em;
 }
 
+#billede1{
+    width:200%;
+    height:200%;
+
+}
+#billede2{
+    width:200%;
+    height:200%;
+}
 
 /*-------------------FOOTER------------------------------*/
 
@@ -315,7 +315,7 @@ td, th {
 
 
 /*-------------------------------------@MEDIA QUERYS--------------------------------------------*/
-@media screen and (min-width: 300px)and (max-width:767px){
+@media screen and (min-width: 300px)and (max-width:759px){
     #jumbotron{
         background-color:whitesmoke;
         border-radius:0% !important;
@@ -336,13 +336,10 @@ td, th {
     top:-0.15em;
     } 
     
-#billede1{
-    height:5em;
-    width:5em;
-}
 
 #container-las{
     margin-bottom:2em !important;
+    height:25em !important;
     }
     
 .lbar{
@@ -350,46 +347,41 @@ td, th {
         left:1.2em;
 }
 
-#container-las{
-        height:35em;
+#container-las{ 
+height:35em;
     }
 
 #container1-5{
-    width:40%;
-    height:22%;
-    left:5%;
-}
-
+left:-5% !important;
+    
+    }
 #container2-5{
-    width:40%;
-    height:22%;
-    left:50%;
+left:50%;
     
-}
-
+    }
 #container3-5{
-    width:40%;
-    height:22%;
-    left:5%;
-    top:25%;
+left:-5%;
+top:7.5em;
     
-}
-
+    }
 #container4-5{
-    width:40%;
-    height:22%;
-    left:50%;
-    top: 25%;
+left:50%;
+top:7.5em;
     
-}
-
+    }
 #container5-5{
-    width:40%;
-    height:22%;
-    left:28%;
-    top:50%;
+left:18%;
+top:15em;
     
-}
+    }
+#billede1{
+width:500%;
+height:500%;
+    }
+#billede2{
+width:600%;
+height:7em !important;      
+    } 
     
 #limg{
 left:5%;
@@ -452,10 +444,10 @@ left:32%;
         width:5.2em !important;
         height:4.9em !important;
     }
-    
-
-
 }
+
+
+
 
 @media screen and (min-width: 768px)and (max-width:959px) {
   #jumbotron {
@@ -489,38 +481,36 @@ left:32%;
 }
     
 #container1-5{
-    width:30%;
-    left:0%;
-}
+left:18% !important;
     
-
+    }
 #container2-5{
-    width:30%;
-    left:32%;
+left:52%;
     
-    
-}
-
+    }
 #container3-5{
-    width:30%;
-    left:65%;
-   
+left:18%;
+top:12em;
     
-}
-
+    }
 #container4-5{
-left:15%;
-width:30%;
-top:18.5em;
+left:52%;
+top:12em;
     
-    
-}
-
+    }
 #container5-5{
-left:48%;
-width:37%;
-top:18.5em;
-}    
+left:20.5%;
+top:24em;
+    
+    }
+#billede1{
+width:200%;
+height:200%;
+    }
+#billede2{
+width:400%;
+height:11.5em !important;      
+    }  
 
     
 #l-billede{
@@ -581,12 +571,36 @@ margin-top:2.7%;
 #l-billede{ 
 margin:0.25em;
     }
+#container1-5{
+left:0% !important;
     
-#container5-5{
-
-    width:28%;
-        
     }
+#container2-5{
+left:25%;
+    
+    }
+#container3-5{
+left:50%;
+    
+    }
+#container4-5{
+left:75%;
+    
+    }
+#container5-5{
+    left:34.5%;
+    top:12em;
+    
+    }
+#billede1{
+width:150%;
+height:150%;
+    }
+#billede2{
+height:8.5em !important;      
+    }
+      
+    
 #las-tekst-hojre{
         font-size:0.7em !important;
     }
@@ -615,7 +629,9 @@ margin:0.25em;
   background-color: whitesmoke;
   }
  
-
+#om-os-container{
+    margin-bottom:6.5em !important;
+    }
 #llogin{ 
     width:15%;
     left:75%;   
@@ -648,6 +664,9 @@ margin:0.25em;
 #container5-5{
 width:25%;
         
+    }
+    h1{
+        font-size:2.5em;
     }
     }
 
