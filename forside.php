@@ -3,9 +3,7 @@
     $page = ('Forside');
     require_once('includes/header.php');
     
-    if (isset($_SESSION['user_id'])) {
-        header('location:forside.php');
-}
+
 ?>
 <!--Alle figurer er sammensat i word af teamet og slides er fra fra egen hjemmeside-->
 
@@ -83,5 +81,5 @@
 </div>
     
  <?php 
-    //require_once('includes/footer.php');
+    require_once('includes/footer.php');
 ?>

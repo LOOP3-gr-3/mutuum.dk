@@ -2,13 +2,20 @@
 <?php
     $page = ('Mine aftaler');
     require_once('includes/header.php');
-    require_once('includes/footer.php');
-    if (isset($_SESSION['user_id'])) {
-        header('location:forside.php');
+
+  if (!isset($_SESSION['user_id'])) {
+        echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
+        echo 'window.location.href="login.php";';
+        echo '</script>' ;
+        die();
 }
 ?>
+<div id="site'highlights" style="text-align:center">
+    <hr>
+        <h1><strong>Mine Aftaler</strong></h1>
+    <hr>
+</div>
 
-<h2>MINE AFTALER</h2>
 <I id="xlille">På denne side finder ud alle dine kontrakter til udlån, oprettede kontrakter og historik over alle underskrevne aftaler</I><br><br>
 
 <!-- billede af lup ved søgefeltet-->
@@ -100,3 +107,8 @@
     </table>
     
 </container>
+
+<?php
+require_once('includes/footer.php');
+?>
+
