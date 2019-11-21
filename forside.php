@@ -3,13 +3,24 @@
     $page = ('Forside');
     require_once('includes/header.php');
     
-    if (isset($_SESSION['user_id'])) {
-        header('location:forside.php');
-}
+
 ?>
+
 
 <div id="om-os-container">
     
+
+<!--Alle figurer er sammensat i word af teamet og slides er fra fra egen hjemmeside-->
+
+<div id="om-os-container">
+
+
+<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+
+
+    <div id="site-highlights">
+        <hr>
+
         <div style="text-align:center">
         <hr><h3><strong><i>HJÆLP DINE NÆRMESTE ELLER FJERNESTE</i></strong></h3>
     </div>
