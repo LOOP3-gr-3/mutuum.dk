@@ -7,11 +7,17 @@
 ?>
 <!--Alle figurer er sammensat i word af teamet og slides er fra fra egen hjemmeside-->
 
+<div id="om-os-container">
+
+
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
+
 
     <div id="site-highlights">
         <hr>
+        <div style="text-align:center">
         <h3><strong><i>HJÆLP DINE NÆRMESTE ELLER FJERNESTE</i></strong></h3>
+    </div>
         <hr>
     </div>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -41,9 +47,15 @@
 <div style="text-align:center">
         <h2 class="w3-wide">Hvad er MUTUUM? </h2>
         <p class="w3-opacity"><i>Start din investering eller lån med kun ét klik. Mutuum lån er anderledes end traditionelle lån. Vi udbyder en platform hvor du frit kan udlåne til en ven eller en fremmed, hvor der er plads til at hjælpe eller tjene med tryghed og sikkerhed som sidens kerne </i></p>
+
+
+
+</div> 
+
+<img id="6grunde" src="images/penge.png">
     
-    <img id="6grunde" src="images/6grunde.PNG">
     
+<div style="text-align:center">
     
 <div id="vorescontainer" >
 <br> <br>
@@ -79,7 +91,7 @@
     </div>
 </div>
 </div>
-    
+</div> 
  <?php 
     require_once('includes/footer.php');
 ?>
