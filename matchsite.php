@@ -28,7 +28,6 @@ $query = "SELECT * FROM kontrakt WHERE laantager_user_id ='$user_id'";
    $result = mysqli_query($con, $query);
 if($result){
         while($row = $result->fetch_assoc()){
-        $kontrakt_id = $row["kontrakt_id"];
         $laangiver_user_id = $row["laangiver_user_id"];
         $laantager_user_id= $row["laantager_user_id"];
         $kredit_id = $row["kredit_id"];
@@ -36,30 +35,30 @@ if($result){
         $rente_id = $row["rente_id"];
         $beloeb_id = $row["beloeb_id"];
         $bindingsperiode_id = $row["bindingsperiode_id"];    
-        $maanedlig_afdrag = $row["maanedlig_afdrag"];    
-        $laangiver_underskrift_id = $row["laangiver_underskrift_id"];    
-        $reg_underskrift_1 = $row["reg_underskrift_1"];
-        $laantager_underskrift_id = $row["laantager_underskrift_id"];    
-        $reg_underskrift_2 = $row["reg_underskrift_2"];
-        $betalings_status_id = $row["betalings_status_id"];
-            
+        $maanedlig_afdrag = $row["maanedlig_afdrag"]; 
 
-        echo '<tr>
-                    <td>'.$kontrakt_id.'</td>
-                    <td>'.$laangiver_user_id.'</td>
-                    <td>'.$laantager_user_id.'</td>
-                    <td>'.$kredit_id.'</td>
-                    <td>'.$kontraktbrud_id.'</td>
-                    <td>'.$rente_id.'</td>
-                    <td>'.$beloeb_id.'</td>
-                    <td>'.$bindingsperiode_id.'</td>
-                    <td>'.$maanedlig_afdrag.'</td>
-                    <td>'.$laangiver_underskrift_id.'</td>
-                    <td>'.$reg_underskrift_1.'</td>
-                    <td>'.$laantager_underskrift_id.'</td>
-                    <td>'.$reg_underskrift_2.'</td>
-                    <td>'.$betalings_status_id.'</td>
-            </tr><br>';
+            
+    /*        
+$query1 = "SELECT * FROM users WHERE user_id ='$user_id'";
+$result1 = mysqli_query($con, $query1);
+if($result1){
+        while($row1 = $result1->fetch_assoc()){
+        $fornavn = $row1["fornavn"]; */
+?>
+
+<table>
+    <tr>
+        <td><?php echo $laangiver_user_id ?></td>
+        <td><?php echo $laantager_user_id ?></td>
+        <td><?php echo $kredit_id ?></td>
+        <td><?php echo $kontraktbrud_id ?></td>
+        <td><?php echo $rente_id ?></td>
+        <td><?php echo $beloeb_id ?></td>
+        <td><?php echo $bindingsperiode_id ?></td>
+        <td><?php echo $maanedlig_afdrag ?></td>
+    </tr>
+</table>
+<?php
         }
 }
 ?>
@@ -72,45 +71,42 @@ if($result){
 
 <?php 
 
-$kredit_id = "SELECT kredit_id FROM users WHERE user_id = '$user_id'";
-
-
-$query1 = "SELECT * FROM kontrakt WHERE kredit_id ='$kredit_id'";
-$result1 = mysqli_query($con, $query1);
-    if($result1){
-        while($row1 = $result1->fetch_assoc()){
-        $kontrakt_id = $row1["kontrakt_id"];
-        $laangiver_user_id = $row1["laangiver_user_id"];
-        $laantager_user_id= $row1["laantager_user_id"];
-        $kredit_id = $row1["kredit_id"];
-        $kontraktbrud_id = $row1["kontraktbrud_id"];
-        $rente_id = $row1["rente_id"];
-        $beloeb_id = $row1["beloeb_id"];
-        $bindingsperiode_id = $row1["bindingsperiode_id"];    
-        $maanedlig_afdrag = $row1["maanedlig_afdrag"];    
-        $laangiver_underskrift_id = $row1["laangiver_underskrift_id"];    
-        $reg_underskrift_1 = $row1["reg_underskrift_1"];
-        $laantager_underskrift_id = $row1["laantager_underskrift_id"];    
-        $reg_underskrift_2 = $row1["reg_underskrift_2"];
-        $betalings_status_id = $row1["betalings_status_id"];
+$query2 = "SELECT * FROM kontrakt WHERE kredit_id ='$kredit_id'";
+$result2 = mysqli_query($con, $query2);
+    if($result2){
+        while($row2 = $result2->fetch_assoc()){
+        $kontrakt_id = $row2["kontrakt_id"];
+        $laangiver_user_id = $row2["laangiver_user_id"];
+        $laantager_user_id= $row2["laantager_user_id"];
+        $kredit_id = $row2["kredit_id"];
+        $kontraktbrud_id = $row2["kontraktbrud_id"];
+        $rente_id = $row2["rente_id"];
+        $beloeb_id = $row2["beloeb_id"];
+        $bindingsperiode_id = $row2["bindingsperiode_id"];    
+        $maanedlig_afdrag = $row2["maanedlig_afdrag"];    
+        $laangiver_underskrift_id = $row2["laangiver_underskrift_id"];    
+        $reg_underskrift_1 = $row2["reg_underskrift_1"];
+        $laantager_underskrift_id = $row2["laantager_underskrift_id"];    
+        $reg_underskrift_2 = $row2["reg_underskrift_2"];
+        $betalings_status_id = $row2["betalings_status_id"];
                     
+?>
 
-        echo '<tr>
-                    <td>'.$kontrakt_id.'</td>
-                    <td>'.$laangiver_user_id.'</td>
+
+<table>
+    <?php 
+        echo 
+                    '<td>'.$laangiver_user_id.'</td>
                     <td>'.$laantager_user_id.'</td>
                     <td>'.$kredit_id.'</td>
                     <td>'.$kontraktbrud_id.'</td>
                     <td>'.$rente_id.'</td>
                     <td>'.$beloeb_id.'</td>
                     <td>'.$bindingsperiode_id.'</td>
-                    <td>'.$maanedlig_afdrag.'</td>
-                    <td>'.$laangiver_underskrift_id.'</td>
-                    <td>'.$reg_underskrift_1.'</td>
-                    <td>'.$laantager_underskrift_id.'</td>
-                    <td>'.$reg_underskrift_2.'</td>
-                    <td>'.$betalings_status_id.'</td>
-            </tr><br>';
+                    <td>'.$maanedlig_afdrag.'</td>';
+    ?>
+</table>
+<?php
         }
 }
 ?>
