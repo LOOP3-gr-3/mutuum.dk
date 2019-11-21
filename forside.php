@@ -19,7 +19,7 @@
 
 
     <div id="site-highlights">
-        <hr>
+        
 
         <div style="text-align:center">
         <hr><h3><strong><i>HJÆLP DINE NÆRMESTE ELLER FJERNESTE</i></strong></h3>
@@ -40,7 +40,7 @@
 <div style="text-align:center">
     
 <div id="vorescontainer" >
-<br> <br>
+
 
     <div id="1kolonne">
         <h2 id="hvad-er-mutuum">Lån sikkert med nemID</h2>
@@ -54,18 +54,16 @@
     </div>
     </div>
     
-    <div id="2kolonne">
+
         <h2 id="hvad-er-mutuum">Betingelser</h2>
         <img id="xw" src="images/checkbox.PNG"> <br><br>
         
       <div id="margin-container"> <p class="w3-opacity">Du skal være fyldt 18 år. Din bruger skal være udfyldt på alle punkter med korrekte oplysninger</p>
   </div>
-    </div>
     
-<br><br><br>
+    
+
     <hr>
-    <br>
-    <br>
     
     <div id="3kolonne">
         <h2> Långiver </h2>
