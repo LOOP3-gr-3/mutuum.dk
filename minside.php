@@ -16,11 +16,16 @@ if(!isset($_SESSION['user_id'])) {
 
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
+
+
+<div id="om-os-container">
+
 <div id="site'highlights" style="text-align:center">
     <hr>
         <h1><strong>Min Side</strong></h1>
     <hr>
 </div>
+
 
 <div id="container-las">
     <div id="container1-5">
@@ -66,7 +71,11 @@ if(!isset($_SESSION['user_id'])) {
         </div>
         
         <div id="l-tekst">
+
+            <a href="OPRETKONTRAKT">Kontrakt</a>
+
             <a href="kontrakt.php">Opret kontrakt</a>
+
             
         </div>
     </div>
@@ -82,7 +91,7 @@ if(!isset($_SESSION['user_id'])) {
         </div>
     </div>
 </div>
-    
+</div>
 <?php
 require_once('includes/footer.php');
 ?>

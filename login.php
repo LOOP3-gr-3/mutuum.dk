@@ -41,27 +41,27 @@ if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for a
     }
 }
 ?>
-
+<div id="om-os-container">
 <div class="container" id="nheading">
-    <h2>Log Ind</h2>
+    <h2><strong>Log ind</strong></h2>
 </div>
 <form class="form-signin" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <!-- sikrer at vi sender "ren" data op til databasen -->
     <div class="form-group" id="logmag">
         <label for="mail">Brugernavn:</label>
-        <input type="email" class="form-control" name="mail" value="" placeholder="kurt@kurtsen.dk" required> 
+        <input type="email" class="form-control" name="mail" value="" placeholder="mikkeholtniklassen@hotmail.com" required> 
     </div>
     <div class="form-group" id="logmag">
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" name="password" id="p1" placeholder="********" required>
     </div>
-    <button class="btn btn-primary" type="submit">Log Ind</button>
+    <button id="xwknap" class="btn btn-light" type="submit">Log Ind</button>
     <br>
     <br>
-    <p>Ikke registreret endnu? Tryk her:</p><a href="opretbruger.php" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
+    <p>Er du ikke registreret som bruger endnu? Tryk her:</p><a href="opretbruger.php" id="xwknap" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
 </form>
 <br>
-
+</div>
 
 <?php
 require_once('includes/footer.php');
