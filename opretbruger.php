@@ -44,23 +44,23 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
 ?>
 <div id="om-os-container">
 <fieldset>
-    <legend>Opret Bruger</legend>
+    <div id="centrer-tekst"><h2><strong>Opret Bruger </strong></h2></div>
     <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
         <div class="form-group" id="logmag">
             <label for="fornavn">Fornavn:</label>
-            <input type="text" class="form-control" name="fornavn" placeholder="Fornavn" required>
+            <input type="text" class="form-control" name="fornavn" placeholder="Mikkel" required>
         </div>
         <div class="form-group" id="logmag">
             <label for="efternavn">Efternavn:</label>
-            <input type="text" class="form-control" name="efternavn" placeholder="Efternavn" required>
+            <input type="text" class="form-control" name="efternavn" placeholder="Holt" required>
         </div>
         <div class="form-group" id="logmag">
             <label for="mail">Mail:</label>
-            <input type="email" class="form-control" name="mail" placeholder="kurt@kurtsen.dk" required>
+            <input type="email" class="form-control" name="mail" placeholder="mikkelholtniklassen@hotmail.com" required>
         </div>
         <div class="form-group" id="logmag">
             <label for="tf">Telefonnummer:</label>
-            <input type="tel" class="form-control" name="telefon" placeholder="00 00 00 00" required>
+            <input type="tel" class="form-control" name="telefon" placeholder="25 32 78 33" required>
         </div>
         <hr>
         <div class="form-group" id="logmag">
