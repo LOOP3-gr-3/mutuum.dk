@@ -9,7 +9,7 @@
 if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsperiode']) && isset($_POST['maanedlig_afdrag']) && isset($_POST['kontraktbrud']) && isset($_POST['kredit_it'])) {
     $laangiver_user_id = $_SESSION['user_id'];
     $laangiver_user_id = $_POST['laangiver_user_id'];
-    $laantager_user_id = $_POST['laangiver_user_id'];
+    $laantager_user_id = $_POST['laantager_user_id'];
     $beloeb_id = $_POST['beloeb_id'];
     $rente_id = $_POST['rente_id'];
     $bindingsperiode_id = $_POST['bindingsperiode_id'];
@@ -152,12 +152,30 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
         ?>
 
         </div> <br>
-         <strong>Kreditrating</strong>
+        <strong>Kreditrating</strong>
+
         <div>
             <p id="beløb"><I>Vælg venligst hvilken kreditrating, som afgør, hvem der kan låne dine penge</I></p>
-            
-            
-        </div>
+
+
+            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
+                <option selected value="">Vælg kreditrating</option>
+                <?php
+            $query6 = "SELECT * FROM kredit ORDER BY kredit_id";    
+            $result6 = mysqli_query($con, $query6);
+            $rows = mysqli_num_rows($result6);                          
+            while($row6 = mysqli_fetch_assoc($result6)) {
+            $kredit_id = $row6['kredit_id'];
+            $kreditrating = $row6['kreditrating'];
+            ?>
+
+                <option value="<?php echo $kredit_id;?>"> <?php echo $kreditrating;?>
+                </option>
+                <?php
+                }
+            ?>
+            </select>
+        </div><br>
 
 
         <!--afsnit for kontraktbrud med menu for hvilke konsekvenser der skal være ved kontraktbrud-->
@@ -189,21 +207,22 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
         <p><I>Udreget afkast = <U>Some generated value , -</U></I></p>
         <br>
         <p><I>Indtast E-mail på den person, som er oprettet på MUTUUM, som skal underskrive kontrakten. <br>Udfyldes feltet ikke, så vil den blive synlig for alle låntagere på Matchsiden</I></p>
-
         <div class="form-group" id="logmag">
             <label for="mail">Mail på låntager</label>
-            
+
             <input type="email" class="form-control" name="mail" placeholder="låntager@mail.dk">
             <?php
                 if(isset($_POST['mail'])) {
                     $mail = $_POST['mail'];
-                    $query5 = "SELECT user_id FROM user WHERE mail = '$mail'";
+                    $query5 = "INSERT INTO kontrakt FROM users WHERE mail = '$mail'";
                     $result5 = mysqli_query($con, $query5);
-                    
-                    echo $_POST['result5'];
+                    if (mysqli_errno($con) == 1062) {
+			         echo '<script>alert("Den vil være synlig og tilgængelig under Matchsiden for din låntager");</script>';
+                        /*Tjekker for at email er i systemet */
                 }
                 else
-                    echo $_POST['1']
+                    $_POST['mail'];
+                }
             ?>
         </div>
 
@@ -239,5 +258,4 @@ function get_post($con, $var) {
 ?>
 
 </body>
-
 </html>
