@@ -3,66 +3,30 @@ $page = 'MinSide';
 require_once('includes/header.php');
 
 
-//Her får jeg php til at tjekke op på om brugeren er logget ind
-if(isset($_POST['email']) && isset($_POST['password'])) {
-        $email = $_POST['email'];
-        $password = $_POST['password'];
 
-        $query = "SELECT * FROM users WHERE email = '$email'";
-
-//Her tjekker den kun for mailadressen, da password skal sammmenholdes med det hashed password. Her skrives der, at hvis mailen ikke matcher en i databasen, så skal der komme en error melding 
-        $result = mysqli_query($con, $query);
-        if(!$result) die(mysqli_error($con));
-    
-//Hvis ikke det er rigtige login så kommer der en else. Rows er hvor mange rækker der er isystemet, row er til hvilken af de rows. 
-        else {
-            $rows = mysqli_num_rows($result);
-
-//Hvis en query har flere end en row, så vil den returnere et nummer. Hvis mailen ikke eksistere, skal siden kunne skrive det. Derfor kommer der en conditional statement som følgende
-            if($rows == 0) {    
-                echo "Du skal logge ind eller oprette en bruger, for at se 'min side'";
-            }
- //Hvis emailen eksistere så skal der være en else statement
-            else {
-                if ($rows > 0) {
-                    while($row = mysqli_fetch_assoc($result)) {
-                        $email = $row['email'];
-                        $database_password = $row['password'];
-                        $user_id = $row['user_id'];
-                        $token = password_verify('$password', '$database_password'); //Token skal være under den række hvor man tilkalder password. $ declare a variable
-            //det overstående statement fortæller siden Dan en ny variable som indeholder email, password og user id
-            // hash er php metode 
-            //values skal ALTID have single quotation '' 
-            //$hash = password_hash('value', PASSWORD_DEFAULT)
-            //$verfify = password_verify ('value', 'hash')
-                        if ($token == $password) {
-                
-                    //Den nedesåtende kode sikre at brugeren ikke skal logge ind på hver eneste side, men at brugeren bare er logget ind på andre sessioner
-                            $_SESSION['user_id'] = $user_id;
-                            echo "Welcome" . $email;
-                            
-                            
-                        }
-                        
-                    }
-                }
-            }
-        }
-    }  
-
-
-
-//if the user is logged in, redirects to the page loggedin_front.php
-//if the user is not logged in performs the necessary queries to compare the credentials against the table users. 
-// use password_verify(plain text password, database hashed password) to create a token to compare against the database.
-
+if(!isset($_SESSION['user_id'])) {
+        echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
+        echo 'window.location.href="login.php";';
+        echo '</script>' ;
+        die();   
+     /*Her bliver brugeren dirigeret til login, hvis de ikke er logget ind */
+}                       
 ?>
 
 
 <!-- Følgende er lavet vha. Bootstrap, hvor billederne bliver stilllet i Bootstraps grid system -->
 <!-- Ikonerne er fra Word Documents 2016 -->
 
+
 <div id="om-os-container">
+
+<div id="site'highlights" style="text-align:center">
+    <hr>
+        <h1><strong>Min Side</strong></h1>
+    <hr>
+</div>
+
+
 <div id="container-las">
     <div id="container1-5">
         <div id="l-billede">
@@ -78,12 +42,12 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     
     <div id="container2-5">
         <div id="l-billede">
-            <a href="NETVÆRK"><img id="billede1" src="images/netvaerk.png"></a>
+            <a href="KFUM.php"><img id="billede1" src="images/netvaerk.png"></a>
             
         </div>
         
         <div id="l-tekst">
-            <a href="NETVÆRK">Mit netværk</a>
+            <a href="KFUM.php">Rådgivning</a>
             
         </div>
     </div>
@@ -95,7 +59,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
         </div>
         
         <div id="l-tekst">
-            <a href="MATCHSITE">Match site</a>
+            <a href="matchsite.php">Match site</a>
             
         </div>
     </div>
@@ -103,22 +67,26 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
     
     <div id="container4-5">
         <div id="l-billede">
-            <a href="Opret kontrakt" taget="_blank"><img id="billede1" src="images/kontrakt.png"></a>
+            <a href="kontrakt.php" taget="_blank"><img id="billede1" src="images/kontrakt.png"></a>
         </div>
         
         <div id="l-tekst">
+
             <a href="OPRETKONTRAKT">Kontrakt</a>
+
+            <a href="kontrakt.php">Opret kontrakt</a>
+
             
         </div>
     </div>
     
     <div id="container5-5">
         <div id="l-billede">
-            <a href="MINPROFIL"><img id="billede1" src="images/hej2.png"></a>
+            <a href="statistik.php"><img id="billede1" src="images/hej2.png"></a>
         </div>
         
         <div id="l-tekst">
-            <a href="STATISTIK">Statistik</a>
+            <a href="statistik.php">Statistik</a>
             
         </div>
     </div>
@@ -126,7 +94,7 @@ if(isset($_POST['email']) && isset($_POST['password'])) {
 </div>
 <?php
 require_once('includes/footer.php');
-    ?>
+?>
 
 
 
