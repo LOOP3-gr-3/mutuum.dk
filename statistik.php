@@ -17,10 +17,11 @@ if(!isset($_SESSION['user_id'])) {
         <h1><strong>Statistik</strong></h1>
     <hr>
 </div>
+<div id="margin-container">
 <div id="vorescontainer">
 <p><I>Denne side vil der blive arbejdet videre på til loop</I></p>
 </div> 
-
+</div>
 <?php
 require_once('includes/footer.php');
 ?>

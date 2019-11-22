@@ -405,7 +405,9 @@ left:32%;
 
 #billede{
         width:80%;
-        height:75%;   
+        height:75%;
+        margin-top:0.5em;
+ 
     }
 #billede-footer{
     margin-top:0px !important;
@@ -426,8 +428,8 @@ left:32%;
     
 /*-----------FORSIDE------------*/ 
     #margin-container{
-        margin-left:0% !important;
-        margin-right:0% !important;
+        margin-left:1em !important;
+        margin-right:1em !important;
         
     }
 
@@ -455,7 +457,16 @@ left:32%;
     border-radius:0 !important;
   }
 
+#om-os-container{
+margin-bottom:2em !important;
+    }
 
+#billede{
+width:75%;
+height:75%;
+    }
+
+    
 .lbar{              /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
     position: relative;
     height: 0.5em;
@@ -667,6 +678,10 @@ width:25%;
     }
     h1{
         font-size:2.5em;
+    }
+    #billede{
+        width:75%;
+        height:75%;
     }
     }
 

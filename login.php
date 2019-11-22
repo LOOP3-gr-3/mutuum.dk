@@ -5,11 +5,7 @@ require_once('includes/header.php');
 if(isset($_SESSION['user_id'])) {
     header('Location: minside.php'); /*Her bliver brugeren dirigeret til minside, hvis de er logget ind */
 }
-if (isset($_COOKIE['login'])) {
-	$mail = $_COOKIE['login']; /* dette gør, at der gemmer sig en cookie på harddisken, som gør, at den husker brugerens brugernavn/mail */
-} else {
-	$mail = '';
-}
+
 if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for at både mail og password er sat */
     $mail_temp = $_POST['mail'];
     $password = $_POST['password'];
@@ -63,6 +59,12 @@ if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for a
 <br>
 </div>
 
+
+
+
 <?php
-require_once('includes/footer.php');
+function get_post($con, $var) {
+	return mysqli_real_escape_string($con, $_POST[$var]);
+}
+    require_once('includes/footer.php');
 ?>

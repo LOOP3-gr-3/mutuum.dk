@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	   <meta charset="utf-8">
-	   <meta name="viewport" content="width=device-width, initial-scale=1">
-	   <meta name="description" content="">
-	   <meta name="author" content="Projektgruppe 3">
-	   <title><?php echo $page;?></title> 
-    
-    <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
-
 
   <div id="footer-container">
     
@@ -27,7 +16,17 @@
     </div>
       </div>
     <div id="billede-footer">
-      <a href="opretbruger.php"><img id="billede" src="images/B3.png"></a>
+        <?php
+            if(isset($_SESSION['user_id'])) {
+            echo '<a href="minside.php"><img id="billede" src="images/B4.png"></a>';
+            } else
+            echo '<a href="opretbruger.php"><img id="billede" src="images/B3.png"></a>';
+                
+        
+          ?>
     </div>
     
 </div>
+
+</body>
+</html>

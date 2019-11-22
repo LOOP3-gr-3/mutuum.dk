@@ -18,7 +18,7 @@ if(!isset($_SESSION['user_id'])) {
 <!-- Ikonerne er fra Word Documents 2016 -->
 
 
-<div id="om-os-container">
+
 
 <div id="site'highlights" style="text-align:center">
     <hr>
@@ -26,7 +26,7 @@ if(!isset($_SESSION['user_id'])) {
     <hr>
 </div>
 
-
+<div id="om-os-container">
 <div id="container-las">
     <div id="container1-5">
         <div id="l-billede">
